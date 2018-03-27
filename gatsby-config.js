@@ -8,7 +8,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           require('postcss-easy-import'),
-          require('precss'),
+          require('postcss-nested'),
           autoprefixer({
             browsers: ['last 2 versions']
           })
