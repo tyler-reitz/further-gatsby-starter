@@ -1,5 +1,4 @@
 const autoprefixer = require('autoprefixer')
-const pixrem = require('pixrem')
 
 module.exports = {
   plugins: [
@@ -8,7 +7,8 @@ module.exports = {
       resolve: 'gatsby-plugin-postcss-sass',
       options: {
         postCssPlugins: [
-          // pixrem(),
+          require('postcss-easy-import'),
+          require('precss'),
           autoprefixer({
             browsers: ['last 2 versions']
           })

@@ -1,4 +1,3 @@
-import '../../node_modules/normalize.css/normalize.css'
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 
