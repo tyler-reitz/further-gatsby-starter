@@ -3,7 +3,7 @@
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
@@ -17,7 +17,8 @@
     "normalize.css": "^8.0.0",
     "pixrem": "^4.0.1",
     "postcss-easy-import": "^3.0.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "tailwindcss": "^0.5.1"
   },
   "devDependencies": {}
 }
