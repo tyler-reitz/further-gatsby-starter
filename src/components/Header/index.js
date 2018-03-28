@@ -1,15 +1,18 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from "react"
+import Link from "gatsby-link"
 
 import Mega from '../Mega'
 
 const Header = () => {
-  const handleClick = function(e) {
-    const el = document.getElementById("nav");
+  const handleClick = (e) => {
+    const main = document.getElementById('nav')
+    const mega = document.getElementById('mega')
 
     e.preventDefault();
-    el.classList.toggle("block");
-    el.classList.toggle("hidden");
+    main.classList.toggle("block");
+    mega.classList.toggle("block");
+    main.classList.toggle("hidden");
+    mega.classList.toggle("hidden");
   };
 
   return (
@@ -25,8 +28,8 @@ const Header = () => {
           >
             <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
           </svg>
-          <span className="font-bold text-xl tracking-tight">
-            Gatsby Starter Tailwind
+          <span className="hidden sm:block font-bold text-xl tracking-tight">
+            Further
           </span>
         </Link>
 
