@@ -12,9 +12,7 @@ export default ({ children }) => (
         title="Further Gatsby Starter"
       />
       <Header />
-      <div className="flex flex-col flex-1 md:justify-center max-w-xl mx-auto px-4 py-8 md:p-8 w-full">
-        {children()}
-      </div>
+      {children()}
       <Footer />
     </div>
   </div>
