@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 
+import Mega from '../Mega'
+
 const Header = () => {
   const handleClick = function(e) {
     const el = document.getElementById("nav");
@@ -70,6 +72,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Mega />
     </nav>
   );
 };
