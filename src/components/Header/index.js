@@ -7,13 +7,16 @@ const Header = () => {
   const handleClick = (e) => {
     e.preventDefault();    
     const main = document.getElementById('main')
+    const mobileMenu = document.getElementById('mobile-menu')
 
     if (!main.style.transform) {
-      return main.style.transform = "translateX(-75%)"
-      console.log(main.style.transform)
+      main.style.transform = "translateX(-75%)"
+      mobileMenu.style.display = "block"
+      return 
     }
     
     main.style.transform = ""
+    setTimeout(() => mobileMenu.style.display = "none", 300)
   };
 
   return (
