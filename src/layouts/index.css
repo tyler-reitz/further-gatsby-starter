@@ -4537,6 +4537,14 @@ button,
   z-index: auto;
 }
 
+#main {
+  transition: all 300ms ease-in-out;
+}
+
+#mobile-menu {
+  right: -80%;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;

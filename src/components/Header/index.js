@@ -5,14 +5,15 @@ import Mega from '../Mega'
 
 const Header = () => {
   const handleClick = (e) => {
-    const main = document.getElementById('nav')
-    const mega = document.getElementById('mega')
+    e.preventDefault();    
+    const main = document.getElementById('main')
 
-    e.preventDefault();
-    main.classList.toggle("block");
-    mega.classList.toggle("block");
-    main.classList.toggle("hidden");
-    mega.classList.toggle("hidden");
+    if (!main.style.transform) {
+      return main.style.transform = "translateX(-75%)"
+      console.log(main.style.transform)
+    }
+    
+    main.style.transform = ""
   };
 
   return (

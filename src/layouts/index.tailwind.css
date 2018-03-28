@@ -3,3 +3,12 @@
 @tailwind components;
 
 @tailwind utilities;
+
+#main {
+  transition: all 300ms ease-in-out;
+}
+
+#mobile-menu {
+  right: 0;
+  transform: translateX(100%);
+}
