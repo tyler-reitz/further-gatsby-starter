@@ -4551,6 +4551,18 @@ button,
   overflow-x: hidden;
 }
 
+.h-screen-1\/4 {
+  height: 25vh;
+}
+
+.h-screen-2\/4 {
+  height: 50vh;
+}
+
+.h-screen-3\/4 {
+  height: 75vh;
+}
+
 /* rc-menu */
 
 .rc-menu-hidden {
@@ -8864,6 +8876,22 @@ button,
   .sm\:z-auto {
     z-index: auto;
   }
+
+  .sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .sm\:h-screen-1\/4 {
+    height: 25vh;
+  }
+
+  .sm\:h-screen-2\/4 {
+    height: 50vh;
+  }
+
+  .sm\:h-screen-3\/4 {
+    height: 75vh;
+  }
 }
 
 @media (min-width: 768px) {
@@ -12756,6 +12784,22 @@ button,
 
   .md\:z-auto {
     z-index: auto;
+  }
+
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .md\:h-screen-1\/4 {
+    height: 25vh;
+  }
+
+  .md\:h-screen-2\/4 {
+    height: 50vh;
+  }
+
+  .md\:h-screen-3\/4 {
+    height: 75vh;
   }
 }
 
@@ -16650,6 +16694,22 @@ button,
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .lg\:h-screen-1\/4 {
+    height: 25vh;
+  }
+
+  .lg\:h-screen-2\/4 {
+    height: 50vh;
+  }
+
+  .lg\:h-screen-3\/4 {
+    height: 75vh;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -20542,5 +20602,21 @@ button,
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .xl\:h-screen-1\/4 {
+    height: 25vh;
+  }
+
+  .xl\:h-screen-2\/4 {
+    height: 50vh;
+  }
+
+  .xl\:h-screen-3\/4 {
+    height: 75vh;
   }
 }

@@ -14,8 +14,28 @@
   display: none;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
+@responsive {
+    .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+}
+
+@responsive {
+    .h-screen-1\/4 {
+    height: 25vh;
+  }
+}
+
+@responsive {
+    .h-screen-2\/4 {
+    height: 50vh;
+  }
+}
+
+@responsive {
+    .h-screen-3\/4 {
+    height: 75vh;
+  }
 }
 
 /* rc-menu */
