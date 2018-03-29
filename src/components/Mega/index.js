@@ -15,6 +15,14 @@ export default () => (
         <MenuItem key="2-1">item2-1</MenuItem>
         <MenuItem key="2-2">item2-2</MenuItem>
       </SubMenu>
+      <SubMenu key="3" title="Submenu 3" className="bg-grey-darker text-grey-lighter">
+        <MenuItem key="3-1">item3-1</MenuItem>
+        <MenuItem key="3-2">item3-2</MenuItem>
+      </SubMenu>
+      <SubMenu key="4" title="Submenu 4" className="bg-grey-darker text-grey-lighter">
+        <MenuItem key="4-1">item4-1</MenuItem>
+        <MenuItem key="4-2">item4-2</MenuItem>
+      </SubMenu>
     </Menu>
   </nav>
 )
