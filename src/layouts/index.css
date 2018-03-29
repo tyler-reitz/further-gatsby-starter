@@ -4555,8 +4555,16 @@ button,
   height: 25vh;
 }
 
+.h-screen-1\/3 {
+  height: 33vh;
+}
+
 .h-screen-2\/4 {
   height: 50vh;
+}
+
+.h-screen-2\/3 {
+  height: 66vh;
 }
 
 .h-screen-3\/4 {
@@ -8885,8 +8893,16 @@ button,
     height: 25vh;
   }
 
+  .sm\:h-screen-1\/3 {
+    height: 33vh;
+  }
+
   .sm\:h-screen-2\/4 {
     height: 50vh;
+  }
+
+  .sm\:h-screen-2\/3 {
+    height: 66vh;
   }
 
   .sm\:h-screen-3\/4 {
@@ -12794,8 +12810,16 @@ button,
     height: 25vh;
   }
 
+  .md\:h-screen-1\/3 {
+    height: 33vh;
+  }
+
   .md\:h-screen-2\/4 {
     height: 50vh;
+  }
+
+  .md\:h-screen-2\/3 {
+    height: 66vh;
   }
 
   .md\:h-screen-3\/4 {
@@ -16703,8 +16727,16 @@ button,
     height: 25vh;
   }
 
+  .lg\:h-screen-1\/3 {
+    height: 33vh;
+  }
+
   .lg\:h-screen-2\/4 {
     height: 50vh;
+  }
+
+  .lg\:h-screen-2\/3 {
+    height: 66vh;
   }
 
   .lg\:h-screen-3\/4 {
@@ -20612,8 +20644,16 @@ button,
     height: 25vh;
   }
 
+  .xl\:h-screen-1\/3 {
+    height: 33vh;
+  }
+
   .xl\:h-screen-2\/4 {
     height: 50vh;
+  }
+
+  .xl\:h-screen-2\/3 {
+    height: 66vh;
   }
 
   .xl\:h-screen-3\/4 {
