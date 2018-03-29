@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import './index.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import MobileMenu from '../components/MobileMenu'
 
 export default ({ children }) => (
   <div id="main" className="relative flex flex-col font-sans min-h-screen text-grey-darkest">
@@ -14,9 +15,7 @@ export default ({ children }) => (
       <Header />
       {children()}
       <Footer />
-      <div id="mobile-menu" className="bg-grey-darkest absolute text-grey pin-t w-4/5 h-screen">
-        Mobile Menu
-      </div>
+      <MobileMenu />
     </div>
   </div>
 )
