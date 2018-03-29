@@ -4739,7 +4739,7 @@ button,
 .rc-menu-vertical.rc-menu-sub,
 .rc-menu-vertical-left.rc-menu-sub,
 .rc-menu-vertical-right.rc-menu-sub {
-  /* padding: 0; */
+  padding: 0;
 }
 
 .rc-menu-sub.rc-menu-inline {
