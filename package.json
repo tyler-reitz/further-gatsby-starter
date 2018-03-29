@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "develop": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby develop",
-    "build": "gatsby build",
+    "build": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby build",
     "serve": "gatsby serve"
   },
   "dependencies": {
