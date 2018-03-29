@@ -4547,6 +4547,10 @@ button,
   display: none;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 /* rc-menu */
 
 .rc-menu-hidden {

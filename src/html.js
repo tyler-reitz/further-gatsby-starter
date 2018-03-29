@@ -32,7 +32,7 @@ export default class HTML extends Component {
           { headComponents }
           { css }
         </head>
-        <body className="overflow-hidden">
+        <body className="overflow-x-hidden">
           <div 
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
