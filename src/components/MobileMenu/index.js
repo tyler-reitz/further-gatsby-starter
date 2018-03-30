@@ -7,9 +7,15 @@ class MobileMenu extends Component {
     return (
       <div id="mobile-menu" className="bg-grey-darkest absolute text-grey pin-t w-screen-3/4 h-full">
         <Menu mode="inline" selectable={false} className="list-reset leading-loose">
-          <MenuItem>Home</MenuItem>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Contact</MenuItem>
+          <MenuItem>
+            <Link to="/" className="text-grey no-underline">Home</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/about" className="text-grey no-underline">About</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/contact" className="text-grey no-underline">Contact</Link>
+          </MenuItem>
           <SubMenu key="1" title="Submenu 1">
             <MenuItem key="1-1">item1-1</MenuItem>
             <MenuItem key="1-2">item1-2</MenuItem>
