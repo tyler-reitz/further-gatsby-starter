@@ -31,8 +31,8 @@ const IndexPage = () => (
       <h2 className="leading-tight w-5/6 text-3xl mb-2">A Little About Our Services</h2>
       <p className="max-w-xl w-5/6 leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis mollitia et magnam velit cumque rerum libero molestias ratione reiciendis laboriosam, iusto, placeat odit pariatur? Aperiam vel totam nemo provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis mollitia et magnam velit cumque rerum libero molestias ratione reiciendis laboriosam, iusto, placeat odit pariatur? Aperiam vel totam nemo provident.</p>
     </div>
-    <div className="flex flex-wrap">
-      <ul className="list-reset">
+    <div>
+      <ul className="list-reset list-reset text-center leading-loose text-xl font-medium text-grey-darker">
         <li>Service Type #1</li>
         <li>Service Type #2</li>
         <li>Service Type #3</li>
@@ -46,7 +46,7 @@ const IndexPage = () => (
       <div>
         map
       </div>
-      <ul className="list-reset">
+      <ul className="list-reset list-reset text-center leading-loose text-xl font-medium text-grey-darker">
         <li>Service Type #1</li>
         <li>Service Type #2</li>
         <li>Service Type #3</li>
