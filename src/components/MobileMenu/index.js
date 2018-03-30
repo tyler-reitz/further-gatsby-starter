@@ -5,7 +5,7 @@ import Menu, { SubMenu, Item as MenuItem } from 'rc-menu'
 class MobileMenu extends Component {
   render() {
     return (
-      <div id="mobile-menu" className="bg-grey-darkest absolute text-grey pin-t w-4/5 h-screen">
+      <div id="mobile-menu" className="bg-grey-darkest absolute text-grey pin-t w-4/5 h-full">
         <Menu mode="inline" selectable={false} className="list-reset leading-loose">
           <MenuItem>Home</MenuItem>
           <MenuItem>About</MenuItem>

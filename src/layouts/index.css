@@ -4559,7 +4559,7 @@ button,
   height: 33vh;
 }
 
-.h-screen-2\/4 {
+.h-screen-1\/2 {
   height: 50vh;
 }
 
@@ -8897,7 +8897,7 @@ button,
     height: 33vh;
   }
 
-  .sm\:h-screen-2\/4 {
+  .sm\:h-screen-1\/2 {
     height: 50vh;
   }
 
@@ -12814,7 +12814,7 @@ button,
     height: 33vh;
   }
 
-  .md\:h-screen-2\/4 {
+  .md\:h-screen-1\/2 {
     height: 50vh;
   }
 
@@ -16731,7 +16731,7 @@ button,
     height: 33vh;
   }
 
-  .lg\:h-screen-2\/4 {
+  .lg\:h-screen-1\/2 {
     height: 50vh;
   }
 
@@ -20648,7 +20648,7 @@ button,
     height: 33vh;
   }
 
-  .xl\:h-screen-2\/4 {
+  .xl\:h-screen-1\/2 {
     height: 50vh;
   }
 
