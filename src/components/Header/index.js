@@ -25,7 +25,7 @@ class Header extends Component {
     const mobileMenu = document.getElementById('mobile-menu')
 
     if (!main.style.transform) {
-      main.style.transform = "translateX(-75%)"
+      main.style.transform = "translateX(-75vw)"
       mobileMenu.style.display = "block"
       return 
     }

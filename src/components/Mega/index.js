@@ -6,8 +6,7 @@ export default () => (
     <Menu 
       mode="horizontal"
       className="flex justify-center list-reset leading-loose"
-      getPopupContainer={menuItemEl => menuItemEl}
-      triggerSubMenuAction="click"
+      getPopupContainer={(menuItemEl) => menuItemEl}
     >
       <MenuItem>Home</MenuItem>
       <MenuItem>About</MenuItem>
