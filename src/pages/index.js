@@ -9,6 +9,13 @@ import Button from '../components/Button'
 const IndexPage = () => (
   <div>
     <Hero />
+    <div className="flex flex-wrap justify-center max-w-2xl mx-auto py-6 md:my-6">
+      { [1,2,3,4,5,6,7,8].map((_, idx) => <Card key={idx} />) }
+    </div>
+    <div className="pt-4 pb-8 text-center">
+      <h2 className="leading-loose text-3xl mb-2">Call To Action</h2>
+      <button className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 px-8 py-4 rounded font-bold text-white">Submit</button>
+    </div>
     <div className="bg-grey">
       <div className="max-w-2xl mx-auto p-4 px-8 flex justify-around md:px-8">
         <img src={badge} alt="badge" className="h-16 sm:h-24"/>
@@ -19,13 +26,6 @@ const IndexPage = () => (
         <img src={badge} alt="badge" className="h-16 sm:h-24"/>
         <img src={badge} alt="badge" className="h-16 sm:h-24"/>
       </div>
-    </div>
-    <div className="flex flex-wrap justify-center max-w-2xl mx-auto py-6 md:my-6">
-      { [1,2,3,4,5,6,7,8].map((_, idx) => <Card key={idx} />) }
-    </div>
-    <div className="pt-4 pb-8 text-center">
-      <h2 className="leading-loose text-3xl mb-2">Call To Action</h2>
-      <button className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 px-8 py-4 rounded font-bold text-white">Submit</button>
     </div>
     <div className="flex flex-wrap justify-center max-w-2xl mx-auto py-6 md:my-6 mb-4">
       <h2 className="leading-tight w-5/6 text-2xl mb-2 text-center">A Little About Our Services</h2>

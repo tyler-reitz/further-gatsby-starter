@@ -16,7 +16,7 @@ export default () => (
       </li>
     </ul>
     <div className="mb-8">
-      <div className="flex justify-center items-center max-w-xl w-5/6 mx-auto md:h-screen-1/3 m-4 bg-grey h-screen-1/2 md:h-screen- text-grey-lighter text-3xl lg:my-8">
+      <div className="flex justify-center items-center max-w-xl w-3/4 mx-auto md:h-screen-1/3 m-4 bg-grey h-screen-1/2 md:h-screen- text-grey-lighter text-3xl lg:my-8">
         map
       </div>
     </div>
@@ -25,7 +25,9 @@ export default () => (
       <input className="block w-full border border-grey border-solid rounded mb-4 mb-4 h-10 p-2" type="text" id="name" placeholder="name *" />
       <input className="block w-full border border-grey border-solid rounded mb-4 mb-4 h-10 p-2" type="text" id="email" placeholder="email *" />
       <textarea className="block w-full border border-grey border-solid rounded mb-4 mb-4 p-2" id="message" cols="30" rows="10" placeholder="email *" ></textarea>
-
+      <div className="flex justify-center lg:justify-end">
+        <button type="submit" className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 lg:w-auto px-8 py-4 rounded font-bold text-white">Submit</button>
+      </div>
     </form>
   </div>
 )
