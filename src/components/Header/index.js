@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import Link from "gatsby-link"
 
-import Mega from '../Mega'
+import MegaMenu from '../MegaMenu'
+import Button from '../Button'
 
 class Header extends Component {
 
@@ -40,7 +41,7 @@ class Header extends Component {
         <div className="flex flex-wrap items-center justify-between max-w-2xl mx-auto p-4 md:p-8">
           <Link to="/" className="flex items-center no-underline text-white">
             <svg
-              className="fill-current hx1-8 mr-2 w-8"
+              className="fill-current hx1-8 mr-2 w-12"
               width="54"
               height="54"
               viewBox="0 0 54 54"
@@ -48,7 +49,7 @@ class Header extends Component {
             >
               <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
             </svg>
-            <span className="hidden sm:block font-bold text-xl tracking-tight">
+            <span className="hidden sm:block font-bold text-5xl tracking-tight">
               Further
             </span>
           </Link>
@@ -67,7 +68,12 @@ class Header extends Component {
             </svg>
           </button>
 
-          <div
+          <div className="hidden sm:flex flex-col text-center">
+            <a className="text-2xl mb-2" href="tel:+13239827609">(888) 888-8888</a>
+            <button className="bg-grey-darker hover:bg-grey-darkest px-4 py-2 rounded font-bold text-white leading-normal w-screen-1/4">Contact Us</button>
+          </div>
+
+          {/* <div
             id="nav"
             className="hidden md:flex md:items-center w-full md:w-auto"
           >
@@ -93,9 +99,10 @@ class Header extends Component {
                 Contact
               </Link>
             </div>
-          </div>
+          </div> */}
+
         </div>
-        <Mega />
+        <MegaMenu />
       </nav>
     )
   }

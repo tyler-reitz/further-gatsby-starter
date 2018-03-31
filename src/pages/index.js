@@ -12,9 +12,9 @@ const IndexPage = () => (
     <div className="flex flex-wrap justify-center max-w-2xl mx-auto py-6 md:my-6">
       { [1,2,3,4,5,6,7,8].map((_, idx) => <Card key={idx} />) }
     </div>
-    <div className="pt-4 pb-8 text-center">
+    <div className="pt-4 pb-8 text-center max-w-2xl mx-auto">
       <h2 className="leading-loose text-3xl mb-2">Call To Action</h2>
-      <button className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 px-8 py-4 rounded font-bold text-white">Submit</button>
+      <button className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 px-8 py-4 rounded font-bold text-white leading-normal w-1/5">Submit</button>
     </div>
     <div className="bg-grey">
       <div className="max-w-2xl mx-auto p-4 px-8 flex justify-around md:px-8">
