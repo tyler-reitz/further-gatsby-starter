@@ -6,16 +6,28 @@ import Button from '../Button'
 
 class Header extends Component {
 
+  state = {
+    windowWidth: ''
+  }
+
   componentDidMount() {
+    this.setState({ windowWidth: window.innerWidth })
+
     window.addEventListener('resize', (e) => {
       const { innerWidth } = window
+      this.setState({ windowWidth: innerWidth })
 
       if (innerWidth > 768) {
+        this.setState({ windowWidth: innerWidth })
+
         const main = document.getElementById('main')
-        const mobileMenu = document.getElementById('mobile-menu')
+        const mobileMenu = document.getElementById('mega-menu')
 
         main.style.transform = ""
-        setTimeout(() => mobileMenu.style.display = "none", 300)
+
+        if (innerWidth < 768 ) {
+          setTimeout(() => mobileMenu.style.display = "none", 300)
+        }
       }
     })
   }
@@ -23,7 +35,7 @@ class Header extends Component {
   handleClick = (e) => {
     e.preventDefault();
     const main = document.getElementById('main')
-    const mobileMenu = document.getElementById('mobile-menu')
+    const mobileMenu = document.getElementById('mega-menu')
 
     if (!main.style.transform) {
       main.style.transform = "translateX(-75vw)"
@@ -74,7 +86,9 @@ class Header extends Component {
           </div>
         </div>
 
-        <MegaMenu />
+        <MegaMenu 
+          mode={ this.state.windowWidth > 768 ? 'horizontal' : 'inline' }
+        />
       </nav>
     )
   }

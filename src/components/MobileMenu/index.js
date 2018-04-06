@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Menu, { SubMenu, Item as MenuItem } from 'rc-menu'
 
+import './style.css'
+
 class MobileMenu extends Component {
   render() {
     return (

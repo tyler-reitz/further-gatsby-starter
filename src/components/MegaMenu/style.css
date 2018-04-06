@@ -1,4 +1,18 @@
-/* rc-menu */
+#mega-menu {
+  right: 0;
+  transform: translateX(100%);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #mega-menu {
+    right: initial;
+    transform: translateX(0);
+    display: block;
+  }
+}
+
+/* Custom RC-MENU styles */
 @font-face {
   font-family: 'FontAwesome';
   src: url('https://cdn.bootcss.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0');
