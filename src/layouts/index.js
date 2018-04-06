@@ -16,7 +16,6 @@ export default ({ children }) => (
       <Header />
       {children()}
       <Footer />
-      {/* <MobileMenu /> */}
     </div>
   </div>
 )
