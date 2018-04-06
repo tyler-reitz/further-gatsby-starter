@@ -68,40 +68,12 @@ class Header extends Component {
             </svg>
           </button>
 
-          <div className="hidden sm:flex flex-col text-center">
+          <div className="hidden md:flex flex-col text-center">
             <a className="text-2xl mb-2" href="tel:+13239827609">(888) 888-8888</a>
             <button className="bg-grey-darker hover:bg-grey-darkest px-4 py-2 rounded font-bold text-white leading-normal w-screen-1/4">Contact Us</button>
           </div>
-
-          {/* <div
-            id="nav"
-            className="hidden md:flex md:items-center w-full md:w-auto"
-          >
-            <div className="text-sm">
-              <Link
-                to="/"
-                className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-white"
-              >
-                Home
-              </Link>
-
-              <Link
-                to="/about"
-                className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
-              >
-                About
-              </Link>
-
-              <Link
-                to="/contact"
-                className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
-              >
-                Contact
-              </Link>
-            </div>
-          </div> */}
-
         </div>
+
         <MegaMenu />
       </nav>
     )

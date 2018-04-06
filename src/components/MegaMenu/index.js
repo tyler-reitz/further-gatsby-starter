@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Menu, { SubMenu, Item as MenuItem, Divider } from 'rc-menu'
 
-import './styles.css'
+import './style.css'
 
 export default () => (
   <nav id="mega" className="bg-grey-darker text-white hidden md:block">
