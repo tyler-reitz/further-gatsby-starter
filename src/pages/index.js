@@ -1,13 +1,8 @@
 import React from "react";
 
-import Carousel from 'react-slick'
-import '../../node_modules/slick-carousel/slick/slick.css'
-import '../../node_modules/slick-carousel/slick/slick-theme.css'
-import Carousel2 from '../components/Carousel'
-
 import Hero from '../components/Hero'
 import Card from '../components/Card'
-
+import Carousel2 from '../components/Carousel'
 import badge from '../images/badge.svg'
 import Button from '../components/Button'
 
@@ -24,15 +19,7 @@ const IndexPage = () => (
       <button className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 px-8 py-4 rounded font-bold text-white leading-normal w-1/5">Submit</button>
     </div>
 
-    <Carousel2 
-      settings={{
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }}
-    />
+    <Carousel2 />
     
     <div className="bg-grey">
       <div className="max-w-2xl mx-auto p-4 px-8 flex justify-around md:px-8">

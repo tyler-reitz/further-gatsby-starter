@@ -1,0 +1,18 @@
+.slick-prev, .slick-next {
+  &::before, &::after {
+    font-size: 40px;
+  }
+}
+
+.slick-prev {
+  left: 0vw;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 1.5vw;
+}
+
+.slick-dots {
+  bottom: 1rem;
+}
