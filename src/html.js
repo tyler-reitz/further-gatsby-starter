@@ -29,6 +29,7 @@ export default class HTML extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta http-equiv="X-UA-Compatible" content="ie=edge" />
           <title>Further Gatsby Starter</title>
+          <link rel="stylesheet" href="https://use.typekit.net/ykn6nrn.css" />
           { headComponents }
           { css }
         </head>
