@@ -56,6 +56,8 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
+  'primary': '#005aab',
+
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
   'red-dark': '#cc1f1a',
@@ -193,7 +195,8 @@ module.exports = {
   */
 
   fonts: {
-    'sans': [
+    'nimbus-sans': [
+      'numbus-sans',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -207,25 +210,35 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
-    'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
-      'serif',
+    'gotham-medium': [
+      'Gotham Medium',
+      'system-ui',
+      'BlinkMacSystemFont',
+      '-apple-system',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
     ],
-    'mono': [
-      'Menlo',
-      'Monaco',
-      'Consolas',
-      'Liberation Mono',
-      'Courier New',
-      'monospace',
+    'gotham-bold': [
+      'Gotham Bold',
+      'system-ui',
+      'BlinkMacSystemFont',
+      '-apple-system',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
     ]
   },
 
@@ -488,14 +501,17 @@ module.exports = {
     '2/3': '66.66667%',
     '1/4': '25%',
     '3/4': '75%',
+    '9/50': '18%',
+    '7/25': '28%',
     '1/5': '20%',
     '2/5': '40%',
+    '45/100': '45%',
     '3/5': '60%',
     '4/5': '80%',
     '1/6': '16.66667%',
     '5/6': '83.33333%',
     'full': '100%',
-    'screen': '100vw'
+    'screen': '100vw',
   },
 
 
@@ -530,8 +546,13 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '4/5': '80%',
+    '9/10': '90%',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
+    'screen-w': '100vw',
+    'screen-w-1/2': '50vw',
+    'screen-w-2/5': '40vw'
   },
 
 

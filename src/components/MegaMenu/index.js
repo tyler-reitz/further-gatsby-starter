@@ -10,7 +10,7 @@ export default ({ mode, ...props }) => {
       id="mega-menu" 
       className={
         mode === 'horizontal' 
-          ? "bg-grey-darker text-white hidden md:block"
+          ? "bg-primary text-white hidden md:block"
           : "bg-grey-darker absolute text-grey pin-t w-screen-3/4 h-full" 
       }
       style={props.style}
@@ -24,25 +24,25 @@ export default ({ mode, ...props }) => {
         }
         getPopupContainer={(menuItemEl) => menuItemEl}
       >
-        <MenuItem key="1" className="bg-grey-darker text-grey-lighter">
+        <MenuItem key="1" className="bg-primary text-grey-lighter">
           <Link to="/" className="no-underline text-grey-lighter">Home</Link>
         </MenuItem>
-        <MenuItem key="2" className="bg-grey-darker text-grey-lighter">
+        <MenuItem key="2" className="bg-primary text-grey-lighter">
           <Link to="/about" className="no-underline text-grey-lighter">About</Link>
         </MenuItem>
-        <MenuItem key="3" className="bg-grey-darker text-grey-lighter">
+        <MenuItem key="3" className="bg-primary text-grey-lighter">
           <Link to="/contact" className="no-underline text-grey-lighter">Contact</Link>
         </MenuItem>
-        <SubMenu key="4" title="Submenu 4" className="bg-grey-darker text-grey-lighter">
+        <SubMenu key="4" title="Submenu 4" className="bg-primary text-grey-lighter">
           <MenuItem key="4-1">item4-1</MenuItem>
         </SubMenu>
-        <SubMenu key="5" title="Submenu 5" className="bg-grey-darker text-grey-lighter">
+        <SubMenu key="5" title="Submenu 5" className="bg-primary text-grey-lighter">
           <MenuItem key="5-1">item5-1</MenuItem>
         </SubMenu>
-        <SubMenu key="6" title="Submenu 6" className="bg-grey-darker text-grey-lighter">
+        <SubMenu key="6" title="Submenu 6" className="bg-primary text-grey-lighter">
           <MenuItem key="6-1">item6-1</MenuItem>
         </SubMenu>
-        <SubMenu key="7" title="Submenu 7" className="bg-grey-darker text-grey-lighter">
+        <SubMenu key="7" title="Submenu 7" className="bg-primary text-grey-lighter">
           <MenuItem key="7-1">item7-1</MenuItem>
         </SubMenu>
       </Menu>

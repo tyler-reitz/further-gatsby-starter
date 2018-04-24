@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default ({ children, className }) => {
+export default ({ children, className, primary, ...props }) => {
   console.log(className)
 
   return (
-    <button className="bg-grey hover:bg-grey-darker px-4 py-2 rounded font-bold text-white leading-normal sm:w-1/5">
+    <button className={`bg-${primary ? 'primary' : 'white'} px-4 py-2 rounded font-bold text-${ primary ? 'white' : 'primary' } leading-normal sm:w-1/5 ${className}`}>
       {children}
     </button>
   )

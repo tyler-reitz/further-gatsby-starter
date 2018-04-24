@@ -1,0 +1,19 @@
+.skew {
+  transform: skew(-5deg);
+  
+  @media (min-width: 768px) {
+    transform: skew(-15deg);
+  }
+}
+
+.left {
+  left: -9vw;
+}
+
+.width {
+  width: 100vw;
+
+  @media (min-width: 768px) {
+    width: 85vw;
+  }
+}
