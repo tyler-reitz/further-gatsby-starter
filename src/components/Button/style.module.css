@@ -1,0 +1,15 @@
+.left {
+  left: -5%;
+}
+
+.width {
+  width: 111%;
+}
+
+.button_z_index {
+  z-index: 1;
+}
+
+.skew_z_index {
+  z-index: -1;
+}
