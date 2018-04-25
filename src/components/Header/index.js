@@ -9,7 +9,8 @@ import Button from '../Button'
 class Header extends Component {
 
   state = {
-    windowWidth: ''
+    windowWidth: '',
+    isOpen: false
   }
 
   componentDidMount() {
@@ -19,7 +20,7 @@ class Header extends Component {
       const { innerWidth } = window
       this.setState({ windowWidth: innerWidth })
 
-      if (innerWidth > 768) {
+      if (innerWidth >= 768) {
         this.setState({ windowWidth: innerWidth })
 
         const main = document.getElementById('main')
@@ -27,8 +28,10 @@ class Header extends Component {
 
         main.style.transform = ""
 
-        if (innerWidth < 768 ) {
+        if (innerWidth < 768) {
           setTimeout(() => mobileMenu.style.display = "none", 300)
+        } else {
+          mobileMenu.style.display = "block"
         }
       }
     })
@@ -36,6 +39,11 @@ class Header extends Component {
 
   handleClick = (e) => {
     e.preventDefault();
+    
+    this.setState(({ isOpen }) => ({
+      isOpen: !isOpen
+    }))
+
     const main = document.getElementById('main')
     const mobileMenu = document.getElementById('mega-menu')
 
@@ -51,7 +59,7 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="relative z-10 bg-white">
+      <header className="relative z-10 bg-white">
         <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
           <p className="hidden md:block text-primary w-1/5">
             Serving the Greater Los Angeles area for all your painting needs.
@@ -82,9 +90,9 @@ class Header extends Component {
         </div>
 
         <MegaMenu 
-          mode={ this.state.windowWidth > 768 ? 'horizontal' : 'inline' }
+          mode={ this.state.windowWidth && this.state.windowWidth < 768 ? 'inline' : 'horizontal' }
         />
-      </nav>
+      </header>
     )
   }
 }

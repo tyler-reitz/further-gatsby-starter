@@ -5,7 +5,7 @@ import Button from "../Button";
 import logo from "../../assets/images/logo-reversed.svg";
 
 const Footer = () => (
-  <div className="bg-black">
+  <footer className="bg-black">
     <div className="flex flex-wrap items-stretch justify-between max-w-4xl mx-auto p-4 md:p-8">
       <div className="flex flex-wrap items-center w-1/3">
         <Link to="/">
@@ -49,7 +49,7 @@ const Footer = () => (
         </p>
       </div>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 class Input extends Component {
   render() {
     const { type, placeholder, className, style } = this.props
-    console.log('style', style)
 
     return (
       <input 
