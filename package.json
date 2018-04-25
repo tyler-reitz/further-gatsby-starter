@@ -5,7 +5,9 @@
   "scripts": {
     "develop": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby develop",
     "build": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy:test": "rsync -anv public/ furtheragency.com@s170644.gridserver.com:~/domains/trifecta-dev.influxmarketing.com/html/",
+    "deploy": "rsync -azP public/ furtheragency.com@s170644.gridserver.com:~/domains/trifecta-dev.influxmarketing.com/html"
   },
   "dependencies": {
     "autoprefixer": "^8.2.0",
