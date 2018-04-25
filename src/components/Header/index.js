@@ -51,7 +51,7 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="bg-white">
+      <nav className="relative z-10 bg-white">
         <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
           <p className="hidden md:block text-primary w-1/5">
             Serving the Greater Los Angeles area for all your painting needs.
