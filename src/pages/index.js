@@ -41,7 +41,7 @@ const IndexPage = () => (
       </p>
     </div>
 
-    <div className="flex flex-wrap justify-center max-w-4xl mx-auto py-6 md:my-6">
+    <div className="flex flex-wrap justify-center mx-auto py-6 md:my-6">
       {[
         { title: "Office Buildings", imgUrl: "feat-retail.jpg" },
         { title: "Retail", imgUrl: "feat-retail.jpg" },
@@ -126,7 +126,7 @@ const IndexPage = () => (
         clients.
       </p>
       {["Ean", "Chris", "Allan"].map(name => (
-        <div className="m-4 md:w-1/4">
+        <div className="m-4 sm:w-2/5 md:w-1/4">
           <img
             className="w-full"
             src="http://via.placeholder.com/300x350"
