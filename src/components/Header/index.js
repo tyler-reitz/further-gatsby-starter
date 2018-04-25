@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import Link from "gatsby-link"
 
+import logo from "../../assets/images/logo.svg"
+
 import MegaMenu from '../MegaMenu'
 import Button from '../Button'
 
@@ -49,25 +51,18 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="bg-grey ">
-        <div className="flex flex-wrap items-center justify-between max-w-2xl mx-auto p-4 md:p-8">
-          <Link to="/" className="flex items-center no-underline text-white">
-            <svg
-              className="fill-current hx1-8 mr-2 w-12"
-              width="54"
-              height="54"
-              viewBox="0 0 54 54"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-            </svg>
-            <span className="hidden md:block font-bold text-5xl tracking-tight">
-              Further
-            </span>
+      <nav className="bg-white">
+        <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
+          <p className="hidden md:block text-primary w-1/5">
+            Serving the Greater Los Angeles area for all your painting needs.
+          </p>
+
+          <Link to="/" className="flex items-center w-1/5">
+            <img className="w-full" src={logo} alt="company logo" />
           </Link>
 
           <button
-            className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
+            className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-primary"
             onClick={this.handleClick}
           >
             <svg
@@ -80,9 +75,9 @@ class Header extends Component {
             </svg>
           </button>
 
-          <div className="hidden md:flex flex-col text-center">
-            <a className="text-2xl mb-2" href="tel:+13239827609">(888) 888-8888</a>
-            <button className="bg-grey-darker hover:bg-grey-darkest px-4 py-2 rounded font-bold text-white leading-normal w-screen-1/4">Contact Us</button>
+          <div className="hidden w-1/5 md:flex flex-col text-center">
+            <a className="font-gotham-bold no-underline text-primary font-semibold text-2xl mb-2" href="tel:+13239827609">(888) 888-8888</a>
+            <Button primary>set an appointment</Button>
           </div>
         </div>
 
