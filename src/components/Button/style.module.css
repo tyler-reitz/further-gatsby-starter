@@ -1,3 +1,7 @@
+.skew {
+  transform: skew(-15deg);
+}
+
 .left {
   left: -5%;
 }

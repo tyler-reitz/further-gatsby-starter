@@ -12,15 +12,15 @@ import bkgLA from "../assets/images/bkg-losangeles.jpg";
 import bkgMap from "../assets/images/bkg-map.jpg";
 
 const IndexPage = () => (
-  <div>
-
+  <main>
+    {/* Hero 1 */}
     <div style={{ backgroundImage: `url(${bkgLA})`}} className="relative bg-no-repeat bg-cover bg-center py-8" >
       <div className="flex flex-wrap justify-center items-center py-6" >
         <div className="realtive z-10 py-8 text-white max-w-4xl">
           <div style={{ maxWidth: "75vw" }} className="px-4 py-8">
             <h1 className="font-gotham-bold mb-2 text-5xl leading-none">Yes, we do commercial painting.</h1>
             <small className="font-gotham-medium text-3xl mb-4">Expert Los Angeles Commercial Painters</small>
-            <p className="text-base font-light leading-normal my-6 w-3/4">We’ve painted hotels and apartments, office buildings and hospitals, shopping centers and parking garages. We’ve worked with HOAs and property management companies. Let Trifecta work for you.</p>
+            <p className="text-base font-light leading-normal my-6 sm:w-3/4">We’ve painted hotels and apartments, office buildings and hospitals, shopping centers and parking garages. We’ve worked with HOAs and property management companies. Let Trifecta work for you.</p>
             <Button className="mr-4 mb-4">Find out more</Button>
             <Button className="mr-4 mb-4">Set an appointment</Button>
           </div>
@@ -29,6 +29,7 @@ const IndexPage = () => (
       <div style={{ top: '1vw' }} className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"></div>
     </div>
 
+    {/* Aside */}
     <div className="flex flex-wrap justify-center max-w-4xl mx-auto py-6 md:my-6 mb-4">
       <h2 className="font-gotham-bold leading-tight w-5/6 text-5xl mb-4 text-center gotham-bold text-primary text-4xl leading-none">
         Communication is our greatest strength. Talk to us.
@@ -41,7 +42,8 @@ const IndexPage = () => (
       </p>
     </div>
 
-    <div className="flex flex-wrap justify-center mx-auto py-6 md:my-6">
+    {/* Services 5-UP */}
+    <div className="flex flex-wrap justify-center mx-auto py-6 md:my-6 bg-gradient-grey-white">
       {[
         { title: "Office Buildings", imgUrl: "feat-retail.jpg" },
         { title: "Retail", imgUrl: "feat-retail.jpg" },
@@ -56,28 +58,30 @@ const IndexPage = () => (
       ].map((_, idx) => <Card key={idx} title={_.title} imgUrl={_.imgUrl} />)}
     </div>
 
+    {/* Contact Form */}
     <div className="flex flex-wrap justify-center max-w-4xl mx-auto p-4 py-8 mb-8">
-      <h3 className="text-3xl text-center text-primary mb-8">
+      <h3 className="font-gotham-medium font-medium text-3xl text-center text-primary mb-8">
         Contact us today to discuss your project and how we can help:{" "}
         <a className="no-underline text-primary" href="tel:888-123-4567">
           888-123-4567  
         </a>
       </h3>
-      <form className="flex flex-wrap justify-center" action="/">
-        <Input placeholder="name*" className="w-full lg:w-7/25" />
-        <Input type="email" placeholder="email*" className="w-full lg:w-7/25" />
-        <Input placeholder="phone*" className="w-full lg:w-7/25" />
-        <Input placeholder="type of project*" className="w-full lg:w-45/100" />
-        <Input placeholder="project notes*" className="w-full lg:w-45/100" />
-        <Button primary>set an appointment</Button>
+      <form className="flex flex-wrap justify-between px-10 sm:px12" action="/">
+        <Input placeholder="name*" className="w-full lg:w-8/25" />
+        <Input type="email" placeholder="email*" className="w-full lg:w-8/25" />
+        <Input placeholder="phone*" className="w-full lg:w-8/25" />
+        <Input placeholder="type of project*" className="w-full lg:w-48/100" />
+        <Input placeholder="project notes*" className="w-full lg:w-48/100" />
+        <Button className="mx-auto" primary>set an appointment</Button>
       </form>
     </div>
 
+    {/* Hero 2 */}
     <div style={{ backgroundImage: `url(${bkgLA})`}} className="relative bg-no-repeat bg-cover bg-center py-8" >
       <div className="flex flex-wrap justify-center items-center py-6" >
         <div className="realtive z-10 py-8 text-white max-w-4xl">
           <div style={{ maxWidth: "75vw" }} className="px-4 py-8">
-            <h1 className="font-gotham-bold mb-2 text-5xl leading-none">Los Angeles building partners</h1>
+            <h1 className="font-gotham-bold mb-2 text-5xl leading-none capitalize">Los Angeles building painters</h1>
             <small className="font-gotham-medium text-3xl mb-4">Who Understand Your Goals and Concerns</small>
             <p className="text-base font-light leading-normal my-6 w-3/4">With over XX years combined experience, Trifecta Painting specializes in humanizing the world of commercial and residential painting services. We know how frustrating it can be to find the best commercial painters in Los Angeles. That’s why we insist on things like a thorough bidding process, and well-written paint specifications that outline the entire course of your project.</p>
             <p className="text-base font-light leading-normal my-8 w-3/4">We’ve established strong relationships with paint suppliers, allowing us to outfit your project with top-quality paint and supplies for a cost that is both competitive and economical. With experienced crews, including expert high-reach equipment operators, the professionalism of our work is defined by our dedication to safety and an unrivaled cleanliness on the job site.</p>
@@ -87,16 +91,37 @@ const IndexPage = () => (
       <div style={{ top: '1vw' }} className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"></div>
     </div>
 
+    {/* 2 x 2 */}
     <div className="sm:flex flex-wrap mb-8 pb-8">
-      <div
-        style={{ backgroundImage: "url(/images/feat-reviews.jpg)" }}
-        className="h-screen-w sm:w-1/2 sm:h-screen-w-1/2 bg-center bg-cover"
-      />
-      <div className="h-screen-w sm:w-1/2 sm:h-screen-w-1/2">
-        <Carousel2 />
+      <div className="relative h-screen-w w-full sm:h-screen-w-1/2 bg-gradient-grey-white">
+        <Carousel2 settings={{ className: "center-slides" }}>
+          <div>
+            <div className="block text-center mx-auto sm:flex sm:flex-wrap content-center justify-center p-4">
+              <h3 className="text-5xl leading-none my-4 text-primary">Trifecta Rave Reviews</h3>
+              <p className="my-4 font-light text-lg lg:w-4/5 leading-normal">“My company is a property management company and has been working with Ean for the past 2 years or so now. He has professionally handled painting and some maintenance issues for several of our properties over the past two years. It’s always extremely easy to get a hold of Ean, and he responds and provides what we need by the deadline of when we ask him for the information. Our clients also have shared nothing but the most amazing feedback both on the quality of service, his fairness, great pricing, and overall integrity.”</p>
+              <span className="block w-full font-medium">NF | Los Angeles</span>
+            </div>
+          </div>
+          <div>
+            <div className="block text-center mx-auto sm:flex sm:flex-wrap content-center justify-center p-4">
+              <h3 className="text-5xl leading-none my-4 text-primary">Trifecta Rave Reviews</h3>
+              <p className="my-4 font-light text-lg lg:w-4/5 leading-normal">“My company is a property management company and has been working with Ean for the past 2 years or so now.”</p>
+              <p className="my-4 font-light text-lg lg:w-4/5 leading-normal">“He has professionally handled painting and some maintenance issues for several of our properties over the past two years. It’s always extremely easy to get a hold of Ean, and he responds and provides what we need by the deadline of when we ask him for the information.”</p>
+              <p className="my-4 font-light text-lg lg:w-4/5 leading-normal">“Our clients also have shared nothing but the most amazing feedback both on the quality of service, his fairness, great pricing, and overall integrity.”</p>
+              <span className="block w-full font-medium">NF | Los Angeles</span>
+            </div>
+          </div>
+          <div>
+            <div className="block text-center mx-auto sm:flex sm:flex-wrap content-center justify-center p-4">
+              <h3 className="text-5xl leading-none my-4 text-primary">Trifecta Rave Reviews</h3>
+              <p className="my-4 font-light text-lg lg:w-4/5 leading-normal">“My company is a property management company and has been working with Ean for the past 2 years or so now. He has professionally handled painting and some maintenance issues for several of our properties over the past two years. It’s always extremely easy to get a hold of Ean, and he responds and provides what we need by the deadline of when we ask him for the information.”</p>
+              <span className="block w-full font-medium">NF | Los Angeles</span>
+            </div>
+          </div>
+        </Carousel2>
       </div>
-      <div className="h-screen-w sm:w-1/2 sm:h-screen-w-1/2">
-        <div className="block text-center p-4">
+      <div className="flex flex-wrap justify-center h-screen-w sm:w-1/2 sm:h-screen-w-1/2 bg-gradient-grey-white">
+        <div className="w-3/4 block text-center p-4">
           <img
             src="/images/logo-icon.svg"
             alt="trifecta logo"
@@ -114,6 +139,7 @@ const IndexPage = () => (
       />
     </div>
 
+    {/* Team */}
     <div className="flex flex-wrap justify-center max-w-4xl mx-auto py-6 md:my-6 mb-4">
       <h2 className="font-gotham-bold leading-tight w-5/6 text-4xl mb-4 text-center gotham-bold text-primary text-4xl leading-none">
         Our team is led by a <span className="text-black">Trifecta</span> of Los
@@ -136,6 +162,7 @@ const IndexPage = () => (
         ))}
     </div>
 
+    {/* Hero 3 */}
     <div style={{ backgroundImage: `url(${bkgMap})`}} className="relative bg-no-repeat bg-cover bg-center py-8" >
       <div className="flex flex-wrap justify-center items-center py-6" >
         <div className="realtive z-10 py-8 text-white max-w-4xl">
@@ -152,7 +179,7 @@ const IndexPage = () => (
       <div style={{ top: '1vw' }} className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"></div>
     </div>
 
-  </div>
+  </main>
 );
 
 export default IndexPage;

@@ -17,3 +17,13 @@
     width: 85vw;
   }
 }
+
+.bg-gradient-grey-white {
+  background: rgb(229,229,229);
+  background: linear-gradient(0deg, rgba(229,229,229,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.center-slides {
+  top: 50%;
+  transform: translateY(-50%);
+}

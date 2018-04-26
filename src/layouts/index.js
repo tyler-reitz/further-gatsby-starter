@@ -9,13 +9,11 @@ import Footer from '../components/Footer'
 
 export default ({ children }) => (
   <div id="main" className="relative flex flex-col nimbus-sans min-h-screen text-grey-darkest">
-    <div>
-      <Helmet 
-        title="Further Gatsby Starter"
-      />
-      <Header />
-      {children()}
-      <Footer />
-    </div>
+    <Helmet 
+      title="Further Gatsby Starter"
+    />
+    <Header />
+    {children()}
+    <Footer />
   </div>
 )
