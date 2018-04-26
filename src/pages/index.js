@@ -14,20 +14,34 @@ import bkgMap from "../assets/images/bkg-map.jpg";
 const IndexPage = () => (
   <main>
     {/* Hero 1 */}
-    <div style={{ backgroundImage: `url(${bkgLA})`}} className="relative bg-no-repeat bg-cover bg-center py-8" >
-      <div className="flex flex-wrap justify-center items-center py-6" >
-        <div className="realtive z-10 py-8 text-white max-w-4xl">
-          <div style={{ maxWidth: "75vw" }} className="px-4 py-8">
-            <h1 className="font-gotham-bold mb-2 text-5xl leading-none">Yes, we do commercial painting.</h1>
-            <small className="font-gotham-medium text-3xl mb-4">Expert Los Angeles Commercial Painters</small>
-            <p className="text-base font-light leading-normal my-6 sm:w-3/4">We’ve painted hotels and apartments, office buildings and hospitals, shopping centers and parking garages. We’ve worked with HOAs and property management companies. Let Trifecta work for you.</p>
-            <Button className="mr-4 mb-4">Find out more</Button>
-            <Button className="mr-4 mb-4">Set an appointment</Button>
+    <div className="relative">
+      <Carousel2 settings={{ autolay: true }}>
+        <div>
+          <div style={{ backgroundImage: `url(${bkgLA})`}} className="w-screen h-screen-1/2 no-repeat">hello</div>
+        </div>
+        <div>
+          <div style={{ backgroundImage: `url(${bkgLA})`}} className="w-screen h-screen-1/2 no-repeat">hello</div>
+        </div>
+      </Carousel2>
+
+      <div style={{ top: '50%', transform: 'translateY(-50%)' }} className="absolute pin-l pin-r bg-no-repeat bg-cover bg-center py-8" >
+        <div className="flex flex-wrap justify-center items-center py-6" >
+          <div className="realtive z-10 py-8 text-white max-w-4xl">
+            <div style={{ maxWidth: "75vw" }} className="px-4 py-8">
+              <h1 className="font-gotham-bold mb-2 text-5xl leading-none">Yes, we do commercial painting.</h1>
+              <small className="font-gotham-medium text-3xl mb-4">Expert Los Angeles Commercial Painters</small>
+              <p className="text-base font-light leading-normal my-6 sm:w-3/4">We’ve painted hotels and apartments, office buildings and hospitals, shopping centers and parking garages. We’ve worked with HOAs and property management companies. Let Trifecta work for you.</p>
+              <Button className="mr-4 mb-4">Find out more</Button>
+              <Button className="mr-4 mb-4">Set an appointment</Button>
+            </div>
           </div>
         </div>
+        
+        <div style={{ top: '1vw' }} className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"></div>
       </div>
-      <div style={{ top: '1vw' }} className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"></div>
+
     </div>
+
 
     {/* Aside */}
     <div className="flex flex-wrap justify-center max-w-4xl mx-auto py-6 md:my-6 mb-4">
