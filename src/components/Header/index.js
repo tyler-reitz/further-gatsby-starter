@@ -61,8 +61,8 @@ class Header extends Component {
     return (
       <header className="relative z-10 bg-gradient-grey-white">
         <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-          <p className="hidden lg:block text-lg text-primary w-64 px-4">
-            Serving the Greater Los Angeles area for all your painting needs.
+          <p className="hidden xl:block text-lg text-primary w-64 px-4">
+            Serving the Greater Los&nbsp;Angeles area for all your painting needs.
           </p>
 
           <Link to="/" style={{ minWidth: 180 }} className="flex items-center w-1/3">
@@ -70,7 +70,7 @@ class Header extends Component {
           </Link>
 
           <button
-            className="block md:hidden self-stretch w-12 p-2 text-primary"
+            className="block xl:hidden self-stretch w-12 p-2 text-primary"
             onClick={this.handleClick}
           >
             <svg
@@ -83,14 +83,14 @@ class Header extends Component {
             </svg>
           </button>
 
-          <div className="hidden md:flex flex-col text-center">
+          <div className="hidden xl:flex flex-col text-center">
             <a className="font-gotham-bold no-underline text-primary font-semibold text-2xl mb-2" href="tel:+13239827609">(888) 888-8888</a>
             <Button primary>set an appointment</Button>
           </div>
         </div>
 
         <MegaMenu 
-          mode={ this.state.windowWidth && this.state.windowWidth < 768 ? 'inline' : 'horizontal' }
+          mode={ this.state.windowWidth && this.state.windowWidth <= 1200 ? 'inline' : 'horizontal' }
         />
       </header>
     )

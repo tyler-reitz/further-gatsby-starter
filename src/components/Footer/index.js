@@ -6,8 +6,8 @@ import logo from "../../assets/images/logo-reversed.svg";
 
 const Footer = () => (
   <footer className="bg-black">
-    <div className="flex flex-wrap items-stretch justify-between max-w-4xl mx-auto p-4 md:p-8">
-      <div className="flex flex-wrap items-center w-1/3">
+    <div className="flex flex-wrap items-stretch justify-center md:justify-between max-w-4xl mx-auto p-4 md:p-8">
+      <div className="flex flex-wrap items-center w-1/2 md:w-1/3 text-center md:text-left">
         <Link to="/">
           <img className="w-full mb-8" src={logo} alt="company logo" />
         </Link>
@@ -22,18 +22,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <button className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white">
-        <svg
-          className="fill-current h-3 w-3"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-
-      <div className="hidden w-1/5 md:flex flex-col space-between text-center">
+      <div className="hidden md:flex flex-wrap justify-end w-1/3 text-right">
         <div>
           <a
             className="block font-gotham-bold no-underline text-white font-semibold text-2xl mb-2"
@@ -44,7 +33,7 @@ const Footer = () => (
           <Button primary>set an appointment</Button>
         </div>
 
-        <p className="text-grey font-light text-xs leading-loose">
+        <p className="text-grey font-light text-xs leading-loose mt-auto">
           Los Angeles Paint Company Marketing by INFLUX
         </p>
       </div>

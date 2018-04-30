@@ -22,7 +22,7 @@ class MegaMenu extends Component {
           mode={mode}
           className={
             mode === 'horizontal' 
-              ? "flex justify-center list-reset leading-loose"
+              ? "flex justify-around max-w-4xl mx-auto list-reset leading-loose"
               : "list-reset leading-loose"
           }
           getPopupContainer={(menuItemEl) => menuItemEl}
@@ -31,23 +31,29 @@ class MegaMenu extends Component {
             <Link to="/" className="no-underline text-grey-lighter">Home</Link>
           </MenuItem>
           <MenuItem key="2" className="bg-primary text-grey-lighter">
-            <Link to="/about" className="no-underline text-grey-lighter">About</Link>
+            <Link to="/about" className="no-underline text-grey-lighter">About Us</Link>
           </MenuItem>
-          <MenuItem key="3" className="bg-primary text-grey-lighter">
+          <SubMenu key="3" title="Commercial Painting" className="bg-primary text-grey-lighter">
+            <MenuItem key="3-1">Commercial Painting</MenuItem>
+          </SubMenu>
+          <SubMenu key="4" title="Residential Painting" className="bg-primary text-grey-lighter">
+            <MenuItem key="4-1">Residential Painting</MenuItem>
+          </SubMenu>
+          <SubMenu key="5" title="Specialty Services" className="bg-primary text-grey-lighter">
+            <MenuItem key="5-1">Specialty Services</MenuItem>
+          </SubMenu>
+          <MenuItem key="7" className="bg-primary text-grey-lighter">
+            <Link to="/gallery" className="no-underline text-grey-lighter">Gallery</Link>
+          </MenuItem>
+          <MenuItem key="8" className="bg-primary text-grey-lighter">
+            <Link to="/service-areas" className="no-underline text-grey-lighter">Service Areas</Link>
+          </MenuItem>
+          <MenuItem key="9" className="bg-primary text-grey-lighter">
+            <Link to="/reviews" className="no-underline text-grey-lighter">Reviews</Link>
+          </MenuItem>
+          <MenuItem key="10" className="bg-primary text-grey-lighter">
             <Link to="/contact" className="no-underline text-grey-lighter">Contact</Link>
           </MenuItem>
-          <SubMenu key="4" title="Submenu 4" className="bg-primary text-grey-lighter">
-            <MenuItem key="4-1">item4-1</MenuItem>
-          </SubMenu>
-          <SubMenu key="5" title="Submenu 5" className="bg-primary text-grey-lighter">
-            <MenuItem key="5-1">item5-1</MenuItem>
-          </SubMenu>
-          <SubMenu key="6" title="Submenu 6" className="bg-primary text-grey-lighter">
-            <MenuItem key="6-1">item6-1</MenuItem>
-          </SubMenu>
-          <SubMenu key="7" title="Submenu 7" className="bg-primary text-grey-lighter">
-            <MenuItem key="7-1">item7-1</MenuItem>
-          </SubMenu>
         </Menu>
       </nav>
     )

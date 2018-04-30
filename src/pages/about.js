@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Menu, { SubMenu, Item as MenuItem } from 'rc-menu'
+import Button from '../components/Button'
 
 export default () => (
   <div className="flex flex-row-reverse items-start max-w-2xl mx-auto p-4 md:p-8">
@@ -13,7 +14,8 @@ export default () => (
       <p className="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi deleniti dolor est deserunt maxime ipsam dolorem natus quas repellat ipsa cumque perferendis possimus minima, ex ratione. Voluptatem tenetur accusantium sapiente.</p>
       <div className="pt-4 pb-8 text-center">
       <h2 className="leading-loose text-2xl mb-2">Call To Action</h2>
-        <button className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 px-8 py-4 rounded font-bold text-white">Submit</button>
+        {/* <button className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 px-8 py-4 rounded font-bold text-white">Submit</button> */}
+        <Button primary type="submit">Submit</Button>
       </div>
     </div>
     <div className="hidden sm:block w-screen-1/3 mx-4 text-base border border-color-grey rounded">

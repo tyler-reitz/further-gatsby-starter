@@ -703,6 +703,10 @@ button,
   background-color: #005aab;
 }
 
+.bg-primary-dark {
+  background-color: #00417a;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -745,6 +749,10 @@ button,
 
 .hover\:bg-primary:hover {
   background-color: #005aab;
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: #00417a;
 }
 
 .bg-bottom {
@@ -855,6 +863,10 @@ button,
   border-color: #005aab;
 }
 
+.border-primary-dark {
+  border-color: #00417a;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -897,6 +909,10 @@ button,
 
 .hover\:border-primary:hover {
   border-color: #005aab;
+}
+
+.hover\:border-primary-dark:hover {
+  border-color: #00417a;
 }
 
 .rounded-none {
@@ -1605,6 +1621,14 @@ button,
   height: 40vw;
 }
 
+.h-screen-2\/3 {
+  height: 66vh;
+}
+
+.h-screen-w-1\.25 {
+  height: 125vw;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -1935,8 +1959,32 @@ button,
   max-width: 100rem;
 }
 
+.max-w-1\/4 {
+  max-width: 25%;
+}
+
+.max-w-1\/2 {
+  max-width: 50%;
+}
+
+.max-w-3\/4 {
+  max-width: 75%;
+}
+
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-screen-1\/2 {
+  max-width: 50vw;
+}
+
+.max-w-screen-3\/4 {
+  max-width: 75vw;
+}
+
+.max-w-screen {
+  max-width: 100vw;
 }
 
 .min-h-0 {
@@ -2731,6 +2779,10 @@ button,
   color: #005aab;
 }
 
+.text-primary-dark {
+  color: #00417a;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -2773,6 +2825,10 @@ button,
 
 .hover\:text-primary:hover {
   color: #005aab;
+}
+
+.hover\:text-primary-dark:hover {
+  color: #00417a;
 }
 
 .text-xs {
@@ -3117,6 +3173,14 @@ button,
   width: 100%;
 }
 
+.w-screen-1\/2 {
+  width: 50vw;
+}
+
+.w-screen-3\/4 {
+  width: 75vw;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -3263,6 +3327,10 @@ button,
     background-color: #005aab;
   }
 
+  .sm\:bg-primary-dark {
+    background-color: #00417a;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -3305,6 +3373,10 @@ button,
 
   .sm\:hover\:bg-primary:hover {
     background-color: #005aab;
+  }
+
+  .sm\:hover\:bg-primary-dark:hover {
+    background-color: #00417a;
   }
 
   .sm\:bg-bottom {
@@ -3415,6 +3487,10 @@ button,
     border-color: #005aab;
   }
 
+  .sm\:border-primary-dark {
+    border-color: #00417a;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -3457,6 +3533,10 @@ button,
 
   .sm\:hover\:border-primary:hover {
     border-color: #005aab;
+  }
+
+  .sm\:hover\:border-primary-dark:hover {
+    border-color: #00417a;
   }
 
   .sm\:rounded-none {
@@ -4165,6 +4245,14 @@ button,
     height: 40vw;
   }
 
+  .sm\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
+  .sm\:h-screen-w-1\.25 {
+    height: 125vw;
+  }
+
   .sm\:leading-none {
     line-height: 1;
   }
@@ -4495,8 +4583,32 @@ button,
     max-width: 100rem;
   }
 
+  .sm\:max-w-1\/4 {
+    max-width: 25%;
+  }
+
+  .sm\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
+  .sm\:max-w-3\/4 {
+    max-width: 75%;
+  }
+
   .sm\:max-w-full {
     max-width: 100%;
+  }
+
+  .sm\:max-w-screen-1\/2 {
+    max-width: 50vw;
+  }
+
+  .sm\:max-w-screen-3\/4 {
+    max-width: 75vw;
+  }
+
+  .sm\:max-w-screen {
+    max-width: 100vw;
   }
 
   .sm\:min-h-0 {
@@ -5283,6 +5395,10 @@ button,
     color: #005aab;
   }
 
+  .sm\:text-primary-dark {
+    color: #00417a;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -5325,6 +5441,10 @@ button,
 
   .sm\:hover\:text-primary:hover {
     color: #005aab;
+  }
+
+  .sm\:hover\:text-primary-dark:hover {
+    color: #00417a;
   }
 
   .sm\:text-xs {
@@ -5669,6 +5789,14 @@ button,
     width: 100%;
   }
 
+  .sm\:w-screen-1\/2 {
+    width: 50vw;
+  }
+
+  .sm\:w-screen-3\/4 {
+    width: 75vw;
+  }
+
   .sm\:w-screen {
     width: 100vw;
   }
@@ -5812,6 +5940,10 @@ button,
     background-color: #005aab;
   }
 
+  .md\:bg-primary-dark {
+    background-color: #00417a;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -5854,6 +5986,10 @@ button,
 
   .md\:hover\:bg-primary:hover {
     background-color: #005aab;
+  }
+
+  .md\:hover\:bg-primary-dark:hover {
+    background-color: #00417a;
   }
 
   .md\:bg-bottom {
@@ -5964,6 +6100,10 @@ button,
     border-color: #005aab;
   }
 
+  .md\:border-primary-dark {
+    border-color: #00417a;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -6006,6 +6146,10 @@ button,
 
   .md\:hover\:border-primary:hover {
     border-color: #005aab;
+  }
+
+  .md\:hover\:border-primary-dark:hover {
+    border-color: #00417a;
   }
 
   .md\:rounded-none {
@@ -6714,6 +6858,14 @@ button,
     height: 40vw;
   }
 
+  .md\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
+  .md\:h-screen-w-1\.25 {
+    height: 125vw;
+  }
+
   .md\:leading-none {
     line-height: 1;
   }
@@ -7044,8 +7196,32 @@ button,
     max-width: 100rem;
   }
 
+  .md\:max-w-1\/4 {
+    max-width: 25%;
+  }
+
+  .md\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
+  .md\:max-w-3\/4 {
+    max-width: 75%;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
+  }
+
+  .md\:max-w-screen-1\/2 {
+    max-width: 50vw;
+  }
+
+  .md\:max-w-screen-3\/4 {
+    max-width: 75vw;
+  }
+
+  .md\:max-w-screen {
+    max-width: 100vw;
   }
 
   .md\:min-h-0 {
@@ -7832,6 +8008,10 @@ button,
     color: #005aab;
   }
 
+  .md\:text-primary-dark {
+    color: #00417a;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -7874,6 +8054,10 @@ button,
 
   .md\:hover\:text-primary:hover {
     color: #005aab;
+  }
+
+  .md\:hover\:text-primary-dark:hover {
+    color: #00417a;
   }
 
   .md\:text-xs {
@@ -8218,6 +8402,14 @@ button,
     width: 100%;
   }
 
+  .md\:w-screen-1\/2 {
+    width: 50vw;
+  }
+
+  .md\:w-screen-3\/4 {
+    width: 75vw;
+  }
+
   .md\:w-screen {
     width: 100vw;
   }
@@ -8361,6 +8553,10 @@ button,
     background-color: #005aab;
   }
 
+  .lg\:bg-primary-dark {
+    background-color: #00417a;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -8403,6 +8599,10 @@ button,
 
   .lg\:hover\:bg-primary:hover {
     background-color: #005aab;
+  }
+
+  .lg\:hover\:bg-primary-dark:hover {
+    background-color: #00417a;
   }
 
   .lg\:bg-bottom {
@@ -8513,6 +8713,10 @@ button,
     border-color: #005aab;
   }
 
+  .lg\:border-primary-dark {
+    border-color: #00417a;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -8555,6 +8759,10 @@ button,
 
   .lg\:hover\:border-primary:hover {
     border-color: #005aab;
+  }
+
+  .lg\:hover\:border-primary-dark:hover {
+    border-color: #00417a;
   }
 
   .lg\:rounded-none {
@@ -9263,6 +9471,14 @@ button,
     height: 40vw;
   }
 
+  .lg\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
+  .lg\:h-screen-w-1\.25 {
+    height: 125vw;
+  }
+
   .lg\:leading-none {
     line-height: 1;
   }
@@ -9593,8 +9809,32 @@ button,
     max-width: 100rem;
   }
 
+  .lg\:max-w-1\/4 {
+    max-width: 25%;
+  }
+
+  .lg\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
+  .lg\:max-w-3\/4 {
+    max-width: 75%;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
+  }
+
+  .lg\:max-w-screen-1\/2 {
+    max-width: 50vw;
+  }
+
+  .lg\:max-w-screen-3\/4 {
+    max-width: 75vw;
+  }
+
+  .lg\:max-w-screen {
+    max-width: 100vw;
   }
 
   .lg\:min-h-0 {
@@ -10381,6 +10621,10 @@ button,
     color: #005aab;
   }
 
+  .lg\:text-primary-dark {
+    color: #00417a;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -10423,6 +10667,10 @@ button,
 
   .lg\:hover\:text-primary:hover {
     color: #005aab;
+  }
+
+  .lg\:hover\:text-primary-dark:hover {
+    color: #00417a;
   }
 
   .lg\:text-xs {
@@ -10767,6 +11015,14 @@ button,
     width: 100%;
   }
 
+  .lg\:w-screen-1\/2 {
+    width: 50vw;
+  }
+
+  .lg\:w-screen-3\/4 {
+    width: 75vw;
+  }
+
   .lg\:w-screen {
     width: 100vw;
   }
@@ -10910,6 +11166,10 @@ button,
     background-color: #005aab;
   }
 
+  .xl\:bg-primary-dark {
+    background-color: #00417a;
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -10952,6 +11212,10 @@ button,
 
   .xl\:hover\:bg-primary:hover {
     background-color: #005aab;
+  }
+
+  .xl\:hover\:bg-primary-dark:hover {
+    background-color: #00417a;
   }
 
   .xl\:bg-bottom {
@@ -11062,6 +11326,10 @@ button,
     border-color: #005aab;
   }
 
+  .xl\:border-primary-dark {
+    border-color: #00417a;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -11104,6 +11372,10 @@ button,
 
   .xl\:hover\:border-primary:hover {
     border-color: #005aab;
+  }
+
+  .xl\:hover\:border-primary-dark:hover {
+    border-color: #00417a;
   }
 
   .xl\:rounded-none {
@@ -11812,6 +12084,14 @@ button,
     height: 40vw;
   }
 
+  .xl\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
+  .xl\:h-screen-w-1\.25 {
+    height: 125vw;
+  }
+
   .xl\:leading-none {
     line-height: 1;
   }
@@ -12142,8 +12422,32 @@ button,
     max-width: 100rem;
   }
 
+  .xl\:max-w-1\/4 {
+    max-width: 25%;
+  }
+
+  .xl\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
+  .xl\:max-w-3\/4 {
+    max-width: 75%;
+  }
+
   .xl\:max-w-full {
     max-width: 100%;
+  }
+
+  .xl\:max-w-screen-1\/2 {
+    max-width: 50vw;
+  }
+
+  .xl\:max-w-screen-3\/4 {
+    max-width: 75vw;
+  }
+
+  .xl\:max-w-screen {
+    max-width: 100vw;
   }
 
   .xl\:min-h-0 {
@@ -12930,6 +13234,10 @@ button,
     color: #005aab;
   }
 
+  .xl\:text-primary-dark {
+    color: #00417a;
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -12972,6 +13280,10 @@ button,
 
   .xl\:hover\:text-primary:hover {
     color: #005aab;
+  }
+
+  .xl\:hover\:text-primary-dark:hover {
+    color: #00417a;
   }
 
   .xl\:text-xs {
@@ -13314,6 +13626,14 @@ button,
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-screen-1\/2 {
+    width: 50vw;
+  }
+
+  .xl\:w-screen-3\/4 {
+    width: 75vw;
   }
 
   .xl\:w-screen {

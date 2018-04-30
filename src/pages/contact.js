@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from '../components/Button'
 
 export default () => (
   <div className="p-4 py-8 text-center max-w-2xl mx-auto">
@@ -26,7 +27,7 @@ export default () => (
       <input className="block w-full border border-grey border-solid rounded mb-4 mb-4 h-10 p-2" type="text" id="email" placeholder="email *" />
       <textarea className="block w-full border border-grey border-solid rounded mb-4 mb-4 p-2" id="message" cols="30" rows="10" placeholder="email *" ></textarea>
       <div className="flex justify-center lg:justify-end">
-        <button type="submit" className="bg-grey hover:bg-grey-darker w-5/6 sm:w-2/5 lg:w-auto px-8 py-4 rounded font-bold text-white">Submit</button>
+        <Button primary type="submit">Submit</Button>
       </div>
     </form>
   </div>

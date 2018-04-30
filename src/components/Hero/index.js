@@ -11,7 +11,7 @@ export default ({ bgImg, ...props }) => (
       <div style={{ maxWidth: "75vw" }} className="bg-primary px-4 py-8">
         <h1 className="gotham-bold mb-1 text-5xl leading-none">Los Angeles building partners</h1>
         <small className="text-2xl mb-4">Expert Los Angeles commercial painter</small>
-        <p className="text-xl font-light leading-normal my-8">We’ve painted hotels and apartments, office buildings and hospitals, shopping centers and parking garages. We’ve worked with HOAs and property management companies. Let Trifecta work for you.</p>
+        <p className="text-xl font-light leading-normal my-8">We&apos;ve painted hotels and apartments, office buildings and hospitals, shopping centers and parking garages. We&apos;ve worked with HOAs and property management companies. Let Trifecta work for you.</p>
         <Button className="mr-4 mb-4">Find out more</Button>
         <Button className="mr-4 mb-4">Set an appointment</Button>
       </div>

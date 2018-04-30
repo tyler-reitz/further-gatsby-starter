@@ -16,6 +16,7 @@
     "gatsby-plugin-postcss-sass": "^1.0.19",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-typography": "^1.7.18",
+    "lodash-es": "^4.17.10",
     "normalize.css": "^8.0.0",
     "pixrem": "^4.0.1",
     "postcss-easy-import": "^3.0.0",

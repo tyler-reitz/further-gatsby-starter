@@ -4,7 +4,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #mega-menu {
     right: initial;
     transform: translateX(0);

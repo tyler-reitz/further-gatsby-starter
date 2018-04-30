@@ -1,5 +1,21 @@
+button::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  background-color: inherit;
+  top: 0;
+  left: -10px;
+  transform: skew(-15deg);
+  z-index: -1
+}
+
 .skew {
   transform: skew(-15deg);
+}
+
+.skew:hover {
+  transform: skew(0)
 }
 
 .left {
