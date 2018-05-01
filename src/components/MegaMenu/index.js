@@ -1,63 +1,126 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import Menu, { SubMenu, Item as MenuItem, Divider } from 'rc-menu'
+import React, { Component } from "react";
+import Link from "gatsby-link";
+import MenuLink from "./MenuLink";
+import Menu, { SubMenu, Item as MenuItem, Divider } from "rc-menu";
+const slugify = require("slugify");
 
-import './style.css'
+import "./style.css";
 
 class MegaMenu extends Component {
+  renderMenuIndexLink = menuText => (
+    <MenuLink to={slugify(menuText).toLowerCase()}>{menuText}</MenuLink>
+  );
+
   render() {
-    const { mode, ...props } = this.props
-    
+    const { mode, ...props } = this.props;
+
     return (
-      <nav 
-        id="mega-menu" 
+      <nav
+        id="mega-menu"
         className={
           mode === "inline" && mode !== undefined
-            ? "absolute bg-primary text-white hidden pin-t w-screen-3/4 h-screen" 
+            ? "absolute bg-primary text-white hidden pin-t w-screen-3/4 h-screen"
             : "bg-primary text-white hidden md:block"
         }
         style={props.style}
       >
-        <Menu 
+        <Menu
           mode={mode}
           className={
-            mode === 'horizontal' 
+            mode === "horizontal"
               ? "flex justify-around max-w-4xl mx-auto list-reset leading-loose"
               : "list-reset leading-loose"
           }
-          getPopupContainer={(menuItemEl) => menuItemEl}
+          getPopupContainer={menuItemEl => menuItemEl}
         >
+          {/* Home */}
           <MenuItem key="1" className="bg-primary text-grey-lighter">
-            <Link to="/" className="no-underline text-grey-lighter">Home</Link>
+            <MenuLink to="/">Home</MenuLink>
           </MenuItem>
+
+          {/* About */}
           <MenuItem key="2" className="bg-primary text-grey-lighter">
-            <Link to="/about" className="no-underline text-grey-lighter">About Us</Link>
+            <MenuLink to="/about">About Us</MenuLink>
           </MenuItem>
-          <SubMenu key="3" title="Commercial Painting" className="bg-primary text-grey-lighter">
-            <MenuItem key="3-1">Commercial Painting</MenuItem>
+
+          {/* Commercial Painting */}
+          <SubMenu
+            key="3"
+            title={this.renderMenuIndexLink("Commercial Painting")}
+            className="bg-primary text-grey-lighter"
+          >
+            <MenuItem key="3-1">
+              <MenuLink to="/commercial-painting/office-buildings">
+                Office Buildings
+              </MenuLink>
+            </MenuItem>
+            <MenuItem key="3-2">
+              <MenuLink to="/commercial-painting/retail">Retail</MenuLink>
+            </MenuItem>
+            <MenuItem key="3-3">
+              <MenuLink to="/commercial-painting/apartments">Apartments</MenuLink>
+            </MenuItem>
+            <MenuItem key="3-4">
+              <MenuLink to="/commercial-painting/parking-garages">Parking Garages</MenuLink>
+            </MenuItem>
+            <MenuItem key="3-5">
+              <MenuLink to="/commercial-painting/hoa">HOA</MenuLink>
+            </MenuItem>
+            <MenuItem key="3-6">
+              <MenuLink to="/commercial-painting/hotels">Hotels</MenuLink>
+            </MenuItem>
           </SubMenu>
-          <SubMenu key="4" title="Residential Painting" className="bg-primary text-grey-lighter">
-            <MenuItem key="4-1">Residential Painting</MenuItem>
+
+          {/* Residential Paiting */}
+          <SubMenu
+            key="4"
+            title={this.renderMenuIndexLink("Residential Painting")}
+            className="bg-primary text-grey-lighter"
+          >
+            <MenuItem key="4-1">
+              <MenuLink to="/residential-painting/highend-estates">
+                High-End Estates
+              </MenuLink>
+            </MenuItem>
+            <MenuItem key="4-2">
+              <MenuLink to="/residential-painting/interior-painting">Interior Painting</MenuLink>
+            </MenuItem>
+            <MenuItem key="4-4">
+              <MenuLink to="/residential-painting/exterior-painting">Exterior Painting</MenuLink>
+            </MenuItem>
+            <MenuItem key="4-4">
+              <MenuLink to="/residential-painting/cabinet-refinishing">Cabinet Refinishing</MenuLink>
+            </MenuItem>
           </SubMenu>
-          <SubMenu key="5" title="Specialty Services" className="bg-primary text-grey-lighter">
-            <MenuItem key="5-1">Specialty Services</MenuItem>
-          </SubMenu>
+
+          {/* Specialty Services */}
+          <MenuItem key="5" className="bg-primary text-grey-lighter">
+            <MenuLink to="/specialty-services">Specialty Services</MenuLink>
+          </MenuItem>
+          
+          {/* Gallery */}
+          <MenuItem key="6" className="bg-primary text-grey-lighter">
+            <MenuLink to="/gallery">Gallery</MenuLink>
+          </MenuItem>
+
+          {/* Service Areas */}
           <MenuItem key="7" className="bg-primary text-grey-lighter">
-            <Link to="/gallery" className="no-underline text-grey-lighter">Gallery</Link>
+            <MenuLink to="/service-areas">Service Areas</MenuLink>
           </MenuItem>
+
+          {/* Reviews */}
           <MenuItem key="8" className="bg-primary text-grey-lighter">
-            <Link to="/service-areas" className="no-underline text-grey-lighter">Service Areas</Link>
+            <MenuLink to="/reviews">Reviews</MenuLink>
           </MenuItem>
+
+          {/* Contact */}
           <MenuItem key="9" className="bg-primary text-grey-lighter">
-            <Link to="/reviews" className="no-underline text-grey-lighter">Reviews</Link>
-          </MenuItem>
-          <MenuItem key="10" className="bg-primary text-grey-lighter">
-            <Link to="/contact" className="no-underline text-grey-lighter">Contact</Link>
+            <MenuLink to="/contact">Contact</MenuLink>
           </MenuItem>
         </Menu>
       </nav>
-    )
+    );
   }
 }
 
-export default MegaMenu
+export default MegaMenu;

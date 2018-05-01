@@ -24,6 +24,7 @@
     "react-helmet": "^5.2.0",
     "react-slick": "^0.23.1",
     "slick-carousel": "^1.8.1",
+    "slugify": "^1.2.9",
     "tailwindcss": "^0.5.1"
   },
   "devDependencies": {}
