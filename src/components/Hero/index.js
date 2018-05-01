@@ -5,7 +5,7 @@ import Button from '../Button'
 export default ({ bgImg, ...props }) => (
   <div 
     style={{ backgroundImage: `url(${bgImg})`}} 
-    className="flex flex-wrap justify-center items-center max-w-4xl mx-auto py-6 md:my-6 mb-4 lg:h-screen-2/5 bg-no-repeat bg-cover"
+    className="flex flex-wrap justify-center items-center max-w-3xl mx-auto py-6 md:my-6 mb-4 lg:h-screen-2/5 bg-no-repeat bg-cover"
   >
     <div className="py-8 text-white">
       <div style={{ maxWidth: "75vw" }} className="bg-primary px-4 py-8">

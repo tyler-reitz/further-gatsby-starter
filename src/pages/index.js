@@ -14,7 +14,7 @@ import bkgLA from "../assets/images/bkg-losangeles.jpg";
 import bkgMap from "../assets/images/bkg-map.jpg";
 
 const IndexPage = () => (
-  <main>
+  <div>
     {/* Hero 1 */}
     <div className="relative">
       <Carousel2 settings={{ 
@@ -32,7 +32,7 @@ const IndexPage = () => (
 
       <div style={{ top: '50%', transform: 'translateY(-50%)' }} className="absolute pin-l pin-r bg-no-repeat bg-cover bg-center py-8" >
         <div className="flex flex-wrap justify-center items-center py-6" >
-          <div className="realtive z-10 sm:py-8 text-white max-w-4xl">
+          <div className="realtive z-10 sm:py-8 text-white max-w-3xl">
             <div className="px-4 sm:py-8 sm:max-w-screen-3/4">
               <h1 className="font-gotham-bold mb-2 text-5xl leading-none">Yes, we do commercial painting.</h1>
               <small className="font-gotham-medium text-3xl mb-4">Expert Los Angeles Commercial Painters</small>
@@ -50,7 +50,7 @@ const IndexPage = () => (
 
 
     {/* Aside */}
-    <div className="flex flex-wrap justify-center max-w-4xl mx-auto py-6 md:my-6 mb-4">
+    <div className="flex flex-wrap justify-center max-w-3xl mx-auto py-6 md:my-6 mb-4">
       <h2 className="font-gotham-bold leading-tight w-5/6 text-5xl mb-4 text-center gotham-bold text-primary text-4xl leading-none">
         Communication is our greatest strength. Talk to us.
       </h2>
@@ -79,7 +79,7 @@ const IndexPage = () => (
     </div>
 
     {/* Contact Form */}
-    <div className="flex flex-wrap justify-center max-w-4xl mx-auto p-4 py-8 mb-8">
+    <div className="flex flex-wrap justify-center max-w-3xl mx-auto p-4 py-8 mb-8">
       <h3 className="font-gotham-medium font-medium text-3xl text-center text-primary mb-8">
         Contact us today to discuss your project and how we can help:{" "}
         <a className="no-underline text-primary" href="tel:888-123-4567">
@@ -99,7 +99,7 @@ const IndexPage = () => (
     {/* Hero 2 */}
     <div style={{ backgroundImage: `url(${bkgLA})`}} className="relative bg-no-repeat bg-cover bg-center py-8" >
       <div className="flex flex-wrap justify-center items-center py-6" >
-        <div className="realtive z-10 py-8 text-white max-w-4xl">
+        <div className="realtive z-10 py-8 text-white max-w-3xl">
           <div className="px-4 py-8 sm:max-w-screen-3/4">
             <h1 className="font-gotham-bold mb-2 text-5xl leading-none capitalize">Los&nbsp;Angeles building painters</h1>
             <small className="font-gotham-medium text-3xl mb-4">Who Understand Your Goals and Concerns</small>
@@ -164,7 +164,7 @@ const IndexPage = () => (
     </div>
 
     {/* Team */}
-    <div className="flex flex-wrap justify-center max-w-4xl mx-auto py-6 md:my-6 mb-4">
+    <div className="flex flex-wrap justify-center max-w-3xl mx-auto py-6 md:my-6 mb-4">
       <h2 className="font-gotham-bold leading-tight w-5/6 text-4xl mb-4 text-center gotham-bold text-primary text-4xl leading-none">
         Our team is led by a <span className="text-black">Trifecta</span> of Los
         Angeles Painting Experts
@@ -189,7 +189,7 @@ const IndexPage = () => (
     {/* Hero 3 */}
     <div style={{ backgroundImage: `url(${bkgMap})`}} className="relative bg-no-repeat bg-cover bg-center py-8" >
       <div className="flex flex-wrap justify-center items-center py-6" >
-        <div className="realtive z-10 py-8 text-white max-w-4xl">
+        <div className="realtive z-10 py-8 text-white max-w-3xl">
           <div className="px-4 py-8 w-screen-3/4 max-w-screen-3/4">
             <h1 className="font-gotham-bold mb-1 text-5xl leading-none mb-8">Areas We Serve</h1>
             <small className="font-gotham-medium font-semibold text-3xl mb-4">Commercial</small>
@@ -203,7 +203,7 @@ const IndexPage = () => (
       <div style={{ top: '1vw' }} className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"></div>
     </div>
 
-  </main>
+  </div >
 );
 
 export default IndexPage;

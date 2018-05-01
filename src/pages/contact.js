@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import PageContainer from '../components/PageContainer'
 import Button from '../components/Button'
 
 export default () => (
-  <div className="p-4 py-8 text-center max-w-2xl mx-auto">
+  <PageContainer>
     <h2 className="mb-4">Contact Us</h2>
     <ul className="md:flex md: flex-row md:justify-around lg:justify-center list-reset leading-loose text-justify p-4">
       <li className="mx-4">Phone:&nbsp;<a href="tel+:(888) 888-8888">(888) 888-8888</a></li>
@@ -30,5 +31,5 @@ export default () => (
         <Button primary type="submit">Submit</Button>
       </div>
     </form>
-  </div>
+  </PageContainer>
 )

@@ -11,7 +11,9 @@ export default ({ children }) => (
   <div id="main" className="relative flex flex-col nimbus-sans min-h-screen text-grey-darkest">
     <Helmet />
     <Header />
-    {children()}
+    <main>
+      {children()}
+    </main>
     <Footer />
   </div>
 )

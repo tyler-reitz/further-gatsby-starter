@@ -17,29 +17,24 @@ class MegaMenu extends Component {
     return (
       <nav
         id="mega-menu"
-        className={
-          mode === "inline" && mode !== undefined
-            ? "absolute bg-primary text-white hidden pin-t w-screen-3/4 h-screen"
-            : "bg-primary text-white hidden md:block"
-        }
         style={props.style}
       >
         <Menu
           mode={mode}
           className={
             mode === "horizontal"
-              ? "flex justify-around max-w-4xl mx-auto list-reset leading-loose"
-              : "list-reset leading-loose"
+              ? "flex justify-around max-w-3xl mx-auto list-reset leading-loose px-8"
+              : "list-reset leading-tight"
           }
           getPopupContainer={menuItemEl => menuItemEl}
         >
           {/* Home */}
-          <MenuItem key="1" className="bg-primary text-grey-lighter">
+          <MenuItem key="1" className="text-grey-lighter">
             <MenuLink to="/">Home</MenuLink>
           </MenuItem>
 
           {/* About */}
-          <MenuItem key="2" className="bg-primary text-grey-lighter">
+          <MenuItem key="2" className="text-grey-lighter">
             <MenuLink to="/about">About Us</MenuLink>
           </MenuItem>
 
@@ -47,7 +42,7 @@ class MegaMenu extends Component {
           <SubMenu
             key="3"
             title={this.renderMenuIndexLink("Commercial Painting")}
-            className="bg-primary text-grey-lighter"
+            className="text-grey-lighter"
           >
             <MenuItem key="3-1">
               <MenuLink to="/commercial-painting/office-buildings">
@@ -75,7 +70,7 @@ class MegaMenu extends Component {
           <SubMenu
             key="4"
             title={this.renderMenuIndexLink("Residential Painting")}
-            className="bg-primary text-grey-lighter"
+            className="text-grey-lighter"
           >
             <MenuItem key="4-1">
               <MenuLink to="/residential-painting/highend-estates">
@@ -94,27 +89,27 @@ class MegaMenu extends Component {
           </SubMenu>
 
           {/* Specialty Services */}
-          <MenuItem key="5" className="bg-primary text-grey-lighter">
+          <MenuItem key="5" className="text-grey-lighter">
             <MenuLink to="/specialty-services">Specialty Services</MenuLink>
           </MenuItem>
           
           {/* Gallery */}
-          <MenuItem key="6" className="bg-primary text-grey-lighter">
+          <MenuItem key="6" className="text-grey-lighter">
             <MenuLink to="/gallery">Gallery</MenuLink>
           </MenuItem>
 
           {/* Service Areas */}
-          <MenuItem key="7" className="bg-primary text-grey-lighter">
+          <MenuItem key="7" className="text-grey-lighter">
             <MenuLink to="/service-areas">Service Areas</MenuLink>
           </MenuItem>
 
           {/* Reviews */}
-          <MenuItem key="8" className="bg-primary text-grey-lighter">
+          <MenuItem key="8" className="text-grey-lighter">
             <MenuLink to="/reviews">Reviews</MenuLink>
           </MenuItem>
 
           {/* Contact */}
-          <MenuItem key="9" className="bg-primary text-grey-lighter">
+          <MenuItem key="9" className="text-grey-lighter">
             <MenuLink to="/contact">Contact</MenuLink>
           </MenuItem>
         </Menu>

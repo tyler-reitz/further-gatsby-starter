@@ -5,17 +5,19 @@ import Button from "../Button";
 
 class PageContainer extends Component {
   render() {
-    const { children } = this.props
-    
+    const { children } = this.props;
+
     return (
-      <div className="flex flex-row-reverse items-start max-w-2xl mx-auto p-4 md:p-8">
-        <div className="sm:w-screen-2/3 mx-4 py-2 leading-normal">{children}</div>
-        <div className="hidden sm:block w-screen-1/3 mx-4 text-base border border-color-grey rounded">
+      <div className="flex flex-row-reverse items-start max-w-3xl mx-auto p-4 md:p-8">
+        <section className="sm:w-screen-2/3 mx-4 py-2 leading-normal">
+          {children}
+        </section>
+        <aside className="hidden md:block bg-primary w-screen-1/4 px-4 py-2 mx-4 text-base border rounded-lg border-color-grey rounded">
           <MegaMenu />
-        </div>
+        </aside>
       </div>
-    )
+    );
   }
 }
 
-export default PageContainer
+export default PageContainer;

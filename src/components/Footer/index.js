@@ -6,7 +6,7 @@ import logo from "../../assets/images/logo-reversed.svg";
 
 const Footer = () => (
   <footer className="bg-black">
-    <div className="flex flex-wrap items-stretch justify-center md:justify-between max-w-4xl mx-auto p-4 md:p-8">
+    <div className="flex flex-wrap items-stretch justify-center md:justify-between max-w-3xl mx-auto p-4 md:p-8">
       <div className="flex flex-wrap items-center w-1/2 md:w-1/3 text-center md:text-left">
         <Link to="/">
           <img className="w-full mb-8" src={logo} alt="company logo" />

@@ -1,0 +1,13 @@
+#drawer {
+  right: 0;
+  transform: translateX(100%);
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #drawer {
+    right: initial;
+    transform: translateX(0);
+    display: block;
+  }
+}
