@@ -1,6 +1,6 @@
-const debounce = require("lodash/debounce");
 import React, { Component } from "react";
 import Link from "gatsby-link";
+const debounce = require("lodash/debounce");
 
 import "./style.css";
 import logo from "../../assets/images/logo.svg";
@@ -20,6 +20,7 @@ class Header extends Component {
     window.addEventListener(
       "resize",
       debounce(e => {
+        debugger;
         const { innerWidth } = window;
         this.setState({ windowWidth: innerWidth });
 
@@ -33,8 +34,6 @@ class Header extends Component {
 
           if (innerWidth < 768) {
             setTimeout(() => (mobileMenu.style.display = "none"), 300);
-          } else {
-            mobileMenu.style.display = "block";
           }
         }
       }),
@@ -104,11 +103,14 @@ class Header extends Component {
           </div>
         </div>
 
-        <div id="drawer" className={
-          this.state.windowWidth && this.state.windowWidth < 992
-            ? "absolute bg-primary text-white pin-t w-screen-3/4 h-screen"
-            : "bg-primary text-white md:block"
-        }>
+        <div
+          id="drawer"
+          // className={
+          //   this.state.windowWidth && this.state.windowWidth < 992
+          //     ? "absolute bg-primary text-white pin-t w-screen-3/4 h-screen block"
+          //     : "bg-primary text-white block"
+          // }
+        >
           <MegaMenu
             mode={
               this.state.windowWidth && this.state.windowWidth < 992

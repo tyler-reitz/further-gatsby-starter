@@ -1,7 +1,13 @@
 #drawer {
   right: 0;
   transform: translateX(100%);
-  display: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 75vw;
+  height: 100vh;
+  color: #fff;
+  background-color: #005aab;
 }
 
 @media (min-width: 992px) {
@@ -9,5 +15,8 @@
     right: initial;
     transform: translateX(0);
     display: block;
+    position: relative;
+    height: auto;
+    width: 100vw;
   }
 }

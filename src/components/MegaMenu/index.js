@@ -17,7 +17,7 @@ class MegaMenu extends Component {
     return (
       <nav
         id="mega-menu"
-        style={props.style}
+        // style={props.style}
       >
         <Menu
           mode={mode}
