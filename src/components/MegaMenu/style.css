@@ -122,7 +122,7 @@
 .rc-menu-vertical-left,
 .rc-menu-vertical-right,
 .rc-menu-inline {
-  /* padding: 12px 0; */
+  padding: 12px 0;
 }
 .rc-menu-vertical > .rc-menu-item,
 .rc-menu-vertical-left > .rc-menu-item,
@@ -162,27 +162,27 @@
 }
 .rc-menu-horizontal .rc-menu-submenu-arrow,
 .rc-menu-inline .rc-menu-submenu-arrow {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: translate3d(0, -50%, 0) rotate(90deg);
+          transform: translate3d(0, -50%, 0) rotate(90deg);
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
 .rc-menu-horizontal .rc-menu-submenu-arrow {
-  -webkit-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
+  -webkit-transform: translate3d(0, -50%, 0) rotate(90deg);
+          transform: translate3d(0, -50%, 0) rotate(90deg);
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
 .rc-menu-horizontal .rc-menu-submenu-open > .rc-menu-submenu-title .rc-menu-submenu-arrow,
 .rc-menu-inline .rc-menu-submenu-open > .rc-menu-submenu-title .rc-menu-submenu-arrow {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: translate3d(0, -50%, 0) rotate(-90deg);
+          transform: translate3d(0, -50%, 0) rotate(-90deg);
 }
 .rc-menu-horizontal .rc-menu-submenu-open > .rc-menu-submenu-title .rc-menu-submenu-arrow {
-  -webkit-transform: translateY(-50%) rotate(-90deg);
-          transform: translateY(-50%) rotate(-90deg);
+  -webkit-transform: translate3d(0, -50%, 0) rotate(-90deg);
+          transform: translate3d(0, -50%, 0) rotate(-90deg);
 }
 .rc-menu-horizontal > .rc-menu-submenu-title {
   position: relative;

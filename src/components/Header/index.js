@@ -20,7 +20,6 @@ class Header extends Component {
     window.addEventListener(
       "resize",
       debounce(e => {
-        debugger;
         const { innerWidth } = window;
         this.setState({ windowWidth: innerWidth });
 
