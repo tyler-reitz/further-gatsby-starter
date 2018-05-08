@@ -1,4 +1,4 @@
-button::after {
+.button::after {
   content: "";
   position: absolute;
   width: 120%;

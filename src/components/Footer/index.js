@@ -9,7 +9,7 @@ const Footer = () => (
     <div className="flex flex-wrap items-stretch justify-center md:justify-between max-w-3xl mx-auto p-4 md:p-8">
       <div className="flex flex-wrap items-center w-1/2 md:w-1/3 text-center md:text-left">
         <Link to="/">
-          <img className="w-full mb-8" src={logo} alt="company logo" />
+          <img className="w-full mb-8 h-16" src={logo} alt="company logo" />
         </Link>
 
         <div>

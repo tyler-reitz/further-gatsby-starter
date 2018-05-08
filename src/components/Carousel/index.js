@@ -17,7 +17,6 @@ const defaultSettings = {
 class Carousel extends Component {
   render() {
     const { settings, children, ...props } = this.props
-    console.log(children)
 
     const blendedSettings = {
       ...defaultSettings,

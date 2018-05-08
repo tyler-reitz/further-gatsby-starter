@@ -1,20 +1,37 @@
 import React from "react";
 import PageContainer from "../components/PageContainer";
 import Rule from "../components/Rule";
+import { H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography"
 
 export default () => (
   <PageContainer>
-    <p className="mb-4">Make Trifecta your Los Angeles Painting Company. Contact us for inquiries outside our listed service area.</p>
+    <H1>Service Areas</H1>
     <Rule />
-    <h1 className="mb-2">RESIDENTIAL</h1>
-    <table className="w-full mb-4">
-      <tr><td>Mixed-use:</td><td>Urban apartments built on top of street-level shops and stores</td></tr>
-      <tr><td>Walk-up:</td><td>Typically 4 to 6 stories tall, without an elevator</td></tr>
+    <P2>Make Trifecta your Los Angeles Painting Company. Contact us for inquiries outside our listed service area.</P2>
+    <Rule />
+    <H3>RESIDENTIAL</H3>
+        <table className="w-full mb-8">
+      {[
+        [
+          "Mixed-use",
+          "Urban apartments built on top of street-level shops and stores"
+        ],
+        ["Walk-up", "Typically 4 to 6 stories tall, without an elevator"],
+        [
+          "Garden-style",
+          "1 to 3 stories tall, these complexes tend to emphasize greenery, gardens, walkways, and courtyards"
+        ],
+      ].map((row, idx) => (
+        <tr className={`text-lg font-light leading-normal my-4 ${idx % 2 ? '' : 'bg-grey-light' }`}>
+          <td className="font-semibold p-4">{row[0]}</td>
+          <td className="p-4">{row[1]}</td>
+        </tr>
+      ))}
     </table>
     <Rule />
-    <h1 className="mb-2">COMMERCIAL</h1>
-    <p className="mb-4">Santa Clarita south to Long Beach</p>
-    <p className="mb-4">Oxnard east to Pasadena</p>
+    <H3>COMMERCIAL</H3>
+    <P2>Santa Clarita south to Long Beach</P2>
+    <P2>Oxnard east to Pasadena</P2>
     <Rule />
   </PageContainer>
 )

@@ -1625,8 +1625,20 @@ button,
   height: 100vh;
 }
 
+.h-screen-2\/3 {
+  height: 66vh;
+}
+
 .h-screen-w {
   height: 100vw;
+}
+
+.h-screen-w-1\/4 {
+  height: 25vw;
+}
+
+.h-screen-w-1\/3 {
+  height: 33vw;
 }
 
 .h-screen-w-1\/2 {
@@ -1637,12 +1649,12 @@ button,
   height: 40vw;
 }
 
-.h-screen-2\/3 {
-  height: 66vh;
-}
-
 .h-screen-w-1\.25 {
   height: 125vw;
+}
+
+.h-screen-w-1\.75 {
+  height: 175vw;
 }
 
 .leading-none {
@@ -4273,8 +4285,20 @@ button,
     height: 100vh;
   }
 
+  .sm\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
   .sm\:h-screen-w {
     height: 100vw;
+  }
+
+  .sm\:h-screen-w-1\/4 {
+    height: 25vw;
+  }
+
+  .sm\:h-screen-w-1\/3 {
+    height: 33vw;
   }
 
   .sm\:h-screen-w-1\/2 {
@@ -4285,12 +4309,12 @@ button,
     height: 40vw;
   }
 
-  .sm\:h-screen-2\/3 {
-    height: 66vh;
-  }
-
   .sm\:h-screen-w-1\.25 {
     height: 125vw;
+  }
+
+  .sm\:h-screen-w-1\.75 {
+    height: 175vw;
   }
 
   .sm\:leading-none {
@@ -6910,8 +6934,20 @@ button,
     height: 100vh;
   }
 
+  .md\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
   .md\:h-screen-w {
     height: 100vw;
+  }
+
+  .md\:h-screen-w-1\/4 {
+    height: 25vw;
+  }
+
+  .md\:h-screen-w-1\/3 {
+    height: 33vw;
   }
 
   .md\:h-screen-w-1\/2 {
@@ -6922,12 +6958,12 @@ button,
     height: 40vw;
   }
 
-  .md\:h-screen-2\/3 {
-    height: 66vh;
-  }
-
   .md\:h-screen-w-1\.25 {
     height: 125vw;
+  }
+
+  .md\:h-screen-w-1\.75 {
+    height: 175vw;
   }
 
   .md\:leading-none {
@@ -9547,8 +9583,20 @@ button,
     height: 100vh;
   }
 
+  .lg\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
   .lg\:h-screen-w {
     height: 100vw;
+  }
+
+  .lg\:h-screen-w-1\/4 {
+    height: 25vw;
+  }
+
+  .lg\:h-screen-w-1\/3 {
+    height: 33vw;
   }
 
   .lg\:h-screen-w-1\/2 {
@@ -9559,12 +9607,12 @@ button,
     height: 40vw;
   }
 
-  .lg\:h-screen-2\/3 {
-    height: 66vh;
-  }
-
   .lg\:h-screen-w-1\.25 {
     height: 125vw;
+  }
+
+  .lg\:h-screen-w-1\.75 {
+    height: 175vw;
   }
 
   .lg\:leading-none {
@@ -12184,8 +12232,20 @@ button,
     height: 100vh;
   }
 
+  .xl\:h-screen-2\/3 {
+    height: 66vh;
+  }
+
   .xl\:h-screen-w {
     height: 100vw;
+  }
+
+  .xl\:h-screen-w-1\/4 {
+    height: 25vw;
+  }
+
+  .xl\:h-screen-w-1\/3 {
+    height: 33vw;
   }
 
   .xl\:h-screen-w-1\/2 {
@@ -12196,12 +12256,12 @@ button,
     height: 40vw;
   }
 
-  .xl\:h-screen-2\/3 {
-    height: 66vh;
-  }
-
   .xl\:h-screen-w-1\.25 {
     height: 125vw;
+  }
+
+  .xl\:h-screen-w-1\.75 {
+    height: 175vw;
   }
 
   .xl\:leading-none {

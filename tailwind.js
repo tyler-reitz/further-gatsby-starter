@@ -556,11 +556,14 @@ module.exports = {
     '9/10': '90%',
     'full': '100%',
     'screen': '100vh',
-    'screen-w': '100vw',
-    'screen-w-1/2': '50vw',
-    'screen-w-2/5': '40vw',
     'screen-2/3': '66vh',
-    'screen-w-1.25': '125vw'
+    'screen-w': '100vw',
+    'screen-w-1/4': '25vw',
+    'screen-w-1/3': '33vw',
+    'screen-w-2/5': '40vw',
+    'screen-w-1/2': '50vw',
+    'screen-w-1.25': '125vw',
+    'screen-w-1.75': '175vw'
   },
 
 

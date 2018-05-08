@@ -411,11 +411,20 @@
 }
 
 /* rc-menu styling popup-hack */
-.rc-menu-submenu-popup {
+.rc-menu-submenu-popup > ul  {
   color:#fff;
-  background-color: #005aab;
   text-align: center;
-  padding: .5rem 0;
+  padding: 0;
   border-radius: .25rem;
   z-index: 10;
+  box-shadow: 0 0 5px 0 #005aab;
+}
+
+/**
+ * .no-underline occurs further down in the source order
+ * than .underline so this is needed to add the active 
+ * style to the mega-menu when displayed as a sidebar.
+ */
+.no-underline.underline {
+  text-decoration: underline;
 }

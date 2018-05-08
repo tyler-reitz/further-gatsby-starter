@@ -20,15 +20,13 @@ class MegaMenu extends Component {
     const slug = slugify(menuText).toLowerCase();
 
     return (
-      <MenuLink to={`/${slug}`} className="text-grey-lighter">
+      <MenuLink exact to={`/${slug}`} className="text-grey-lighter">
         {menuText}
       </MenuLink>
     );
   };
-  
-  mapMenusToPaths = () => {
 
-  }
+  mapMenusToPaths = () => {};
 
   componentDidMount() {
     const { navigationMapping } = this.state;
@@ -36,7 +34,6 @@ class MegaMenu extends Component {
       location: { pathname },
       mode
     } = this.props;
-    console.log("mode", mode);
 
     const regex1 = RegExp("commercial-painting");
     const regex2 = RegExp("residential-painting");
@@ -60,18 +57,18 @@ class MegaMenu extends Component {
         openKeys: [openKey]
       });
     } else {
-      this.setState({ openKeys: [] })
+      this.setState({ openKeys: [] });
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
+    nextProps;
     const { navigationMapping } = this.state;
     const {
       location: { pathname },
       mode
     } = nextProps;
-    console.log("mode", mode);
+    "mode", mode;
 
     const regex1 = RegExp("commercial-painting");
     const regex2 = RegExp("residential-painting");
@@ -95,7 +92,7 @@ class MegaMenu extends Component {
         openKeys: [openKey]
       });
     } else {
-      this.setState({ openKeys: [] })
+      this.setState({ openKeys: [] });
     }
   }
 
@@ -111,24 +108,33 @@ class MegaMenu extends Component {
           mode={mode}
           className={
             mode === "horizontal"
-              ? "flex justify-around max-w-3xl mx-auto list-reset leading-loose px-8"
-              : "list-reset leading-tight"
+              ? "font-gotham-bold flex justify-around max-w-3xl mx-auto list-reset leading-loose px-8"
+              : "font-gotham-bold list-reset leading-tight"
           }
           getPopupContainer={menuItemEl => menuItemEl}
           inlineIndent={0}
           openKeys={openKeys}
           onOpenChange={e => this.setState({ openKeys: e })}
+          openAnimation="slide-up"
+          // triggerSubMenuAction="click"
         >
           {/* Home */}
           <MenuItem key="1">
-            <MenuLink to="/" className="text-grey-lighter">
+            <MenuLink
+              exact
+              to="/"
+              className="text-grey-lighter hover:bg-primary-light"
+            >
               Home
             </MenuLink>
           </MenuItem>
 
           {/* About */}
           <MenuItem key="2">
-            <MenuLink to="/about" className="text-grey-lighter">
+            <MenuLink
+              to="/about"
+              className="text-grey-lighter hover:bg-primary-light"
+            >
               About Us
             </MenuLink>
           </MenuItem>
@@ -137,10 +143,11 @@ class MegaMenu extends Component {
           <SubMenu
             key="3"
             title={this.renderMenuIndexLink("Commercial Painting")}
-            className="text-grey-lighter"
+            className="text-grey-lighter hover:bg-primary-light"
           >
             <MenuItem key="3-1" className="bg-white">
               <MenuLink
+                sub
                 to="/commercial-painting/office-buildings"
                 className="text-primary"
               >
@@ -149,6 +156,7 @@ class MegaMenu extends Component {
             </MenuItem>
             <MenuItem key="3-2" className="bg-white">
               <MenuLink
+                sub
                 to="/commercial-painting/retail"
                 className="text-primary"
               >
@@ -157,6 +165,7 @@ class MegaMenu extends Component {
             </MenuItem>
             <MenuItem key="3-3" className="bg-white">
               <MenuLink
+                sub
                 to="/commercial-painting/apartments"
                 className="text-primary"
               >
@@ -165,6 +174,7 @@ class MegaMenu extends Component {
             </MenuItem>
             <MenuItem key="3-4" className="bg-white">
               <MenuLink
+                sub
                 to="/commercial-painting/parking-garages"
                 className="text-primary"
               >
@@ -172,16 +182,21 @@ class MegaMenu extends Component {
               </MenuLink>
             </MenuItem>
             <MenuItem key="3-5" className="bg-white">
-              <MenuLink to="/commercial-painting/hoa" className="text-primary">
+              <MenuLink
+                sub
+                to="/commercial-painting/hoa"
+                className="text-primary"
+              >
                 HOA
               </MenuLink>
             </MenuItem>
             <MenuItem key="3-6" className="bg-white">
               <MenuLink
-                to="/commercial-painting/hotels"
+                sub
+                to="/commercial-painting/hospitality"
                 className="text-primary"
               >
-                Hotels
+                Hospitality
               </MenuLink>
             </MenuItem>
           </SubMenu>
@@ -190,10 +205,11 @@ class MegaMenu extends Component {
           <SubMenu
             key="4"
             title={this.renderMenuIndexLink("Residential Painting")}
-            className="text-grey-lighter"
+            className="text-grey-lighter hover:bg-primary-light"
           >
             <MenuItem key="4-1" className="bg-white">
               <MenuLink
+                sub
                 to="/residential-painting/highend-estates"
                 className="text-primary"
               >
@@ -202,6 +218,7 @@ class MegaMenu extends Component {
             </MenuItem>
             <MenuItem key="4-2" className="bg-white">
               <MenuLink
+                sub
                 to="/residential-painting/interior-painting"
                 className="text-primary"
               >
@@ -210,6 +227,7 @@ class MegaMenu extends Component {
             </MenuItem>
             <MenuItem key="4-4" className="bg-white">
               <MenuLink
+                sub
                 to="/residential-painting/exterior-painting"
                 className="text-primary"
               >
@@ -218,6 +236,7 @@ class MegaMenu extends Component {
             </MenuItem>
             <MenuItem key="4-5" className="bg-white">
               <MenuLink
+                sub
                 to="/residential-painting/cabinet-refinishing"
                 className="text-primary"
               >
@@ -228,35 +247,50 @@ class MegaMenu extends Component {
 
           {/* Specialty Services */}
           <MenuItem key="5">
-            <MenuLink to="/specialty-services" className="text-grey-lighter">
+            <MenuLink
+              to="/specialty-services"
+              className="text-grey-lighter hover:bg-primary-light"
+            >
               Specialty Services
             </MenuLink>
           </MenuItem>
 
           {/* Gallery */}
           <MenuItem key="6">
-            <MenuLink to="/gallery" className="text-grey-lighter">
+            <MenuLink
+              to="/gallery"
+              className="text-grey-lighter hover:bg-primary-light"
+            >
               Gallery
             </MenuLink>
           </MenuItem>
 
           {/* Service Areas */}
           <MenuItem key="7">
-            <MenuLink to="/service-areas" className="text-grey-lighter">
+            <MenuLink
+              to="/service-areas"
+              className="text-grey-lighter hover:bg-primary-light"
+            >
               Service Areas
             </MenuLink>
           </MenuItem>
 
           {/* Reviews */}
           <MenuItem key="8">
-            <MenuLink to="/reviews" className="text-grey-lighter">
+            <MenuLink
+              to="/reviews"
+              className="text-grey-lighter hover:bg-primary-light"
+            >
               Reviews
             </MenuLink>
           </MenuItem>
 
           {/* Contact */}
           <MenuItem key="9">
-            <MenuLink to="/contact" className="text-grey-lighter">
+            <MenuLink
+              to="/contact"
+              className="text-grey-lighter hover:bg-primary-light"
+            >
               Contact
             </MenuLink>
           </MenuItem>
