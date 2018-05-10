@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import PageContainer from "../components/PageContainer";
-import Button from "../components/Button";
-import Input from "../components/Input";
-import Textarea from "../components/Textarea";
+// import Button from "../components/Button";
+// import Input from "../components/Input";
+// import Textarea from "../components/Textarea";
+import Form from "../components/Form";
 import Rule from "../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography";
 
@@ -48,15 +49,6 @@ export default () => (
     </ul>
     <Rule />
     <H3>Send Us A Message</H3>
-    <form action="" className="p-4 max-w-lg mx-auto">
-      <Input placeholder="name*" className="w-full" />
-      <Input placeholder="email*" type="email" className="w-full" />
-      <Input placeholder="phone*" className="w-full" /> 
-      <Textarea placeholder="type of project*" className="w-full" />
-      <Textarea placeholder="project notes*" className="w-full" />      
-      <Button primary type="submit">
-        Submit
-      </Button>
-    </form>
+    <Form formElementClassName="w-full" />
   </PageContainer>
 );

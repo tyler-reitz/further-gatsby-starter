@@ -1641,12 +1641,12 @@ button,
   height: 33vw;
 }
 
-.h-screen-w-1\/2 {
-  height: 50vw;
-}
-
 .h-screen-w-2\/5 {
   height: 40vw;
+}
+
+.h-screen-w-1\/2 {
+  height: 50vw;
 }
 
 .h-screen-w-1\.25 {
@@ -4301,12 +4301,12 @@ button,
     height: 33vw;
   }
 
-  .sm\:h-screen-w-1\/2 {
-    height: 50vw;
-  }
-
   .sm\:h-screen-w-2\/5 {
     height: 40vw;
+  }
+
+  .sm\:h-screen-w-1\/2 {
+    height: 50vw;
   }
 
   .sm\:h-screen-w-1\.25 {
@@ -6950,12 +6950,12 @@ button,
     height: 33vw;
   }
 
-  .md\:h-screen-w-1\/2 {
-    height: 50vw;
-  }
-
   .md\:h-screen-w-2\/5 {
     height: 40vw;
+  }
+
+  .md\:h-screen-w-1\/2 {
+    height: 50vw;
   }
 
   .md\:h-screen-w-1\.25 {
@@ -9599,12 +9599,12 @@ button,
     height: 33vw;
   }
 
-  .lg\:h-screen-w-1\/2 {
-    height: 50vw;
-  }
-
   .lg\:h-screen-w-2\/5 {
     height: 40vw;
+  }
+
+  .lg\:h-screen-w-1\/2 {
+    height: 50vw;
   }
 
   .lg\:h-screen-w-1\.25 {
@@ -12248,12 +12248,12 @@ button,
     height: 33vw;
   }
 
-  .xl\:h-screen-w-1\/2 {
-    height: 50vw;
-  }
-
   .xl\:h-screen-w-2\/5 {
     height: 40vw;
+  }
+
+  .xl\:h-screen-w-1\/2 {
+    height: 50vw;
   }
 
   .xl\:h-screen-w-1\.25 {

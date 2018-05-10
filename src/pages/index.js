@@ -23,7 +23,7 @@ const IndexPage = () => (
     <div className="relative">
       <Carousel2
         settings={{
-          autoplay: true,
+          autoplay: false,
           dotsClass: "slick-dots slick-dots-blue slick-dots-light"
         }}
       >
@@ -154,7 +154,7 @@ const IndexPage = () => (
           888-123-4567
         </a>
       </H3>
-      <Form />
+      <Form textAreaHeight={1} />
       {/* <form className="flex flex-wrap justify-between px-6 sm:px12" action="/">
         <Input placeholder="name*" className="w-full lg:w-8/25" />
         <Input type="email" placeholder="email*" className="w-full lg:w-8/25" />
