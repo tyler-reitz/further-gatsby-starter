@@ -9,4 +9,4 @@ export const Small = ({ className, children, ...props }) => <span className={`bl
 
 export const P1 = ({ className, children, ...props }) => <p className={`text-xl leading-normal font-light my-4 ${className}`}>{children}</p>
 export const P2 = ({ className, children, ...props }) => <p className={`text-lg font-light leading-normal my-4  ${className}`}>{children}</p>
-export const p3 = ({ className, children, ...props }) => <p className={`text-base font-light leading-normal my-4 ${className}`}>{children}</p>
+export const P3 = ({ className, children, ...props }) => <p className={`text-base font-light leading-normal my-4 ${className}`}>{children}</p>

@@ -1,7 +1,8 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
-import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography"
+import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
 
 export default () => (
   <PageContainer>
@@ -16,6 +17,7 @@ export default () => (
       reputation for quality, because doing the best paint job we can do on
       every job is our minimum standard.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>We tackle the biggest jobs.</H3>
     <P2>
@@ -25,6 +27,7 @@ export default () => (
       several different categories, including multi-family housing units, office
       buildings, industrial complexes, and large campuses.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Confident, satisfied clients.</H3>
     <P2>
@@ -33,6 +36,7 @@ export default () => (
       painting contractors Los Angeles has to offer, and we are constantly
       looking for feedback on how to improve your customer experience.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>We keep it clean.</H3>
     <P2>
@@ -41,6 +45,7 @@ export default () => (
       repainting jobs in completed spaces, Trifecta’s teams are experts at
       protection, preparation and masking.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Industrial quality supplies and equipment.</H3>
     <P2>
@@ -53,5 +58,6 @@ export default () => (
       suppliers to ensure we provide you with the best possible cost for
       interior painting and exterior painting.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

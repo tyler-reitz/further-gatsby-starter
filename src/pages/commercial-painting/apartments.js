@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
 
@@ -17,6 +18,7 @@ export default () => (
       including both interior painting and exterior painting of all types of
       multi-family housing.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">We paint walls and ceilings.</H3>
     <P2>
@@ -25,6 +27,7 @@ export default () => (
       it right. With a steady hand and an eye for detail, we make the ordinary
       look extraordinary.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">We paint windows and doors.</H3>
     <P2>
@@ -32,6 +35,7 @@ export default () => (
       only looks fantastic, it helps protect these important openings from
       weather and insects.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">We paint cabinets and trim.</H3>
     <P2>
@@ -39,12 +43,14 @@ export default () => (
       cabinets, crown molding, chair rail, wall paneling, handrails—you name it,
       we’ll paint it.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">We do accent walls.</H3>
     <P2>
       When an apartment needs a splash of color, we can liven it up with an
       accent wall in the color of your choice.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>
       Here are some of the different types of apartments our expert teams can

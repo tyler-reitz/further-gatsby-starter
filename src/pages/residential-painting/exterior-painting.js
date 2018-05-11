@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography"
 
@@ -17,6 +18,7 @@ export default () => (
       dedicated to doing quality work. Let us give your house a paint job that
       will stand up to the LA sun for years to come.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>We want to know what you like.</H3>
     <P2>
@@ -27,6 +29,7 @@ export default () => (
       your home in the most efficient way possible, on a schedule that works
       best for you.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Every type of home.</H3>
     <P2>
@@ -35,6 +38,7 @@ export default () => (
       have an adobe, an italianate, a queen anne, or a mission revival, we’ve
       got you covered.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Add value to your home.</H3>
     <P2>
@@ -45,6 +49,7 @@ export default () => (
       satisfaction you’ll get when you see just how good it looks, and we work
       hard to keep our rates competitive and affordable.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Add value to your home.</H3>
     <P2>
@@ -55,6 +60,7 @@ export default () => (
       satisfaction you’ll get when you see just how good it looks, and we work
       hard to keep our rates competitive and affordable.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Our process is standard and thorough.</H3>
     <P2>
@@ -69,5 +75,6 @@ export default () => (
       planter beds to ensure that the paint only goes where it’s supposed to,
       nowhere else.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

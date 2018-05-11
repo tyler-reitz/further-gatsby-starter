@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography"
 
@@ -17,6 +18,7 @@ export default () => (
       high-rises and Class B mid-size office buildings, and we will also take on
       Class C commercial office spaces when they are in good repair.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">We upgrade existing office buildings.</H3>
     <P2>
@@ -26,6 +28,7 @@ export default () => (
       Trifecta Painting knows how to properly prep and paint LA office buildings
       for lasting results.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">Inside and outside, we have it covered.</H3>
     <P2>
@@ -36,6 +39,7 @@ export default () => (
       minimal interruption of your business.
     </P2>
     <Rule />
+    <TwoUp />
     <H3 className="mb-2">Industrial grade coatings.</H3>
     <P2>
       Scorching LA summers are hell on exterior paint jobs. But certain colors
@@ -46,6 +50,7 @@ export default () => (
       on the inside, we have the perfect products for easy maintenance in
       high-traffic areas like hallways, mail rooms, and dining areas.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">We keep it clean.</H3>
     <P2>
@@ -54,6 +59,7 @@ export default () => (
       repainting jobs in completed spaces, Trifecta’s teams are experts at
       protection, preparation and masking.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">Every style and color.</H3>
     <P2>
@@ -63,5 +69,6 @@ export default () => (
       and color scheme. We work well with exterior designers, and we look
       forward to working with you.
     </P2>
+    <TwoUp /> 
   </PageContainer>
 );

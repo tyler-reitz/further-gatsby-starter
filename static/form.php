@@ -1,29 +1,3 @@
-Form Fields:
-<br>
-name: <?php echo $_POST["name"]; ?>
-<br>
-email: <?php echo $_POST["email"]; ?>
-<br>
-phone: <?php echo $_POST["phone"]; ?>
-<br>
-notes: <?php echo $_POST["notes"]; ?>
-<br>
-message: <?php echo $_POST["message"]; ?>
-<br>
-
-Errors:
-<br>
-name: <?php echo $nameErr; ?>
-<br>
-email: <?php echo $emailErr; ?>
-<br>
-phone: <?php echo $phoneErr; ?>
-<br>
-notes: <?php echo $notesErr; ?>
-<br>
-message: <?php echo $messageErr; ?>
-<br>
-
 <?php
   // Setup necessary variables for form fields and error messages
   $name = $email = $phone = $notes = $message = "";
@@ -99,7 +73,7 @@ message: <?php echo $messageErr; ?>
   );
 
   $email_was_sent = mail(
-    $email_recipient, 
+    $email_recipient,
     $email_subject, 
     $email_body
   );
@@ -113,3 +87,28 @@ message: <?php echo $messageErr; ?>
 
 ?>
 
+Form Fields:
+<br>
+<b>name:</b> <?php echo $_POST["name"]; ?>
+<br>
+email: <?php echo $_POST["email"]; ?>
+<br>
+phone: <?php echo $_POST["phone"]; ?>
+<br>
+notes: <?php echo $_POST["notes"]; ?>
+<br>
+message: <?php echo $_POST["message"]; ?>
+<br>
+
+Errors:
+<br>
+name: <?php echo $nameErr; ?>
+<br>
+email: <?php echo $emailErr; ?>
+<br>
+phone: <?php echo $phoneErr; ?>
+<br>
+notes: <?php echo $notesErr; ?>
+<br>
+message: <?php echo $messageErr; ?>
+<br>

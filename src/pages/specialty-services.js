@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../components/PageContainer";
+import { TwoUp } from "../components/ImagesContainers";
 import Rule from "../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography"
 
@@ -13,6 +14,7 @@ export default () => (
       have experience with drywall, mudding, and taping, and we can rapidly fix
       your walls and make them look like new again.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Stucco Repair.</H3>
     <P2>
@@ -22,6 +24,7 @@ export default () => (
       stucco job that is obviously failing — we’ll do the repairs ourselves as
       part of our full-spectrum exterior painting services.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Wallpaper Removal.</H3>
     <P2>
@@ -31,6 +34,7 @@ export default () => (
       the look and feel of your walls. Whatever it is, we offer wallpaper
       removal services in addition to our regular interior painting services.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Lead Paint Removal.</H3>
     <P2>
@@ -39,6 +43,7 @@ export default () => (
       attempt to remove lead paint yourself due to the inherent health hazards,
       and that’s why Trifecta offers lead paint removal services to assist you.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Power Washing.</H3>
     <P2>
@@ -48,6 +53,7 @@ export default () => (
       paint job will require power washing to ensure that all dirt and debris
       have been cleared away.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Light Carpentry.</H3>
     <P2>
@@ -56,5 +62,6 @@ export default () => (
       members of our crew who are experienced carpenters and we can assist you
       with light repairs or modifications.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

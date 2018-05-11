@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography"
 
@@ -11,6 +12,7 @@ export default () => (
     <Rule />
     <H3>Efficient, expert home painters.</H3>
     <P2>Your Los Angeles Painting Company</P2>
+    <TwoUp />
     <Rule />
     <H3>We paint interiors.</H3>
     <P2>
@@ -20,6 +22,7 @@ export default () => (
       you choose the right look with interior paint colors and living room paint
       ideas.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>We paint exteriors.</H3>
     <P2>
@@ -28,6 +31,7 @@ export default () => (
       of exterior siding, including stucco, vinyl siding, wood siding, cedar
       shake siding, fiber cement siding, and aluminum siding.{" "}
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Ready for redecorating—or even a remodel.</H3>
     <P2>
@@ -36,6 +40,7 @@ export default () => (
       refined, we can work with you to find the perfect look for every room in
       your house.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Repaint when you want to sell.</H3>
     <P2>
@@ -46,6 +51,7 @@ export default () => (
       teams are experts at doing clean, efficient in-home jobs. When you don’t
       want to worry, call Trifecta.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Take care of your home.</H3>
     <P2>
@@ -53,5 +59,6 @@ export default () => (
       to you. Trifecta understands this, and that’s why we work to make the cost
       to paint the interior of your house reasonable and affordable.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

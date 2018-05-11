@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography"
 
@@ -18,6 +19,7 @@ export default () => (
       care to clean all surfaces thoroughly to ensure proper adhesion of the
       paint, for a high-quality, long-lasting paint jo
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">Clean, fast, and professional.</H3>
     <P2>
@@ -27,6 +29,7 @@ export default () => (
       a brand new paint job, it makes upkeep easier, helping you save on
       maintenance costs.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">Industrial-grade protective coatings.</H3>
     <P2>
@@ -39,6 +42,7 @@ export default () => (
       do the best possible job of keeping your parking garage looking
       professional.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">Increase safety with increased visibility.</H3>
     <P2>
@@ -48,5 +52,6 @@ export default () => (
       remarkable increase in visibility, thereby reducing collisions and
       accidents.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

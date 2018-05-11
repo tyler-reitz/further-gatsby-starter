@@ -1,10 +1,21 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types"
+import { Transition } from "react-transition-group"
 
 import { H1, H2, H3, H4, P1, P2, P3} from "../Typography"
 import Input from "../Input";
 import Textarea from "../Textarea";
 import Button from "../Button";
+
+const defaultStyle = {
+  transition: `opacity 500ms ease-in-out`,
+  opacity: 0,
+}
+
+const transitionStyles = {
+  entering: { opacity: 0 },
+  entered:  { opacity: 1 },
+};
 
 class Form extends Component {
 
@@ -52,8 +63,10 @@ class Form extends Component {
         }]) => valid === false
       )
 
+    console.log(isFormValid.length)
+    
     this.setState({
-      valid: isFormValid.length < 1 ? true : false,
+      valid: isFormValid.length === 0  ? true : false,
       [name]: {
         value,
         valid: value ? true : false,
@@ -76,6 +89,16 @@ class Form extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
+    const isFormValid = Object
+    .entries(this.state)
+    .filter(
+      ([, {
+        valid
+      }]) => valid === false
+    )
+
+    console.log(isFormValid)
+    
     if (this.state.valid) {
       const formData = new FormData()
   
@@ -183,7 +206,21 @@ class Form extends Component {
             </Button>
           </form>
         ) : (
-          <H3 className="w-full text-center">Thanks! We'll be in touch soon</H3>
+          <Transition
+            in={this.state.submit}
+            timeout={500}
+          >
+            {state => (
+              <div
+                style={{
+                  ...defaultStyle,
+                  ...transitionStyles[state]
+                }}
+              >
+                <H3 className="w-full text-center">Thanks! We'll be in touch soon</H3>
+              </div>
+            )}
+          </Transition>
         )
     );
   }

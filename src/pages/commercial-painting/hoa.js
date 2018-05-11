@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography"
 
@@ -16,6 +17,7 @@ export default () => (
       commercial painting contractor who knows how to get the job done to the
       satisfaction of your HOA’s requirements.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>We have the experience. </H3>
     <P2>
@@ -25,6 +27,7 @@ export default () => (
       the stipulations in HOA covenants, conditions and restrictions (CC&Rs) to
       the satisfaction of all concerned.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Coordinated color matching.</H3>
     <P2>
@@ -37,6 +40,7 @@ export default () => (
       community. and we have experience in working with homeowners and HOAs to
       work within a color palette to the satisfaction of all concerned.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Detailed paint specifications.</H3>
     <P2>
@@ -51,5 +55,6 @@ export default () => (
       specifications that will ensure your paint job will stand the test of
       time.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

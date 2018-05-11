@@ -155,16 +155,6 @@ const IndexPage = () => (
         </a>
       </H3>
       <Form textAreaHeight={1} />
-      {/* <form className="flex flex-wrap justify-between px-6 sm:px12" action="/">
-        <Input placeholder="name*" className="w-full lg:w-8/25" />
-        <Input type="email" placeholder="email*" className="w-full lg:w-8/25" />
-        <Input placeholder="phone*" className="w-full lg:w-8/25" />
-        <Input placeholder="type of project*" className="w-full lg:w-48/100" />
-        <Input placeholder="project notes*" className="w-full lg:w-48/100" />
-        <Button className="mx-auto" primary>
-          set an appointment
-        </Button>
-      </form> */}
     </div>
 
     {/* Hero 2 */}

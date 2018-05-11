@@ -612,6 +612,10 @@ button,
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -3247,6 +3251,38 @@ button,
 
 .z-auto {
   z-index: auto;
+}
+
+.aspect-ratio-square {
+  padding-top: 100%;
+}
+
+.aspect-ratio-16\/9 {
+  padding-top: 56.25%;
+}
+
+.aspect-ratio-4\/3 {
+  padding-top: 75%;
+}
+
+.aspect-ratio-21\/9 {
+  padding-top: 42.86%;
+}
+
+.hover\:aspect-ratio-square:hover {
+  padding-top: 100%;
+}
+
+.hover\:aspect-ratio-16\/9:hover {
+  padding-top: 56.25%;
+}
+
+.hover\:aspect-ratio-4\/3:hover {
+  padding-top: 75%;
+}
+
+.hover\:aspect-ratio-21\/9:hover {
+  padding-top: 42.86%;
 }
 
 .overflow-x-hidden {
@@ -5901,6 +5937,38 @@ button,
     z-index: auto;
   }
 
+  .sm\:aspect-ratio-square {
+    padding-top: 100%;
+  }
+
+  .sm\:aspect-ratio-16\/9 {
+    padding-top: 56.25%;
+  }
+
+  .sm\:aspect-ratio-4\/3 {
+    padding-top: 75%;
+  }
+
+  .sm\:aspect-ratio-21\/9 {
+    padding-top: 42.86%;
+  }
+
+  .sm\:hover\:aspect-ratio-square:hover {
+    padding-top: 100%;
+  }
+
+  .sm\:hover\:aspect-ratio-16\/9:hover {
+    padding-top: 56.25%;
+  }
+
+  .sm\:hover\:aspect-ratio-4\/3:hover {
+    padding-top: 75%;
+  }
+
+  .sm\:hover\:aspect-ratio-21\/9:hover {
+    padding-top: 42.86%;
+  }
+
   .sm\:overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -8548,6 +8616,38 @@ button,
 
   .md\:z-auto {
     z-index: auto;
+  }
+
+  .md\:aspect-ratio-square {
+    padding-top: 100%;
+  }
+
+  .md\:aspect-ratio-16\/9 {
+    padding-top: 56.25%;
+  }
+
+  .md\:aspect-ratio-4\/3 {
+    padding-top: 75%;
+  }
+
+  .md\:aspect-ratio-21\/9 {
+    padding-top: 42.86%;
+  }
+
+  .md\:hover\:aspect-ratio-square:hover {
+    padding-top: 100%;
+  }
+
+  .md\:hover\:aspect-ratio-16\/9:hover {
+    padding-top: 56.25%;
+  }
+
+  .md\:hover\:aspect-ratio-4\/3:hover {
+    padding-top: 75%;
+  }
+
+  .md\:hover\:aspect-ratio-21\/9:hover {
+    padding-top: 42.86%;
   }
 
   .md\:overflow-x-hidden {
@@ -11199,6 +11299,38 @@ button,
     z-index: auto;
   }
 
+  .lg\:aspect-ratio-square {
+    padding-top: 100%;
+  }
+
+  .lg\:aspect-ratio-16\/9 {
+    padding-top: 56.25%;
+  }
+
+  .lg\:aspect-ratio-4\/3 {
+    padding-top: 75%;
+  }
+
+  .lg\:aspect-ratio-21\/9 {
+    padding-top: 42.86%;
+  }
+
+  .lg\:hover\:aspect-ratio-square:hover {
+    padding-top: 100%;
+  }
+
+  .lg\:hover\:aspect-ratio-16\/9:hover {
+    padding-top: 56.25%;
+  }
+
+  .lg\:hover\:aspect-ratio-4\/3:hover {
+    padding-top: 75%;
+  }
+
+  .lg\:hover\:aspect-ratio-21\/9:hover {
+    padding-top: 42.86%;
+  }
+
   .lg\:overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -13846,6 +13978,38 @@ button,
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:aspect-ratio-square {
+    padding-top: 100%;
+  }
+
+  .xl\:aspect-ratio-16\/9 {
+    padding-top: 56.25%;
+  }
+
+  .xl\:aspect-ratio-4\/3 {
+    padding-top: 75%;
+  }
+
+  .xl\:aspect-ratio-21\/9 {
+    padding-top: 42.86%;
+  }
+
+  .xl\:hover\:aspect-ratio-square:hover {
+    padding-top: 100%;
+  }
+
+  .xl\:hover\:aspect-ratio-16\/9:hover {
+    padding-top: 56.25%;
+  }
+
+  .xl\:hover\:aspect-ratio-4\/3:hover {
+    padding-top: 75%;
+  }
+
+  .xl\:hover\:aspect-ratio-21\/9:hover {
+    padding-top: 42.86%;
   }
 
   .xl\:overflow-x-hidden {

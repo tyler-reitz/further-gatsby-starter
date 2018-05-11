@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography"
 
@@ -19,6 +20,7 @@ export default () => (
       houses. Trifecta understands the importance of speed and cleanliness, and
       we always maintain cleanliness throughout the work site.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>No distractions.</H3>
     <P2>
@@ -30,6 +32,7 @@ export default () => (
       We’re also familiar with a variety of low-VOC and low-odor paints, and
       we’ll work with you to find a product that fits your needs.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>We’re versatile and experienced.</H3>
     <P2>
@@ -39,13 +42,13 @@ export default () => (
       Trifecta is up to the task. We have the experience and flexibility to
       paint anything your hotel has to offer, inside and out.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>We paint event venues, too.</H3>
     <P2>
       In fact, we can handle all kinds of hospitality painting services in Los
       Angeles:
     </P2>
-    <Rule />
     <ul className="flex flex-wrap list-reset sm:px-8">
       {[
         "Resorts",

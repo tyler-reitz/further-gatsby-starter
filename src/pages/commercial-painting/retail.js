@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
 
@@ -20,6 +21,7 @@ export default () => (
       well-maintained building tends to attract shoppers. Painting your store is
       the kind of investment that can immediately boost your bottom line.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">Stand out from the competition.</H3>
     <P2>
@@ -29,6 +31,7 @@ export default () => (
       palette. We know how to showcase your brand and make your business stand
       out.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">Skilled, professional project management.</H3>
     <P2>
@@ -36,6 +39,7 @@ export default () => (
       years of work here in Los Angeles, painting shopping centers,
       supermarkets, home improvement stores, and malls.
     </P2>
+    <TwoUp />
     <Rule />
     <H3 className="mb-2">We do all types of retail painting.</H3>
     <P2>
@@ -83,5 +87,6 @@ export default () => (
       agents in preparation for painting. It’s all done in order to ensure a
       high-quality finish that will last, year after year, season after season.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

@@ -1,5 +1,6 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer";
+import { TwoUp } from "../../components/ImagesContainers";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
 
@@ -19,6 +20,7 @@ export default () => (
       craftsmen: when we paint luxury estates in Los Angeles, our painters are
       never sub-contracted.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Full interior and exterior painting:</H3>
     <P2>
@@ -30,6 +32,7 @@ export default () => (
       best option for all of your refinishing needs. With unsurpassed attention
       to detail, we use LED lights to double-check our work.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Premium lacquer and fine finishing.</H3>
     <P2>
@@ -39,6 +42,7 @@ export default () => (
       installation. Our team of skilled artisans can execute any job to the
       highest standards.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Airtight privacy.</H3>
     <P2>
@@ -50,6 +54,7 @@ export default () => (
       personal information is guarded and never shared with anyone outside of
       the job.
     </P2>
+    <TwoUp />
     <Rule />
     <H3>Fully insured.</H3>
     <P2>
@@ -87,5 +92,6 @@ export default () => (
       cleanup. We cover hard floors with durable ram board and soft floors with
       heavy duty 4 mil plastic, and we also bring our own portable toilet.
     </P2>
+    <TwoUp />
   </PageContainer>
 );

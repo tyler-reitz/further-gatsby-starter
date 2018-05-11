@@ -1,7 +1,7 @@
 import styles from './style.module.css'
 import React from "react";
 
-import Button from "../Button";import { stripBasename } from "history/PathUtils";
+import Button from "../Button";
 import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
 
 import bkgDefault from "../../assets/images/01.jpg"
