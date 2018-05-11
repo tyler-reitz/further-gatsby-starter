@@ -1,7 +1,9 @@
 import React from "react";
 import PageContainer from "../components/PageContainer";
 import Rule from "../components/Rule";
-import { H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography"
+import { H1, H2, H3, H4, P1, P2, P3, Small } from "../components/Typography"
+
+import bkgMap from "../assets/images/bkg-map.jpg";
 
 export default () => (
   <PageContainer>
@@ -30,8 +32,11 @@ export default () => (
     </table>
     <Rule />
     <H3>COMMERCIAL</H3>
-    <P2>Santa Clarita south to Long Beach</P2>
-    <P2>Oxnard east to Pasadena</P2>
+    <img src={bkgMap} alt="map" />
+    <div className="flex justify-between">
+      <Small>Santa Clarita south to Long Beach</Small>
+      <Small>Oxnard east to Pasadena</Small>
+    </div>
     <Rule />
   </PageContainer>
 )

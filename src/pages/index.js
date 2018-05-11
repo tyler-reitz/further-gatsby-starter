@@ -23,7 +23,7 @@ const IndexPage = () => (
     <div className="relative">
       <Carousel2
         settings={{
-          autoplay: false,
+          autoplay: true,
           dotsClass: "slick-dots slick-dots-blue slick-dots-light"
         }}
       >

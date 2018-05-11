@@ -3,14 +3,13 @@ import PageContainer from '../components/PageContainer'
 import Hero from '../components/Hero'
 import Button from '../components/Button'
 import Rule from '../components/Rule'
-import { H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography"
-import ImagesContainer from "../components/ImagesContainer"
+import { H1, H2, H3, H4, P1, P2, P3, BQ } from "../components/Typography"
 
 import bkgImg from '../assets/images/01.jpg'
 
 export default () => (
   <PageContainer>
-    <Hero bgImg={bkgImg}>
+    <Hero style={{ marginBottom: '3rem' }} bgImg={bkgImg}>
       <H1>Big Header</H1>
       <H3>Smaller for the subtext</H3>
       <P2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat unde sint suscipit ab nisi expedita molestias omnis, sed ipsam a at deleniti, doloribus fugiat beatae inventore odio hic, dolorem vero.</P2>
@@ -24,6 +23,8 @@ export default () => (
 
     <H3>Commercial</H3>
     <H4>Contact us today to discuss your project and how we can help:</H4>
+
+    <BQ>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate at a possimus! Consectetur velit non nulla quis fugiat!"</BQ>
 
     <span className="block w-full font-medium">NF | Los Angeles</span>
 

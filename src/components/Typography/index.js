@@ -5,7 +5,8 @@ export const H2 = ({ className, children, ...props }) => <h2 className={`font-go
 export const H3 = ({ className, children, ...props }) => <h3 className={`font-gotham-medium text-3xl font-semibold mb-4 block ${className}`}>{children}</h3>
 export const H4 = ({ className, children, ...props }) => <h4 className={`font-gotham-light text-2xl font-medium mb-4 ${className}`}>{children}</h4>
 
-export const Small = ({ className, children, ...props }) => <span className={`block w-full font-medium ${className}`}>{children}</span>
+export const BQ = ({ className, children, ...props}) => <blockquote className={`font-nimbus-sans text-3xl font-thin text-grey-dark font-thin italic mb-4 block ${className}`}>{children}</blockquote>
+export const Small = ({ className, children, ...props }) => <span className={`inlin-block font-medium ${className}`}>{children}</span>
 
 export const P1 = ({ className, children, ...props }) => <p className={`text-xl leading-normal font-light my-4 ${className}`}>{children}</p>
 export const P2 = ({ className, children, ...props }) => <p className={`text-lg font-light leading-normal my-4  ${className}`}>{children}</p>

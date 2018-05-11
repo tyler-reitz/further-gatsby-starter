@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-export const FullWidth = () => <img style={{ display: 'block', margin: '1rem 0' }} src="http://via.placeholder.com/877x375" alt="" />
+export const FullWidth = (props) => <img {...props} style={{ display: 'block', margin: '1rem 0' }} src="http://via.placeholder.com/877x375" alt="" />
   
 export const TwoUp = () =>
   <div className="flex flex-wrap justify-between">

@@ -20,10 +20,10 @@ const bkgImages = {
   'hoa': bkgHOA,
 }
 
-export default ({ bgImg, children, ...props }) => {
+export default ({ bgImg, style, children, ...props }) => {
   return (
     <div
-      style={{ backgroundImage: `url(/images/bkg-${bgImg}.jpg)` }}
+      style={{ ...style, backgroundImage: `url(/images/bkg-${bgImg}.jpg)` }}
       className={`flex flex-wrap mx-auto py-6 h-screen-w-1/4 bg-no-repeat bg-cover bg-center ${styles.backgroundImages}`}
     >
       {children && (
