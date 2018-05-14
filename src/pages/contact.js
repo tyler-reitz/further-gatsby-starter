@@ -1,11 +1,8 @@
-import React, { Component } from "react";
-import PageContainer from "../components/PageContainer";
-// import Button from "../components/Button";
-// import Input from "../components/Input";
-// import Textarea from "../components/Textarea";
+import React from "react";
 import Form from "../components/Form";
+import PageContainer from "../components/PageContainer";
 import Rule from "../components/Rule";
-import { H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography";
+import { H1, H3, H4 } from "../components/Typography";
 
 export default () => (
   <PageContainer>

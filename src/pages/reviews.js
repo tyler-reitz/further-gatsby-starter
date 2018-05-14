@@ -33,6 +33,5 @@ export default () => (
       <BQ>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate at a possimus! Consectetur velit non nulla quis fugiat!"</BQ>
       {Array(5).fill(null).map(_ => <Star />)}
     </div>
-    <Rule />
   </PageContainer>
 );

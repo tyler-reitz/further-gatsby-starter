@@ -74,6 +74,7 @@ export default () => (
       slideDuration={400}
       swipingTransitionDuration={400}
     />
+    <Rule />
     <H3>Residential</H3>
     <ImageGallery 
       items={images}
@@ -84,6 +85,7 @@ export default () => (
       slideDuration={400}
       swipingTransitionDuration={400}
     />
+    <Rule />
     <H3>Estates</H3>
     <ImageGallery 
       items={images}
@@ -93,6 +95,6 @@ export default () => (
       showPlayButton={false}
       slideDuration={400}
       swipingTransitionDuration={400}
-    /> 
+    />
   </PageContainer>
 )
