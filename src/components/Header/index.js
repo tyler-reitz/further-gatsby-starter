@@ -6,8 +6,6 @@ import MegaMenu from "../MegaMenu";
 import "./style.css";
 const debounce = require("lodash/debounce");
 
-
-
 class Header extends Component {
   state = {
     windowWidth: "",
@@ -103,9 +101,9 @@ class Header extends Component {
           <div className="hidden lg:flex flex-col text-center">
             <a
               className="font-gotham-bold no-underline text-primary font-semibold text-2xl mb-2"
-              href="tel:+13239827609"
+              href={`tel:+${window.phone}`}
             >
-              (888) 888-8888
+              {window.phone}
             </a>
             <Button primary>set an appointment</Button>
           </div>

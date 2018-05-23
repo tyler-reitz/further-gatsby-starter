@@ -1,10 +1,16 @@
 import React from "react";
 import bgImg from '../../assets/images/feat-exterior.jpg';
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Residential/Ext4.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Residential/Ext5.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Residential/Ext6.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Residential/Ext7.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Residential/Int0.jpg"
+import img6 from "../../assets/images/Trifecta Selects/Residential/Int1.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
@@ -18,7 +24,7 @@ export default () => (
       dedicated to doing quality work. Let us give your house a paint job that
       will stand up to the LA sun for years to come.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>We want to know what you like.</H3>
     <P3>
@@ -29,7 +35,7 @@ export default () => (
       your home in the most efficient way possible, on a schedule that works
       best for you.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>Every type of home.</H3>
     <P3>
@@ -38,7 +44,7 @@ export default () => (
       have an adobe, an italianate, a queen anne, or a mission revival, we’ve
       got you covered.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>Add value to your home.</H3>
     <P3>
@@ -49,7 +55,7 @@ export default () => (
       satisfaction you’ll get when you see just how good it looks, and we work
       hard to keep our rates competitive and affordable.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3>Add value to your home.</H3>
     <P3>
@@ -60,7 +66,7 @@ export default () => (
       satisfaction you’ll get when you see just how good it looks, and we work
       hard to keep our rates competitive and affordable.
     </P3>
-    <TwoUp />
+    <FullWidth img={img5} />
     <Rule />
     <H3>Our process is standard and thorough.</H3>
     <P3>
@@ -75,6 +81,6 @@ export default () => (
       planter beds to ensure that the paint only goes where it’s supposed to,
       nowhere else.
     </P3>
-    <TwoUp />
+    <FullWidth img={img6} />
   </PageContainer>
 );

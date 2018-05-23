@@ -313,15 +313,6 @@ class MegaMenu extends Component {
                 Residential
               </MenuLink>
             </MenuItem>
-            <MenuItem key="6-3" className="bg-grey-lightest">
-              <MenuLink
-                sub
-                to="/gallery/estates"
-                className="text-primary"
-              >
-                Estates
-              </MenuLink>
-            </MenuItem>
           </SubMenu>
 
           {/* Service Areas */}

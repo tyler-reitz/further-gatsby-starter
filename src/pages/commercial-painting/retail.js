@@ -1,10 +1,14 @@
 import React from "react";
 import bgImg from "../../assets/images/feat-retail.jpg";
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/DSCN3180.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/DSCN3209.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Commercial/IMG_0485.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
@@ -21,7 +25,7 @@ export default () => (
       well-maintained building tends to attract shoppers. Painting your store is
       the kind of investment that can immediately boost your bottom line.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3 className="mb-2">Stand out from the competition.</H3>
     <P3>
@@ -31,7 +35,7 @@ export default () => (
       palette. We know how to showcase your brand and make your business stand
       out.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3 className="mb-2">Skilled, professional project management.</H3>
     <P3>
@@ -39,7 +43,7 @@ export default () => (
       years of work here in Los Angeles, painting shopping centers,
       supermarkets, home improvement stores, and malls.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3 className="mb-2">We do all types of retail painting.</H3>
     <P3>
@@ -87,6 +91,6 @@ export default () => (
       agents in preparation for painting. It’s all done in order to ensure a
       high-quality finish that will last, year after year, season after season.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
   </PageContainer>
 );

@@ -1,10 +1,16 @@
 import React from "react";
 import bgImg from '../../assets/images/feat-house.jpg';
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Residential/Ext1.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Residential/Ext2.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Residential/Ext3.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Residential/Ext4.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Residential/Ext6.jpg"
+import img6 from "../../assets/images/Trifecta Selects/Residential/Ext7.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg} >
@@ -12,7 +18,7 @@ export default () => (
     <Rule />
     <H3>Efficient, expert home painters.</H3>
     <P3>Your Los Angeles Painting Company</P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>We paint interiors.</H3>
     <P3>
@@ -22,7 +28,7 @@ export default () => (
       you choose the right look with interior paint colors and living room paint
       ideas.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>We paint exteriors.</H3>
     <P3>
@@ -31,7 +37,7 @@ export default () => (
       of exterior siding, including stucco, vinyl siding, wood siding, cedar
       shake siding, fiber cement siding, and aluminum siding.{" "}
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>Ready for redecorating—or even a remodel.</H3>
     <P3>
@@ -40,7 +46,7 @@ export default () => (
       refined, we can work with you to find the perfect look for every room in
       your house.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3>Repaint when you want to sell.</H3>
     <P3>
@@ -51,7 +57,7 @@ export default () => (
       teams are experts at doing clean, efficient in-home jobs. When you don’t
       want to worry, call Trifecta.
     </P3>
-    <TwoUp />
+    <FullWidth img={img5} />
     <Rule />
     <H3>Take care of your home.</H3>
     <P3>
@@ -59,6 +65,6 @@ export default () => (
       to you. Trifecta understands this, and that’s why we work to make the cost
       to paint the interior of your house reasonable and affordable.
     </P3>
-    <TwoUp />
+    <FullWidth img={img6} />
   </PageContainer>
 );

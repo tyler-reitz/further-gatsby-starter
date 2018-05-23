@@ -1,8 +1,13 @@
 import React from "react";
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
+
+import img1 from "../../assets/images/Trifecta Selects/Residential/Ext0.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Residential/Ext1.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Residential/Ext2.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Residential/Ext3.jpg"
 
 export default () => (
   <PageContainer>
@@ -16,7 +21,7 @@ export default () => (
       installation. Our team of skilled artisans can execute any job to the
       highest standards.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>Save yourself the trouble.</H3>
     <P3>
@@ -27,7 +32,7 @@ export default () => (
       can get the job done rapidly and save you the pain and stress of trying to
       do it yourself.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>Avoid a total remodel.</H3>
     <P3>
@@ -38,7 +43,7 @@ export default () => (
       Trifecta can help you get the look of a remodel without going to all the
       trouble.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>We do kitchens, bathrooms and built-ins.</H3>
     <P3>
@@ -46,6 +51,6 @@ export default () => (
       new look, we can repaint or refinish them for you, in any room in your
       house.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
   </PageContainer>
 );

@@ -96,8 +96,6 @@ class Form extends Component {
         valid
       }]) => valid === false
     )
-
-    console.log(isFormValid)
     
     if (this.state.valid) {
       const formData = new FormData()
@@ -111,7 +109,7 @@ class Form extends Component {
         mode: "no-cors",
         body: formData
       }).then(res => {
-        console.log(res)
+        // console.log(res)
         this.setState({ submit: true })
       });
     }

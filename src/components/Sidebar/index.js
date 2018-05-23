@@ -12,9 +12,9 @@ export default () => (
         <h2 className="mb-2 text-3xl font-thin">Contact us today to discuss your project</h2>
         <a
           className="font-gotham-bold no-underline text-primary font-semibold text-2xl mb-2"
-          href="tel:+13239827609"
+          href={`tel:+${window.phone}`}
         >
-          (888) 888-8888
+          {window.phone}
         </a>
         <Button primary>set an appointment</Button>
       </div>

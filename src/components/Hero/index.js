@@ -17,9 +17,15 @@ const bkgImages = {
 
 class Hero extends Component {
   render () {
-    const { bgImg, style, children, isSubMenu, sectionHasBgImgs, ...props } = this.props
+    const {
+    	bgImg,
+    	style,
+    	children,
+    	isSubMenu,
+    	sectionHasBgImgs,
+    	...props
+    } = this.props
 
-    console.log(bgImg, isSubMenu)
 
     return (
       <div

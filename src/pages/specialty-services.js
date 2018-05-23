@@ -1,8 +1,15 @@
 import React from "react";
-import { TwoUp } from "../components/ImagesContainers";
+import { FullWidth } from "../components/ImagesContainers";
 import PageContainer from "../components/PageContainer";
 import Rule from "../components/Rule";
 import { H1, H3, P3 } from "../components/Typography";
+
+import img1 from "../assets/images/Trifecta Selects/Commercial/DSCN2234.jpg"
+import img2 from "../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
+import img3 from "../assets/images/Trifecta Selects/Commercial/DSCN3180.jpg"
+import img4 from "../assets/images/Trifecta Selects/Commercial/DSCN3209.jpg"
+import img5 from "../assets/images/Trifecta Selects/Commercial/IMG_0485.jpg"
+import img6 from "../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
 
 export default () => (
   <PageContainer>
@@ -14,7 +21,7 @@ export default () => (
       have experience with drywall, mudding, and taping, and we can rapidly fix
       your walls and make them look like new again.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>Stucco Repair.</H3>
     <P3>
@@ -24,7 +31,7 @@ export default () => (
       stucco job that is obviously failing — we’ll do the repairs ourselves as
       part of our full-spectrum exterior painting services.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>Wallpaper Removal.</H3>
     <P3>
@@ -34,7 +41,7 @@ export default () => (
       the look and feel of your walls. Whatever it is, we offer wallpaper
       removal services in addition to our regular interior painting services.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>Lead Paint Removal.</H3>
     <P3>
@@ -43,7 +50,7 @@ export default () => (
       attempt to remove lead paint yourself due to the inherent health hazards,
       and that’s why Trifecta offers lead paint removal services to assist you.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3>Power Washing.</H3>
     <P3>
@@ -53,7 +60,7 @@ export default () => (
       paint job will require power washing to ensure that all dirt and debris
       have been cleared away.
     </P3>
-    <TwoUp />
+    <FullWidth img={img5} />
     <Rule />
     <H3>Light Carpentry.</H3>
     <P3>
@@ -62,6 +69,6 @@ export default () => (
       members of our crew who are experienced carpenters and we can assist you
       with light repairs or modifications.
     </P3>
-    <TwoUp />
+    <FullWidth img={img6} />
   </PageContainer>
 );

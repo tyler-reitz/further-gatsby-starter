@@ -26,9 +26,9 @@ const Footer = () => (
         <div>
           <a
             className="block font-gotham-bold no-underline text-white font-semibold text-2xl mb-2"
-            href="tel:+13239827609"
+            href={`tel:+${window.phone}`}
           >
-            (888) 888-8888
+            {window.phone}
           </a>
           <Button primary>set an appointment</Button>
         </div>

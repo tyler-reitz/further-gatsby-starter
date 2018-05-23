@@ -1,10 +1,15 @@
 import React from "react";
 import bgImg from '../../assets/images/feat-apartments.jpg';
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/DSCN3180.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Commercial/DSCN3209.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Commercial/IMG_0485.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
@@ -18,7 +23,7 @@ export default () => (
       including both interior painting and exterior painting of all types of
       multi-family housing.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3 className="mb-2">We paint walls and ceilings.</H3>
     <P3>
@@ -27,7 +32,7 @@ export default () => (
       it right. With a steady hand and an eye for detail, we make the ordinary
       look extraordinary.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3 className="mb-2">We paint windows and doors.</H3>
     <P3>
@@ -35,7 +40,7 @@ export default () => (
       only looks fantastic, it helps protect these important openings from
       weather and insects.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3 className="mb-2">We paint cabinets and trim.</H3>
     <P3>
@@ -43,14 +48,14 @@ export default () => (
       cabinets, crown molding, chair rail, wall paneling, handrails—you name it,
       we’ll paint it.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3 className="mb-2">We do accent walls.</H3>
     <P3>
       When an apartment needs a splash of color, we can liven it up with an
       accent wall in the color of your choice.
     </P3>
-    <TwoUp />
+    <FullWidth img={img5} />
     <Rule />
     <H3>
       Here are some of the different types of apartments our expert teams can

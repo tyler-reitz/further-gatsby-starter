@@ -1,10 +1,14 @@
 import React from "react";
 import bgImg from '../../assets/images/feat-hoa.jpg';
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/DSCN3180.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Commercial/DSCN3209.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
@@ -17,7 +21,7 @@ export default () => (
       commercial painting contractor who knows how to get the job done to the
       satisfaction of your HOA’s requirements.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>We have the experience. </H3>
     <P3>
@@ -27,7 +31,7 @@ export default () => (
       the stipulations in HOA covenants, conditions and restrictions (CC&Rs) to
       the satisfaction of all concerned.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>Coordinated color matching.</H3>
     <P3>
@@ -40,7 +44,7 @@ export default () => (
       community. and we have experience in working with homeowners and HOAs to
       work within a color palette to the satisfaction of all concerned.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>Detailed paint specifications.</H3>
     <P3>
@@ -55,6 +59,6 @@ export default () => (
       specifications that will ensure your paint job will stand the test of
       time.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
   </PageContainer>
 );

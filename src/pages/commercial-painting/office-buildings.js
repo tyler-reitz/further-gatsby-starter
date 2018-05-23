@@ -1,10 +1,16 @@
 import React from "react";
 import bgImg from '../../assets/images/feat-office.jpg';
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Commercial/IMG_3248.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/IMG_3253.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/IMG_3261.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Commercial/IMG_3282.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Commercial/DSCN2234.jpg"
+import img6 from "../../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
@@ -18,7 +24,7 @@ export default () => (
       high-rises and Class B mid-size office buildings, and we will also take on
       Class C commercial office spaces when they are in good repair.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3 className="mb-2">We upgrade existing office buildings.</H3>
     <P3>
@@ -28,7 +34,7 @@ export default () => (
       Trifecta Painting knows how to properly prep and paint LA office buildings
       for lasting results.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3 className="mb-2">Inside and outside, we have it covered.</H3>
     <P3>
@@ -38,8 +44,7 @@ export default () => (
       department to determine the best schedule for painting interiors with
       minimal interruption of your business.
     </P3>
-    <Rule />
-    <TwoUp />
+    <FullWidth img={img3} />
     <H3 className="mb-2">Industrial grade coatings.</H3>
     <P3>
       Scorching LA summers are hell on exterior paint jobs. But certain colors
@@ -50,7 +55,7 @@ export default () => (
       on the inside, we have the perfect products for easy maintenance in
       high-traffic areas like hallways, mail rooms, and dining areas.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3 className="mb-2">We keep it clean.</H3>
     <P3>
@@ -59,7 +64,7 @@ export default () => (
       repainting jobs in completed spaces, Trifecta’s teams are experts at
       protection, preparation and masking.
     </P3>
-    <TwoUp />
+    <FullWidth img={img5} />
     <Rule />
     <H3 className="mb-2">Every style and color.</H3>
     <P3>
@@ -69,6 +74,6 @@ export default () => (
       and color scheme. We work well with exterior designers, and we look
       forward to working with you.
     </P3>
-    <TwoUp /> 
+    <FullWidth img={img6} />
   </PageContainer>
 );

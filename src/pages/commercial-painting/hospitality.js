@@ -1,10 +1,13 @@
 import React from "react";
 import bgImg from '../../assets/images/feat-hotels.jpg';
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/IMG_3248.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/IMG_3253.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
@@ -20,7 +23,7 @@ export default () => (
       houses. Trifecta understands the importance of speed and cleanliness, and
       we always maintain cleanliness throughout the work site.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>No distractions.</H3>
     <P3>
@@ -32,7 +35,7 @@ export default () => (
       We’re also familiar with a variety of low-VOC and low-odor paints, and
       we’ll work with you to find a product that fits your needs.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>We’re versatile and experienced.</H3>
     <P3>
@@ -42,7 +45,7 @@ export default () => (
       Trifecta is up to the task. We have the experience and flexibility to
       paint anything your hotel has to offer, inside and out.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>We paint event venues, too.</H3>
     <P3>

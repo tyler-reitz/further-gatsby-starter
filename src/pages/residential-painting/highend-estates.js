@@ -1,10 +1,16 @@
 import React from "react";
 import bgImg from "../../assets/images/feat-estate.jpg";
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, H4, P1, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Residential/Int3.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Residential/Int4.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Residential/Work0.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Residential/Work1.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Residential/Work2.jpg"
+import img6 from "../../assets/images/Trifecta Selects/Residential/Ext0.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
@@ -20,7 +26,7 @@ export default () => (
       craftsmen: when we paint luxury estates in Los Angeles, our painters are
       never sub-contracted.
     </P3>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>Full interior and exterior painting:</H3>
     <P3>
@@ -32,7 +38,7 @@ export default () => (
       best option for all of your refinishing needs. With unsurpassed attention
       to detail, we use LED lights to double-check our work.
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>Premium lacquer and fine finishing.</H3>
     <P3>
@@ -42,7 +48,7 @@ export default () => (
       installation. Our team of skilled artisans can execute any job to the
       highest standards.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>Airtight privacy.</H3>
     <P3>
@@ -54,7 +60,7 @@ export default () => (
       personal information is guarded and never shared with anyone outside of
       the job.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3>Fully insured.</H3>
     <P3>
@@ -92,6 +98,6 @@ export default () => (
       cleanup. We cover hard floors with durable ram board and soft floors with
       heavy duty 4 mil plastic, and we also bring our own portable toilet.
     </P3>
-    <TwoUp />
+    <FullWidth img={img5} />
   </PageContainer>
 );

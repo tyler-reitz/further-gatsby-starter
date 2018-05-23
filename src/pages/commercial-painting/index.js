@@ -1,8 +1,14 @@
 import React from "react";
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H2, H3, P1, P2 } from "../../components/Typography";
+
+import img1 from "../../assets/images/Trifecta Selects/Commercial/DSCN2234.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/DSCN3180.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Commercial/DSCN3209.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
 
 export default () => (
   <PageContainer>
@@ -18,7 +24,7 @@ export default () => (
       reputation for quality, because doing the best paint job we can do on
       every job is our minimum standard.
     </P2>
-    <TwoUp />
+    <FullWidth img={img1} />
     <Rule />
     <H3>We tackle the biggest jobs.</H3>
     <P2>
@@ -28,7 +34,7 @@ export default () => (
       several different categories, including multi-family housing units, office
       buildings, industrial complexes, and large campuses.
     </P2>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3>Confident, satisfied clients.</H3>
     <P2>
@@ -37,7 +43,7 @@ export default () => (
       painting contractors Los Angeles has to offer, and we are constantly
       looking for feedback on how to improve your customer experience.
     </P2>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3>We keep it clean.</H3>
     <P2>
@@ -46,7 +52,7 @@ export default () => (
       repainting jobs in completed spaces, Trifecta’s teams are experts at
       protection, preparation and masking.
     </P2>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3>Industrial quality supplies and equipment.</H3>
     <P2>
@@ -59,6 +65,6 @@ export default () => (
       suppliers to ensure we provide you with the best possible cost for
       interior painting and exterior painting.
     </P2>
-    <TwoUp />
+    <FullWidth img={img5} />
   </PageContainer>
 );

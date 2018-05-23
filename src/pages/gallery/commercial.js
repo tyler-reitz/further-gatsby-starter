@@ -5,56 +5,54 @@ import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P1, P2 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta\ Selects/Commercial/DSCN2234.jpg"
+import img2 from "../../assets/images/Trifecta\ Selects/Commercial/DSCN3124.jpg"
+import img3 from "../../assets/images/Trifecta\ Selects/Commercial/DSCN3180.jpg"
+import img4 from "../../assets/images/Trifecta\ Selects/Commercial/DSCN3124.jpg"
+import img5 from "../../assets/images/Trifecta\ Selects/Commercial/DSCN3209.jpg"
+import img6 from "../../assets/images/Trifecta\ Selects/Commercial/IMG_3233.jpg"
+import img7 from "../../assets/images/Trifecta\ Selects/Commercial/IMG_3248.jpg"
+import img8 from "../../assets/images/Trifecta\ Selects/Commercial/IMG_3253.jpg"
+import img9 from "../../assets/images/Trifecta\ Selects/Commercial/IMG_3261.jpg"
+import img10 from "../../assets/images/Trifecta\ Selects/Commercial/IMG_3282.jpg"
 
 const images = [
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img1,
+    thumbnail: img1,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img2,
+    thumbnail: img2,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img3,
+    thumbnail: img3,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img5,
+    thumbnail: img5,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img6,
+    thumbnail: img6,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img7,
+    thumbnail: img7,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img8,
+    thumbnail: img8,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
+    original: img9,
+    thumbnail: img9,
   },
   {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
-  },
-  {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
-  },
-  {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
-  },
-  {
-    original: 'http://placehold.it/877x375',
-    thumbnail: 'http://placehold.it/92x92',
-  },
+    original: img10,
+    thumbnail: img10,
+  }
 ]
 
 export default () => (

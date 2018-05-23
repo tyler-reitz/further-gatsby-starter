@@ -1,15 +1,20 @@
 import React from "react";
 import bgImg from '../../assets/images/feat-parking.jpg';
-import { TwoUp } from "../../components/ImagesContainers";
+import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
 
+import img1 from "../../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/IMG_3248.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/IMG_3253.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Commercial/IMG_3261.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Commercial/IMG_3282.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
     <H1>Parking Garages</H1>
-    <Rule />
+    <FullWidth img={img1} />
     <H3 className="mb-2">More than a maintenance coat.</H3>
     <P3>
       When it comes to painting parking garages in Los Angeles, we don’t do a
@@ -19,7 +24,7 @@ export default () => (
       care to clean all surfaces thoroughly to ensure proper adhesion of the
       paint, for a high-quality, long-lasting paint jo
     </P3>
-    <TwoUp />
+    <FullWidth img={img2} />
     <Rule />
     <H3 className="mb-2">Clean, fast, and professional.</H3>
     <P3>
@@ -29,7 +34,7 @@ export default () => (
       a brand new paint job, it makes upkeep easier, helping you save on
       maintenance costs.
     </P3>
-    <TwoUp />
+    <FullWidth img={img3} />
     <Rule />
     <H3 className="mb-2">Industrial-grade protective coatings.</H3>
     <P3>
@@ -42,7 +47,7 @@ export default () => (
       do the best possible job of keeping your parking garage looking
       professional.
     </P3>
-    <TwoUp />
+    <FullWidth img={img4} />
     <Rule />
     <H3 className="mb-2">Increase safety with increased visibility.</H3>
     <P3>
@@ -52,6 +57,6 @@ export default () => (
       remarkable increase in visibility, thereby reducing collisions and
       accidents.
     </P3>
-    <TwoUp />
+    <FullWidth img={img5} />
   </PageContainer>
 );
