@@ -9,8 +9,8 @@ class MenuLink extends Component {
     return (
       <Link
         to={to}
-        className={`block py-4 px-4 no-underline ${className}`}
-        activeClassName={sub ? 'underline' : 'bg-primary-light'}
+        className={`block py-3 px-6 no-underline text-sm ${className}`}
+        activeClassName={sub ? 'underline' : 'bg-primary-dark'}
         {...props}
       >
         {children}

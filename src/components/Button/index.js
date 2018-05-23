@@ -1,7 +1,7 @@
-import React, { Component } from "react";
 import Link from "gatsby-link";
-
+import React from "react";
 import styles from "./style.module.css";
+
 
 export default ({ children, className, primary, to, ...props }) => {
   const { button, left, width, skew, button_z_index, skew_z_index } = styles;

@@ -12,7 +12,8 @@ class MegaMenu extends Component {
     openKeys: [],
     navigationMapping: {
       "commercial-painting": 3,
-      "residential-painting": 4
+      "residential-painting": 4,
+      "gallery": 6
     }
   };
 
@@ -20,7 +21,11 @@ class MegaMenu extends Component {
     const slug = slugify(menuText).toLowerCase();
 
     return (
-      <MenuLink exact to={`/${slug}`} className="text-grey-lighter">
+      <MenuLink 
+        to={`/${slug}`} 
+        onClick={e => e.preventDefault()} 
+        className="text-grey-lighter"
+      >
         {menuText}
       </MenuLink>
     );
@@ -37,6 +42,7 @@ class MegaMenu extends Component {
 
     const regex1 = RegExp("commercial-painting");
     const regex2 = RegExp("residential-painting");
+    const regex3 = RegExp("gallery");
 
     let strippedPath;
 
@@ -46,6 +52,10 @@ class MegaMenu extends Component {
 
     if (regex2.test(pathname)) {
       strippedPath = regex2.exec(pathname)[0];
+    }
+
+    if (regex3.test(pathname)) {
+      strippedPath = regex3.exec(pathname)[0];
     }
 
     const includesPath = Object.keys(navigationMapping).includes(strippedPath);
@@ -72,6 +82,7 @@ class MegaMenu extends Component {
 
     const regex1 = RegExp("commercial-painting");
     const regex2 = RegExp("residential-painting");
+    const regex3 = RegExp("gallery");
 
     let strippedPath;
 
@@ -81,6 +92,10 @@ class MegaMenu extends Component {
 
     if (regex2.test(pathname)) {
       strippedPath = regex2.exec(pathname)[0];
+    }
+
+    if (regex3.test(pathname)) {
+      strippedPath = regex3.exec(pathname)[0];
     }
 
     const includesPath = Object.keys(navigationMapping).includes(strippedPath);
@@ -108,7 +123,7 @@ class MegaMenu extends Component {
           mode={mode}
           className={
             mode === "horizontal"
-              ? "font-gotham-bold flex justify-around max-w-3xl mx-auto list-reset leading-loose px-8"
+              ? "font-gotham-bold flex justify-center max-w-3xl mx-auto list-reset leading-loose px-8"
               : "font-gotham-bold list-reset leading-tight"
           }
           getPopupContainer={menuItemEl => menuItemEl}
@@ -145,7 +160,17 @@ class MegaMenu extends Component {
             title={this.renderMenuIndexLink("Commercial Painting")}
             className="text-grey-lighter hover:bg-primary-light"
           >
-            <MenuItem key="3-1" className="bg-white">
+            <MenuItem key="3-1" className="bg-grey-lightest">
+              <MenuLink
+                sub
+                exact
+                to="/commercial-painting"
+                className="text-primary"
+              >
+                Commercial Pianting
+              </MenuLink>
+            </MenuItem>
+            <MenuItem key="3-2" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/commercial-painting/office-buildings"
@@ -154,7 +179,7 @@ class MegaMenu extends Component {
                 Office Buildings
               </MenuLink>
             </MenuItem>
-            <MenuItem key="3-2" className="bg-white">
+            <MenuItem key="3-3" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/commercial-painting/retail"
@@ -163,7 +188,7 @@ class MegaMenu extends Component {
                 Retail
               </MenuLink>
             </MenuItem>
-            <MenuItem key="3-3" className="bg-white">
+            <MenuItem key="3-4" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/commercial-painting/apartments"
@@ -172,7 +197,7 @@ class MegaMenu extends Component {
                 Apartments
               </MenuLink>
             </MenuItem>
-            <MenuItem key="3-4" className="bg-white">
+            <MenuItem key="3-5" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/commercial-painting/parking-garages"
@@ -181,7 +206,7 @@ class MegaMenu extends Component {
                 Parking Garages
               </MenuLink>
             </MenuItem>
-            <MenuItem key="3-5" className="bg-white">
+            <MenuItem key="3-6" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/commercial-painting/hoa"
@@ -190,7 +215,7 @@ class MegaMenu extends Component {
                 HOA
               </MenuLink>
             </MenuItem>
-            <MenuItem key="3-6" className="bg-white">
+            <MenuItem key="3-7" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/commercial-painting/hospitality"
@@ -207,7 +232,16 @@ class MegaMenu extends Component {
             title={this.renderMenuIndexLink("Residential Painting")}
             className="text-grey-lighter hover:bg-primary-light"
           >
-            <MenuItem key="4-1" className="bg-white">
+            <MenuItem key="4-1" className="bg-grey-lightest">
+              <MenuLink
+                sub
+                to="/residential-painting"
+                className="text-primary"
+              >
+                Residential Painting
+              </MenuLink>
+            </MenuItem>
+            <MenuItem key="4-2" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/residential-painting/highend-estates"
@@ -216,7 +250,7 @@ class MegaMenu extends Component {
                 High-End Estates
               </MenuLink>
             </MenuItem>
-            <MenuItem key="4-2" className="bg-white">
+            <MenuItem key="4-3" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/residential-painting/interior-painting"
@@ -225,7 +259,7 @@ class MegaMenu extends Component {
                 Interior Painting
               </MenuLink>
             </MenuItem>
-            <MenuItem key="4-4" className="bg-white">
+            <MenuItem key="4-4" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/residential-painting/exterior-painting"
@@ -234,7 +268,7 @@ class MegaMenu extends Component {
                 Exterior Painting
               </MenuLink>
             </MenuItem>
-            <MenuItem key="4-5" className="bg-white">
+            <MenuItem key="4-5" className="bg-grey-lightest">
               <MenuLink
                 sub
                 to="/residential-painting/cabinet-refinishing"
@@ -256,14 +290,39 @@ class MegaMenu extends Component {
           </MenuItem>
 
           {/* Gallery */}
-          <MenuItem key="6">
-            <MenuLink
-              to="/gallery"
-              className="text-grey-lighter hover:bg-primary-light"
-            >
-              Gallery
-            </MenuLink>
-          </MenuItem>
+          <SubMenu
+            key="6"
+            title={this.renderMenuIndexLink("Gallery")}
+            className="text-grey-lighter hover:bg-primary-light"
+          >
+            <MenuItem key="6-1" className="bg-grey-lightest">
+              <MenuLink
+                sub
+                to="/gallery/commercial"
+                className="text-primary"
+              >
+                Commercial
+              </MenuLink>
+            </MenuItem>
+            <MenuItem key="6-2" className="bg-grey-lightest">
+              <MenuLink
+                sub
+                to="/gallery/residential"
+                className="text-primary"
+              >
+                Residential
+              </MenuLink>
+            </MenuItem>
+            <MenuItem key="6-3" className="bg-grey-lightest">
+              <MenuLink
+                sub
+                to="/gallery/estates"
+                className="text-primary"
+              >
+                Estates
+              </MenuLink>
+            </MenuItem>
+          </SubMenu>
 
           {/* Service Areas */}
           <MenuItem key="7">

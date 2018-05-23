@@ -13,7 +13,7 @@ export default () => (
         <H4>
           Phone:{" "}
           <a
-            className="no-underline whitespace-no-wrap"
+            className="no-underline whitespace-no-wrap text-primary"
             href="tel+:(888) 888-8888"
           >
             (888) 888-8888
@@ -24,7 +24,7 @@ export default () => (
         <H4>
           Fax:{" "}
           <a
-            className="no-underline whitespace-no-wrap"
+            className="no-underline whitespace-no-wrap text-primary"
             href="tel+:(888) 888-0000"
           >
             (888) 888-8080
@@ -35,7 +35,7 @@ export default () => (
         <H4>
           Address:{" "}
           <a
-            className="no-underline whitespace-no-wrap"
+            className="no-underline whitespace-no-wrap text-primary"
             href="https://www.google.com/maps/place/Further./@34.1399754,-118.1537657,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c37a4848fe75:0xb205bab15d04167b!8m2!3d34.139971!4d-118.151577"
             target="_blank"
           >
@@ -46,6 +46,6 @@ export default () => (
     </ul>
     <Rule />
     <H3>Send Us A Message</H3>
-    <Form formElementClassName="w-full" />
+    <Form formElementClassName="w-full" textAreaHeight={5} />
   </PageContainer>
 );

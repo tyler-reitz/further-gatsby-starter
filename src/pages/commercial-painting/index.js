@@ -1,15 +1,16 @@
 import React from "react";
-import PageContainer from "../../components/PageContainer";
 import { TwoUp } from "../../components/ImagesContainers";
+import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
-import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
+import { H1, H2, H3, P1, P2 } from "../../components/Typography";
 
 export default () => (
   <PageContainer>
     <H1>Commercial Painting</H1>
     <Rule />
-    <H3>Honest, dependable workmanship.</H3>
-    <P2>Los Angeles Commercial Painting Contractors.</P2>
+    <H2>Honest, dependable workmanship.</H2>
+    <P1>Los Angeles Commercial Painting Contractors.</P1>
+    <Rule />
     <H3>We paint it right the first time.</H3>
     <P2>
       Nothing wastes time and money like bad workmanship. That’s why we pride

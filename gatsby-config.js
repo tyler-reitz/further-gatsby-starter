@@ -3,6 +3,8 @@ const autoprefixer = require('autoprefixer')
 module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-postcss-sass',
       options: {
@@ -14,12 +16,6 @@ module.exports = {
         ]
       },
       precision: 8
-    },
-    // {
-    //   resolve: 'gatsby-plugin-typography',
-    //   options: {
-    //     pathToConfigModule: 'src/utils/typography.js'
-    //   }
-    // }
+    }
   ]
 }

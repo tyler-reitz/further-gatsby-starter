@@ -1,10 +1,10 @@
 import React from "react";
-import PageContainer from "../components/PageContainer";
-import Rule from "../components/Rule";
-import { H1, H3, P2 } from "../components/Typography";
-
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import PageContainer from "../../components/PageContainer";
+import Rule from "../../components/Rule";
+import { H1, H3, P1, P2 } from "../../components/Typography";
+
 
 const images = [
   {
@@ -58,35 +58,13 @@ const images = [
 ]
 
 export default () => (
-  <PageContainer>
+  <PageContainer style={{ width: '72%' }}>
     <H1>See Our Work</H1>
-    <P2>Los Angeles Commercial Painting Contractors</P2>
+    <P1>Los Angeles Commercial Painting Contractors</P1>
     <Rule />
     <P2>We want our work to speak for itself. Take a look at our recently completed projects and find out how we can work for you.</P2>
     <Rule />
     <H3>Commercial</H3>
-    <ImageGallery 
-      items={images}
-      infinite={true}
-      showNav={true}
-      showFullscreenButton={false}
-      showPlayButton={false}
-      slideDuration={400}
-      swipingTransitionDuration={400}
-    />
-    <Rule />
-    <H3>Residential</H3>
-    <ImageGallery 
-      items={images}
-      infinite={true}
-      showNav={true}
-      showFullscreenButton={false}
-      showPlayButton={false}
-      slideDuration={400}
-      swipingTransitionDuration={400}
-    />
-    <Rule />
-    <H3>Estates</H3>
     <ImageGallery 
       items={images}
       infinite={true}

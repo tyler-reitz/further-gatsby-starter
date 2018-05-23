@@ -1,12 +1,12 @@
-import React, { Component } from "react";
 import Link from "gatsby-link";
+import React, { Component } from "react";
+import logo from "../../assets/images/logo.svg";
+import Button from "../Button";
+import MegaMenu from "../MegaMenu";
+import "./style.css";
 const debounce = require("lodash/debounce");
 
-import "./style.css";
-import logo from "../../assets/images/logo.svg";
 
-import MegaMenu from "../MegaMenu";
-import Button from "../Button";
 
 class Header extends Component {
   state = {
@@ -68,7 +68,7 @@ class Header extends Component {
     
     return (
       <header className="relative z-10 bg-gradient-grey-white">
-        <div className="flex flex-wrap items-center justify-between max-w-3xl mx-auto p-4 md:p-8">
+        <div className="flex flex-wrap items-center justify-between max-w-3xl mx-auto p-4 md:p-6">
           {/* Paragraph */}
           <p className="hidden xl:block text-lg text-primary w-64 px-4">
             Serving the Greater Los&nbsp;Angeles area for all your painting
@@ -79,7 +79,7 @@ class Header extends Component {
           <Link
             to="/"
             style={{ minWidth: 180 }}
-            className="flex items-center sm:w-64"
+            className="flex items-center sm:w-80"
           >
             <img className="w-full" src={logo} alt="company logo" />
           </Link>

@@ -1,11 +1,11 @@
+import PropTypes from "prop-types";
 import React, { Component } from "react";
-import PropTypes from "prop-types"
-import { Transition } from "react-transition-group"
-
-import { H1, H2, H3, H4, P1, P2, P3} from "../Typography"
+import { Transition } from "react-transition-group";
+import Button from "../Button";
 import Input from "../Input";
 import Textarea from "../Textarea";
-import Button from "../Button";
+import { H3 } from "../Typography";
+
 
 const defaultStyle = {
   transition: `opacity 500ms ease-in-out`,
@@ -63,7 +63,7 @@ class Form extends Component {
         }]) => valid === false
       )
 
-    console.log(isFormValid.length)
+    // console.log(isFormValid.length)
     
     this.setState({
       valid: isFormValid.length === 0  ? true : false,
@@ -135,7 +135,7 @@ class Form extends Component {
               value={this.state.name.value}
               required={true}
               placeholder="name*"
-              className={formElementClassName ? formElementClassName : "w-full lg:w-8/25"}
+              className="w-full lg:w-8/25"
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
             />
@@ -151,7 +151,7 @@ class Form extends Component {
               type="email"
               pattern={/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/}
               placeholder="email*"
-              className={formElementClassName ? formElementClassName : "w-full lg:w-8/25"}
+              className="w-full lg:w-8/25"
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
             />
@@ -167,7 +167,7 @@ class Form extends Component {
               type="tel"
               placeholder="phone*"
               pattern={/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/}
-              className={formElementClassName ? formElementClassName : "w-full lg:w-8/25"}
+              className="w-full lg:w-8/25"
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
             />
@@ -182,7 +182,7 @@ class Form extends Component {
               required={true}
               placeholder="type of project*"
               className={formElementClassName ? formElementClassName : "w-full lg:w-48/100"}
-              rows={textAreaHeight}
+              // rows={textAreaHeight}
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
             />

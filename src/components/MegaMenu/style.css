@@ -122,7 +122,7 @@
 .rc-menu-vertical-left,
 .rc-menu-vertical-right,
 .rc-menu-inline {
-  padding: 12px 0;
+  padding: 0;
 }
 .rc-menu-vertical > .rc-menu-item,
 .rc-menu-vertical-left > .rc-menu-item,
@@ -199,7 +199,7 @@
   right: 16px;
   line-height: 1.5em;
   position: absolute;
-  right: .25rem;
+  right: .5rem;
   top: 50%;
   transform:  translateY(-50%) rotate(90deg);
 }
@@ -265,15 +265,15 @@
     opacity: 0;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    /* -webkit-transform: scaleY(0);
+            transform: scaleY(0); */
   }
   100% {
     opacity: 1;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    /* -webkit-transform: scaleY(1);
+            transform: scaleY(1); */
   }
 }
 @keyframes rcMenuOpenSlideUpIn {
@@ -281,15 +281,15 @@
     opacity: 0;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    /* -webkit-transform: scaleY(0);
+            transform: scaleY(0); */
   }
   100% {
     opacity: 1;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    /* -webkit-transform: scaleY(1);
+            transform: scaleY(1); */
   }
 }
 @-webkit-keyframes rcMenuOpenSlideUpOut {
@@ -297,15 +297,15 @@
     opacity: 1;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    /* -webkit-transform: scaleY(1);
+            transform: scaleY(1); */
   }
   100% {
     opacity: 0;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    /* -webkit-transform: scaleY(0);
+            transform: scaleY(0); */
   }
 }
 @keyframes rcMenuOpenSlideUpOut {
@@ -313,15 +313,15 @@
     opacity: 1;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    /* -webkit-transform: scaleY(1);
+            transform: scaleY(1); */
   }
   100% {
     opacity: 0;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    /* -webkit-transform: scaleY(0);
+            transform: scaleY(0); */
   }
 }
 .rc-menu-open-zoom-enter,

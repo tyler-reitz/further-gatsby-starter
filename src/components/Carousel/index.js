@@ -1,8 +1,8 @@
-import '../../../node_modules/slick-carousel/slick/slick.css'
-import '../../../node_modules/slick-carousel/slick/slick-theme.css'
-import './style.scss'
-import React, { Component } from 'react'
-import Slick from 'react-slick'
+import React, { Component } from 'react';
+import Slick from 'react-slick';
+import '../../../node_modules/slick-carousel/slick/slick-theme.css';
+import '../../../node_modules/slick-carousel/slick/slick.css';
+import './style.scss';
 
 const defaultSettings = {
   adaptiveHeight: true,

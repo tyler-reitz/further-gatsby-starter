@@ -3137,6 +3137,10 @@ button,
   width: 16rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -3211,6 +3215,10 @@ button,
 
 .w-full {
   width: 100%;
+}
+
+.w-screen-1\/5 {
+  width: 20vw;
 }
 
 .w-screen-1\/2 {
@@ -5821,6 +5829,10 @@ button,
     width: 16rem;
   }
 
+  .sm\:w-80 {
+    width: 20rem;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -5895,6 +5907,10 @@ button,
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-screen-1\/5 {
+    width: 20vw;
   }
 
   .sm\:w-screen-1\/2 {
@@ -8502,6 +8518,10 @@ button,
     width: 16rem;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -8576,6 +8596,10 @@ button,
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-screen-1\/5 {
+    width: 20vw;
   }
 
   .md\:w-screen-1\/2 {
@@ -11183,6 +11207,10 @@ button,
     width: 16rem;
   }
 
+  .lg\:w-80 {
+    width: 20rem;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -11257,6 +11285,10 @@ button,
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-screen-1\/5 {
+    width: 20vw;
   }
 
   .lg\:w-screen-1\/2 {
@@ -13864,6 +13896,10 @@ button,
     width: 16rem;
   }
 
+  .xl\:w-80 {
+    width: 20rem;
+  }
+
   .xl\:w-auto {
     width: auto;
   }
@@ -13938,6 +13974,10 @@ button,
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-screen-1\/5 {
+    width: 20vw;
   }
 
   .xl\:w-screen-1\/2 {

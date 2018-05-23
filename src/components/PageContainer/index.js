@@ -5,10 +5,13 @@ import CTA from "../../components/CTA";
 
 class PageContainer extends Component {
   render() {
-    const { children, bgImg, className, location } = this.props;
+    const { children, bgImg, className, location, ...props } = this.props;
 
     return (
-      <section className="pl-4 flex-grow w-3/5">
+      <section 
+        className="pl-4 flex-grow"
+        {...props}
+      >
         {children}
         {!/contact/.test(location.pathname) && <CTA />}
       </section>

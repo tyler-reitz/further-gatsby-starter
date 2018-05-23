@@ -1,55 +1,55 @@
 import React from "react";
-import PageContainer from "../../components/PageContainer";
+import bgImg from '../../assets/images/feat-apartments.jpg';
 import { TwoUp } from "../../components/ImagesContainers";
+import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
-import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
+import { H1, H3, P3 } from "../../components/Typography";
 
-import bgImg from '../../assets/images/feat-apartments.jpg'
 
 export default () => (
   <PageContainer bgImg={bgImg}>
     <H1>Apartments</H1>
     <Rule />
     <H3 className="mb-2">Los Angeles Apartment Painting</H3>
-    <P2>
+    <P3>
       Painting apartment buildings in Los Angeles requires a painting company
       that can tackle large jobs with confidence and professionalism. Trifecta
       Painting specializes in painting apartment complexes in Los Angeles,
       including both interior painting and exterior painting of all types of
       multi-family housing.
-    </P2>
+    </P3>
     <TwoUp />
     <Rule />
     <H3 className="mb-2">We paint walls and ceilings.</H3>
-    <P2>
+    <P3>
       Sure, it may seem obvious that Trifecta will paint the interior walls and
       ceilings of the apartments. What isn’t obvious is that we take care to do
       it right. With a steady hand and an eye for detail, we make the ordinary
       look extraordinary.
-    </P2>
+    </P3>
     <TwoUp />
     <Rule />
     <H3 className="mb-2">We paint windows and doors.</H3>
-    <P2>
+    <P3>
       Properly painting apartment doors and windows serves a dual purpose—it not
       only looks fantastic, it helps protect these important openings from
       weather and insects.
-    </P2>
+    </P3>
     <TwoUp />
     <Rule />
     <H3 className="mb-2">We paint cabinets and trim.</H3>
-    <P2>
+    <P3>
       Trifecta has mastered the art of refinishing and painting baseboards,
       cabinets, crown molding, chair rail, wall paneling, handrails—you name it,
       we’ll paint it.
-    </P2>
+    </P3>
     <TwoUp />
     <Rule />
     <H3 className="mb-2">We do accent walls.</H3>
-    <P2>
+    <P3>
       When an apartment needs a splash of color, we can liven it up with an
       accent wall in the color of your choice.
-    </P2>
+    </P3>
     <TwoUp />
     <Rule />
     <H3>

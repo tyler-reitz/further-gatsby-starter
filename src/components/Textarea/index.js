@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Input extends Component {
   render() {
@@ -7,7 +7,7 @@ class Input extends Component {
     return (
       <textarea 
         cols="30"
-        rows={rows || 10}
+        rows={rows || 1}
         placeholder={ placeholder ? placeholder : "" }
         style={{ 
           ...style,

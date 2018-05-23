@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import PageContainer from '../components/PageContainer'
-import Hero from '../components/Hero'
-import Button from '../components/Button'
-import Rule from '../components/Rule'
-import { H1, H2, H3, H4, P1, P2, P3, BQ } from "../components/Typography"
+import React from 'react';
+import bkgImg from '../assets/images/01.jpg';
+import Button from '../components/Button';
+import Hero from '../components/Hero';
+import PageContainer from '../components/PageContainer';
+import Rule from '../components/Rule';
+import { BQ, H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography";
 
-import bkgImg from '../assets/images/01.jpg'
 
 export default () => (
   <PageContainer>

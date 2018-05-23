@@ -1,21 +1,17 @@
-import "./style.scss";
 import React from "react";
-import Link from "gatsby-link"
-
-import Hero from "../components/Hero";
-import Card from "../components/Card";
-import Carousel2 from "../components/Carousel";
-import badge from "../assets/images/badge.svg";
-import Button from "../components/Button";
-import Input from "../components/Input";
-import Star from "../components/Star";
-import { H1, H2, H3, H4, P1, P2, P3 } from "../components/Typography"
-import Form from "../components/Form"
-
 import sliderImg1 from "../assets/images/01.jpg";
 import sliderImg2 from "../assets/images/02.jpg";
 import bkgLA from "../assets/images/bkg-losangeles.jpg";
 import bkgMap from "../assets/images/bkg-map.jpg";
+import Button from "../components/Button";
+import Card from "../components/Card";
+import Carousel2 from "../components/Carousel";
+import Form from "../components/Form";
+import Star from "../components/Star";
+import { H3 } from "../components/Typography";
+import "./style.scss";
+
+
 
 const IndexPage = () => (
   <div>
@@ -60,7 +56,7 @@ const IndexPage = () => (
                 worked with HOAs and property management companies. Let Trifecta
                 work for you.
               </p>
-              <Button className="mr-4 mb-4">Find out more</Button>
+              <Button className="mr-6 mb-4">Find out more</Button>
               <Button className="mr-4 mb-4">Set an appointment</Button>
             </div>
           </div>
@@ -154,7 +150,7 @@ const IndexPage = () => (
           888-123-4567
         </a>
       </H3>
-      <Form textAreaHeight={1} />
+      <Form />
     </div>
 
     {/* Hero 2 */}

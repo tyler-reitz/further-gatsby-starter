@@ -1,21 +1,19 @@
-import "../assets/fonts/Gotham.css";
-import "./index.css";
-import "./style.scss";
-
-import React, { Component, Fragment } from "react";
+import React from "react";
 import Helmet from "react-helmet";
-import { withRouter } from "react-router-dom";
-const path = require('path')
-
+import "../assets/fonts/Gotham.css";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Sidebar from "../components/Sidebar";
-import Footer from "../components/Footer";
+import "./index.css";
+import "./style.scss";
 
-
+const path = require('path')
 
 export default ({ children, location, ...props }) => {
   const [, root, pathname ] = location.pathname.split('/')
+  const isSubMenu = location.pathname.split('/').length > 2
+  const sectionHasBgImgs = root === 'commercial-painting' || root === 'residential-painting'
 
   return (
     <div
@@ -27,7 +25,11 @@ export default ({ children, location, ...props }) => {
       <main>
         {location.pathname !== "/" ? (
           <div>
-            <Hero bgImg={pathname ? pathname : root} />
+            <Hero 
+              bgImg={pathname}
+              isSubMenu={isSubMenu}
+              sectionHasBgImgs={sectionHasBgImgs}
+            />
             <div className="flex sm:flex-row-reverse items-start max-w-3xl mx-auto p-4 md:p-8">
               {children()}
               <Sidebar />

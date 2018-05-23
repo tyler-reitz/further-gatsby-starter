@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import Link from "gatsby-link";
+import React from "react";
 const slugify = require('slugify')
 
 export default ({ collection, title, path, root, imgUrl }) => {

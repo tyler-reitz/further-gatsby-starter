@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Button from "../../components/Button";
-import { H1, H2, H3, H4, P1, P2, P3 } from "../../components/Typography";
+import { H3 } from "../../components/Typography";
 
 export default () => (
   <div className="bg-primary py-8 my-8 text-center">
