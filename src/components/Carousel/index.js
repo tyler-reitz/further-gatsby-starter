@@ -11,12 +11,13 @@ const defaultSettings = {
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  fade: true
 }
 
 class Carousel extends Component {
   render() {
-    const { settings, children, ...props } = this.props
+    const { settings, children, getRef = () => ({}), ...props } = this.props
 
     const blendedSettings = {
       ...defaultSettings,
@@ -24,7 +25,10 @@ class Carousel extends Component {
     }
 
     return (
-      <Slick {...blendedSettings}>
+      <Slick
+        {...blendedSettings}
+        ref={slider => getRef(slider)}
+      >
         { children }
       </Slick>
     )
