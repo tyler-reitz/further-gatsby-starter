@@ -15,14 +15,10 @@ export default () => (
         <table className="w-full mb-8">
       {[
         [
-          "Mixed-use",
-          "Urban apartments built on top of street-level shops and stores"
+          "San Fernando Valley",
+          "Calabasas, West Hills, Woodland Hills, Tarzana, Encino, Sherman Oaks, Studio City, Toluca Lake"
         ],
-        ["Walk-up", "Typically 4 to 6 stories tall, without an elevator"],
-        [
-          "Garden-style",
-          "1 to 3 stories tall, these complexes tend to emphasize greenery, gardens, walkways, and courtyards"
-        ],
+        ["Los Angeles", "Santa Monica, Brentwood, Bel Air, Beverly Hills, Hollywood, West Hollywood"]
       ].map((row, idx) => (
         <tr className={`text-base font-light leading-normal my-4 ${idx % 2 ? '' : 'bg-grey-light' }`}>
           <td className="font-semibold p-4">{row[0]}</td>

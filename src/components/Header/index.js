@@ -101,11 +101,11 @@ class Header extends Component {
           <div className="hidden lg:flex flex-col text-center">
             <a
               className="font-gotham-bold no-underline text-primary font-semibold text-2xl mb-2"
-              href={`tel:+123-345-6789`}
+              href={`tel:+${global.phone}`}
             >
-              123-345-6789
+              {global.phone}
             </a>
-            <Button primary>set an appointment</Button>
+            <Button to="/contact" primary>set an appointment</Button>
           </div>
         </div>
 

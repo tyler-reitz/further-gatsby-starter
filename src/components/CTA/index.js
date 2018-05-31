@@ -6,11 +6,11 @@ export default () => (
   <div className="bg-primary py-8 my-8 text-center">
     <H3 className="text-white">
       Contact us today to discuss your project:{" "}
-      <a className="no-underline text-white" href={`tel:+123-345-6789`}>
-        123-345-6789
+      <a className="no-underline text-white" href={`tel:+${global.phone}`}>
+        {global.phone}
       </a>
     </H3>
-    <Button type="submit">
+    <Button to="/contact" type="submit">
       Set an appointment
     </Button>
   </div>

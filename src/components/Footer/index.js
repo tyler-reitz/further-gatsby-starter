@@ -26,11 +26,11 @@ const Footer = () => (
         <div>
           <a
             className="block font-gotham-bold no-underline text-white font-semibold text-2xl mb-2"
-            href={`tel:+123-345-6789`}
+            href={`tel:+${global.phone}`}
           >
-            123-345-6789
+            {global.phone}
           </a>
-          <Button primary>set an appointment</Button>
+          <Button to="/contact" primary>set an appointment</Button>
         </div>
 
         <p className="text-grey font-light text-xs leading-loose mt-auto">

@@ -32,7 +32,7 @@ class IndexPage extends Component {
         <div className="relative">
           <Carousel2
             settings={{
-              autoplay: true,
+              // autoplay: true,
               dotsClass: "slick-dots slick-dots-blue slick-dots-light",
               asNavFor: this.state.nav2
             }}
@@ -65,31 +65,39 @@ class IndexPage extends Component {
                     }}
                     getRef={ref => this.slider2 = ref}
                   >
-                    <div>
+                    <div className="pl-1">
                       <h1 className="font-gotham-bold mb-2 text-5xl leading-none">
                         Yes, we do commercial painting.
                       </h1>
                       <small className="font-gotham-medium text-3xl mb-4">
                         Expert Los Angeles Commercial Painters
                       </small>
+                      <p className="text-base font-light leading-normal my-6 sm:w-3/4">
+                        We&rsquo;ve painted hotels and apartments, office buildings and
+                        hospitals, shopping centers and parking garages. We&rsquo;ve
+                        worked with HOAs and property management companies. Let Trifecta
+                        work for you.
+                      </p>
+                      <Button to="/commercial-painting" className="mr-6 mb-4">Find out more</Button>
+                      <Button to="/contact" className="mr-4 mb-4">Set an appointment</Button>
                     </div>
-                    <div>
+                    <div className="pl-1">
                       <h1 className="font-gotham-bold mb-2 text-5xl leading-none">
-                        Yes, we do apartments painting.
+                        Yes, we do residential painting.
                       </h1>
                       <small className="font-gotham-medium text-3xl mb-4">
-                        Expert Los Angeles Aparment Painters
+                        Expert Los Angeles Residential   Painters
                       </small>
+                      <p className="text-base font-light leading-normal my-6 sm:w-3/4">
+                        We&rsquo;ve painted hotels and apartments, office buildings and
+                        hospitals, shopping centers and parking garages. We&rsquo;ve
+                        worked with HOAs and property management companies. Let Trifecta
+                        work for you.
+                      </p>
+                      <Button to="/residential-painting" className="mr-6 mb-4">Find out more</Button>
+                      <Button to="/contact" className="mr-4 mb-4">Set an appointment</Button>
                     </div>
                   </Carousel2>
-                  <p className="text-base font-light leading-normal my-6 sm:w-3/4">
-                    We&rsquo;ve painted hotels and apartments, office buildings and
-                    hospitals, shopping centers and parking garages. We&rsquo;ve
-                    worked with HOAs and property management companies. Let Trifecta
-                    work for you.
-                  </p>
-                  <Button className="mr-6 mb-4">Find out more</Button>
-                  <Button className="mr-4 mb-4">Set an appointment</Button>
                 </div>
               </div>
             </div>
@@ -104,7 +112,7 @@ class IndexPage extends Component {
         {/* Aside */}
         <div className="flex flex-wrap justify-center max-w-3xl mx-auto py-6 md:my-6 mb-4">
           <h2 className="font-gotham-bold leading-tight w-5/6 text-5xl mb-4 text-center gotham-bold text-primary text-4xl leading-none">
-            Communication is our greatest strength. Talk to us.
+            Communication is our greatest strength. Talk&nbsp;to&nbsp;us.
           </h2>
           <p className="text-xl w-5/6 leading-normal text-center font-light">
             We pride ourselves on our relationships with our clients, our crews, and

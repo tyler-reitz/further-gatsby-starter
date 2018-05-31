@@ -12,11 +12,11 @@ export default () => (
         <h2 className="mb-2 text-3xl font-thin">Contact us today to discuss your project</h2>
         <a
           className="font-gotham-bold no-underline text-primary font-semibold text-2xl mb-2"
-          href={`tel:+123-345-6789`}
+          href={`tel:+${global.phone}`}
         >
-          123-345-6789
+          {global.phone}
         </a>
-        <Button primary>set an appointment</Button>
+        <Button to="/contact" primary>set an appointment</Button>
       </div>
       <div className="bg-primary">
         <MegaMenu mode="inline" />

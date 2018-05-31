@@ -20,7 +20,7 @@ class Layout extends Component {
   componentDidMount() {
     for (let key in this.state) {
       console.log(key)
-      window[key] = this.state[key]
+      global[key] = this.state[key]
     }
   }
   
