@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "develop": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby develop",
+    "prebuild": "rm -rf ./public",
     "build": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby build",
     "serve": "gatsby serve",
     "deploy:test": "rsync -anv public/ furtheragency.com@s170644.gridserver.com:~/domains/trifecta-dev.influxmarketing.com/html/",
