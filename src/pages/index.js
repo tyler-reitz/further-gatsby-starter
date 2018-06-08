@@ -9,6 +9,7 @@ import Carousel2 from "../components/Carousel";
 import Form from "../components/Form";
 import Star from "../components/Star";
 import { H3 } from "../components/Typography";
+import Img from "gatsby-image"
 import "./style.scss";
 
 class IndexPage extends Component {
@@ -25,7 +26,9 @@ class IndexPage extends Component {
     })
   }
 
-  render () {
+  render() {
+    const featureImages = this.props.data.allImageSharp.edges
+    
     return (
       <div>
         {/* Hero 1 */}
@@ -128,57 +131,77 @@ class IndexPage extends Component {
             {
               collection: "commercial-painting",
               title: "retail",
-              imgUrl: "feat-retail.jpg"
+              sizes: featureImages.filter(edge =>
+                /retail/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "commercial-painting",
               title: "hospitality",
-              imgUrl: "feat-hotels.jpg"
+              sizes: featureImages.filter(edge =>
+                /hotels/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "commercial-painting",
               title: "apartments",
-              imgUrl: "feat-apartments.jpg"
+              sizes: featureImages.filter(edge =>
+                /apartments/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "commercial-painting",
               title: "office buildings",
-              imgUrl: "feat-office.jpg"
+              sizes: featureImages.filter(edge =>
+                /office/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "commercial-painting",
               title: "parking garages",
-              imgUrl: "feat-parking.jpg"
+              sizes: featureImages.filter(edge =>
+                /parking/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "commercial-painting",
               title: "healthcare",
               path: "healthcare-hospitals",
-              imgUrl: "feat-hospitals.jpg"
+              sizes: featureImages.filter(edge =>
+                /hospitals/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "residential-painting",
               title: "house painting",
               root: true,
-              imgUrl: "feat-house.jpg"
+              sizes: featureImages.filter(edge =>
+                /house/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "residential-painting",
               title: "interior painting",
-              imgUrl: "feat-interior.jpg"
+              sizes: featureImages.filter(edge =>
+                /interior/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "residential-painting",
               title: "exterior painting",
-              imgUrl: "feat-exterior.jpg"
+              sizes: featureImages.filter(edge =>
+                /exterior/.test(edge.node.id)
+              )[0].node.sizes
             },
             {
               collection: "residential-painting",
               title: "highend estates",
-              imgUrl: "feat-estate.jpg"
+              sizes: featureImages.filter(edge =>
+                /estate/.test(edge.node.id)
+              )[0].node.sizes
             }
           ].map((_, idx) => (
-            <Card key={idx} title={_.title} imgUrl={_.imgUrl} {..._} />
+            <Card key={idx} title={_.title} sizes={_.sizes} {..._} />
           ))}
         </div>
 
@@ -391,3 +414,18 @@ class IndexPage extends Component {
 }
 
 export default IndexPage;
+
+export const query = graphql`
+  query FeatureSectionQuery {
+    allImageSharp(filter: { id: { regex: "/feat/" } }) {
+      edges {
+        node {
+          id
+          sizes {
+            ...GatsbyImageSharpSizes
+          }
+        }
+      }
+    }
+  }
+`
