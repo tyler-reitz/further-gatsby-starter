@@ -53,11 +53,13 @@ class Header extends Component {
       main.style.transform = "translateX(-75vw)";
       mobileMenu.style.display = "block";
       body.style.overflowY = "hidden"
+      body.style.overflowX = "hidden"
       return;
     }
 
     main.style.transform = "";
     body.style.overflowY = "";
+    body.style.overflowX = "";
     setTimeout(() => (mobileMenu.style.display = "none"), 300);
   };
 
@@ -112,10 +114,11 @@ class Header extends Component {
         <div
           id="drawer"
           className={isOpen && 'overflow-y-scroll'}
+          style={{ display: 'none' }}
         >
           <MegaMenu
             mode={
-              this.state.windowWidth && this.state.windowWidth < 992
+              this.state.windowWidth && this.state.windowWidth < 1100
                 ? "inline"
                 : "horizontal"
             }
