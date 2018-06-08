@@ -8,6 +8,7 @@ import Sidebar from "../components/Sidebar";
 import "./index.css";
 import "./style.scss";
 
+
 const path = require('path')
 
 class Layout extends Component {
@@ -19,7 +20,6 @@ class Layout extends Component {
 
   componentDidMount() {
     for (let key in this.state) {
-      console.log(key)
       global[key] = this.state[key]
     }
   }

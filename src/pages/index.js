@@ -31,7 +31,7 @@ class IndexPage extends Component {
     
     return (
       <div>
-        {/* Hero 1 */}
+        {/* Hero 1
         <div className="relative">
           <Carousel2
             settings={{
@@ -110,7 +110,7 @@ class IndexPage extends Component {
               className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Aside */}
         <div className="flex flex-wrap justify-center max-w-3xl mx-auto py-6 md:my-6 mb-4">
@@ -201,7 +201,7 @@ class IndexPage extends Component {
               )[0].node.sizes
             }
           ].map((_, idx) => (
-            <Card key={idx} title={_.title} sizes={_.sizes} {..._} />
+            <Card key={_.title} title={_.title} sizes={_.sizes} {..._} />
           ))}
         </div>
 
@@ -281,7 +281,7 @@ class IndexPage extends Component {
                     amazing feedback both on the quality of service, his fairness,
                     great pricing, and overall integrity.”
                   </p>
-                  {Array(5).fill(null).map(_ => <Star />)}
+                  {Array(5).fill(null).map((_, idx) => <Star key={idx} />)}
                   <span className="block w-full font-medium my-3">NF | Los Angeles</span>
                 </div>
               </div>
@@ -306,7 +306,7 @@ class IndexPage extends Component {
                     feedback both on the quality of service, his fairness, great
                     pricing, and overall integrity.”
                   </p>
-                  {Array(5).fill(null).map(_ => <Star />)}
+                  {Array(5).fill(null).map((_, idx) => <Star key={idx} />)}
                   <span className="block w-full font-medium my-3">NF | Los Angeles</span>
                 </div>
               </div>
@@ -324,7 +324,7 @@ class IndexPage extends Component {
                     provides what we need by the deadline of when we ask him for the
                     information.”
                   </p>
-                  {Array(5).fill(null).map(_ => <Star />)}
+                  {Array(5).fill(null).map((_, idx) => <Star key={idx} />)}
                   <span className="block w-full font-medium my-3">NF | Los Angeles</span>
                 </div>
               </div>
@@ -362,7 +362,7 @@ class IndexPage extends Component {
             clients.
           </p>
           {["Ean", "Chris", "Allan"].map(name => (
-            <div className="m-4 sm:w-2/5 md:w-1/4">
+            <div key={name} className="m-4 sm:w-2/5 md:w-1/4">
               <img
                 className="w-full"
                 src="http://via.placeholder.com/300x350"
