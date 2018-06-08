@@ -31,7 +31,7 @@ class IndexPage extends Component {
     
     return (
       <div>
-        {/* Hero 1
+        {/* Hero 1 */}
         <div className="relative">
           <Carousel2
             settings={{
@@ -62,7 +62,7 @@ class IndexPage extends Component {
           >
             <div className="flex flex-wrap justify-center items-center py-6">
               <div className="realtive z-10 sm:py-8 text-white max-w-3xl">
-                <div className="px-4 sm:py-8 sm:max-w-screen-3/4">
+                <div className="px-4 sm:py-8 sm:max-w-screen-3/4" style={{ maxWidth: "100vw" }}>
                   <Carousel2 settings={{
                       dots: false,
                     }}
@@ -110,7 +110,7 @@ class IndexPage extends Component {
               className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"
             />
           </div>
-        </div> */}
+        </div>
 
         {/* Aside */}
         <div className="flex flex-wrap justify-center max-w-3xl mx-auto py-6 md:my-6 mb-4">
