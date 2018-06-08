@@ -47,19 +47,19 @@ class Header extends Component {
 
     const main = document.getElementById("main");
     const mobileMenu = document.getElementById("drawer");
-    const body = document.querySelector("body")
+    const body = document.querySelector("#___gatsby")
 
     if (!main.style.transform) {
       main.style.transform = "translateX(-75vw)";
       mobileMenu.style.display = "block";
-      body.style.overflowY = "hidden"
-      body.style.overflowX = "hidden"
+      body.style.height = "100vh";
+      body.style.overflow = "hidden";
       return;
     }
 
     main.style.transform = "";
-    body.style.overflowY = "";
-    body.style.overflowX = "";
+    body.style.overflow = "";
+    body.style.height = "";
     setTimeout(() => (mobileMenu.style.display = "none"), 300);
   };
 
