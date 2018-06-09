@@ -1,5 +1,5 @@
 import React from 'react';
-import bkgImg from '../assets/images/01.jpg';
+import bkgImg from '../assets/images/hero-01.jpg';
 import Button from '../components/Button';
 import Hero from '../components/Hero';
 import PageContainer from '../components/PageContainer';

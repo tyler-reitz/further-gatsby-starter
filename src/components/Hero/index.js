@@ -4,7 +4,7 @@ import bkgApartments from "../../assets/images/bkg-apartments.jpg";
 import bkgOffice from "../../assets/images/bkg-office-buildings.jpg";
 import bkgGarages from "../../assets/images/bkg-parking-garages.jpg";
 import bkgRetail from "../../assets/images/bkg-retail.jpg";
-import bkgDefault from "../../assets/images/01.jpg"
+import bkgDefault from "../../assets/images/hero-01.jpg"
 import styles from './style.module.css';
 
 const bkgImages = {

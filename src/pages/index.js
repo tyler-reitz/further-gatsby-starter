@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import sliderImg1 from "../assets/images/01.jpg";
-import sliderImg2 from "../assets/images/02.jpg";
 import bkgLA from "../assets/images/bkg-losangeles.jpg";
 import bkgMap from "../assets/images/bkg-map.jpg";
 import Button from "../components/Button";
@@ -10,6 +8,7 @@ import Form from "../components/Form";
 import Star from "../components/Star";
 import { H3 } from "../components/Typography";
 import Img from "gatsby-image"
+import LazyLoad from "react-lazyload"
 import "./style.scss";
 
 class IndexPage extends Component {
@@ -27,7 +26,9 @@ class IndexPage extends Component {
   }
 
   render() {
-    const featureImages = this.props.data.allImageSharp.edges
+    const heroImages = this.props.data.hero.edges
+    const featureImages = this.props.data.features.edges
+    const featGalleryImage = this.props.data.featGallery.childImageSharp.sizes
     
     return (
       <div>
@@ -35,7 +36,7 @@ class IndexPage extends Component {
         <div className="relative">
           <Carousel2
             settings={{
-              // autoplay: true,
+              autoplay: true,
               dotsClass: "slick-dots slick-dots-blue slick-dots-light",
               asNavFor: this.state.nav2
             }}
@@ -43,13 +44,13 @@ class IndexPage extends Component {
           >
             <div>
               <div
-                style={{ backgroundImage: `url(${sliderImg1})` }}
+                style={{ backgroundImage: `url(${heroImages[0].node.childImageSharp.sizes.src})` }}
                 className="w-screen h-screen md:h-screen-2/3 bg-no-repeat bg-cover bg-center"
               />
             </div>
             <div>
               <div
-                style={{ backgroundImage: `url(${sliderImg2})` }}
+                style={{ backgroundImage: `url(${heroImages[1].node.childImageSharp.sizes.src})` }}
                 className="w-screen h-screen md:h-screen-2/3 bg-no-repeat bg-cover bg-center"
               />
             </div>
@@ -132,73 +133,73 @@ class IndexPage extends Component {
               collection: "commercial-painting",
               title: "retail",
               sizes: featureImages.filter(edge =>
-                /retail/.test(edge.node.id)
-              )[0].node.sizes
+                /retail/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "commercial-painting",
               title: "hospitality",
               sizes: featureImages.filter(edge =>
-                /hotels/.test(edge.node.id)
-              )[0].node.sizes
+                /hotels/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "commercial-painting",
               title: "apartments",
               sizes: featureImages.filter(edge =>
-                /apartments/.test(edge.node.id)
-              )[0].node.sizes
+                /apartments/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "commercial-painting",
               title: "office buildings",
               sizes: featureImages.filter(edge =>
-                /office/.test(edge.node.id)
-              )[0].node.sizes
+                /office/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "commercial-painting",
               title: "parking garages",
               sizes: featureImages.filter(edge =>
-                /parking/.test(edge.node.id)
-              )[0].node.sizes
+                /parking/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "commercial-painting",
               title: "healthcare",
               path: "healthcare-hospitals",
               sizes: featureImages.filter(edge =>
-                /hospitals/.test(edge.node.id)
-              )[0].node.sizes
+                /hospitals/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "residential-painting",
               title: "house painting",
               root: true,
               sizes: featureImages.filter(edge =>
-                /house/.test(edge.node.id)
-              )[0].node.sizes
+                /house/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "residential-painting",
               title: "interior painting",
               sizes: featureImages.filter(edge =>
-                /interior/.test(edge.node.id)
-              )[0].node.sizes
+                /interior/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "residential-painting",
               title: "exterior painting",
               sizes: featureImages.filter(edge =>
-                /exterior/.test(edge.node.id)
-              )[0].node.sizes
+                /exterior/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             },
             {
               collection: "residential-painting",
               title: "highend estates",
               sizes: featureImages.filter(edge =>
-                /estate/.test(edge.node.id)
-              )[0].node.sizes
+                /estate/.test(edge.node.childImageSharp.id)
+              )[0].node.childImageSharp.sizes
             }
           ].map((_, idx) => (
             <Card key={_.title} title={_.title} sizes={_.sizes} {..._} />
@@ -332,11 +333,13 @@ class IndexPage extends Component {
           </div>
           <div className="flex flex-wrap justify-center items-center w-full md:w-1/2 h-screen-w md:h-screen-w-1/2 bg-gradient-grey-white">
             <div className="w-3/4 block text-center p-4">
-              <img
-                src="/images/logo-icon.svg"
-                alt="trifecta logo"
-                className="w-1/2 m-auto"
-              />
+              <LazyLoad>
+                <img
+                  src="/images/logo-icon.svg"
+                  alt="trifecta logo"
+                  className="w-1/2 m-auto"
+                />
+              </LazyLoad>
               <h3 className="font-gotham-bold text-5xl leading-none my-4 text-primary">
                 see for yourself
               </h3>
@@ -344,9 +347,11 @@ class IndexPage extends Component {
             </div>
           </div>
           <div
-            style={{ backgroundImage: "url(/images/feat-gallery.jpg)" }}
+            // style={{ backgroundImage: "url(/images/feat-gallery.jpg)" }}
             className="h-screen-w w-full md:w-1/2 md:h-screen-w-1/2 bg-center bg-cover"
-          />
+          >
+            <Img sizes={featGalleryImage} />
+          </div>
         </div>
 
         {/* Team */}
@@ -416,16 +421,53 @@ class IndexPage extends Component {
 export default IndexPage;
 
 export const query = graphql`
-  query FeatureSectionQuery {
-    allImageSharp(filter: { id: { regex: "/feat/" } }) {
+  query HomePageQuery {
+    hero: allFile(filter: { relativePath: { regex: "/hero/" }}) {
       edges {
         node {
-          id
-          sizes {
-            ...GatsbyImageSharpSizes
+          childImageSharp {
+            id,
+            sizes(maxWidth: 1600, quality: 80) {
+              ...GatsbyImageSharpSizes
+            }
           }
+        }
+      }
+    }
+    features: allFile(filter: { relativePath: { regex: "/feat/" }}) {
+      edges {
+        node {
+          childImageSharp {
+            id,
+            sizes(maxWidth: 500) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
+    featGallery: file(relativePath: { regex: "/feat-gallery.jpg/"}) {
+      childImageSharp {
+        id,
+        sizes(maxWidth: 750, maxHeight: 750) {
+          ...GatsbyImageSharpSizes
         }
       }
     }
   }
 `
+
+// export const query = graphql`
+//   query HomePageQuery {
+//     allImageSharp(filter: { id: { regex: "/feat/" } }) {
+//       edges {
+//         node {
+//           id
+//           sizes(maxWidth: 500) {
+//             ...GatsbyImageSharpSizes
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
