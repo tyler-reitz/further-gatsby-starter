@@ -4,9 +4,14 @@ import PageContainer from "../components/PageContainer";
 import Rule from "../components/Rule";
 import Star from "../components/Star";
 import { BQ, H1, H3, P1 } from "../components/Typography";
+import Helmet from "react-helmet"
 
 export default () => (
   <PageContainer>
+    <Helmet>
+      <title>Trifect | Reviews</title>
+    </Helmet>
+    
     <H1>Reviews</H1>
     {/* <Rule /> */}
     <P1>

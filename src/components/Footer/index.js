@@ -26,15 +26,22 @@ const Footer = () => (
         <div>
           <a
             className="block font-gotham-bold no-underline text-white font-semibold text-2xl mb-2"
-            href={`tel:+${global.phone}`}
+            href={`tel:+${process.env.PHONE}`}
           >
-            {global.phone}
+            {process.env.PHONE}
           </a>
           <Button to="/contact" primary>set an appointment</Button>
         </div>
 
         <p className="text-grey font-light text-xs leading-loose mt-auto">
-          Los Angeles Paint Company Marketing by INFLUX
+          Los Angeles Paint Company Marketing by{' '}
+          <a 
+            target="_blank"
+            href="https://www.influxmarketing.com/"
+            className="no-underline text-primary"
+          >
+            INFLUX
+          </a>
         </p>
       </div>
     </div>

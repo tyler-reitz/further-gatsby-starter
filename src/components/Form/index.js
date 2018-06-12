@@ -122,7 +122,7 @@ class Form extends Component {
     return (
       !this.state.submit
         ? (
-          <form className="flex flex-wrap justify-between px-6 sm:px12" action="/">
+          <form className="flex flex-wrap justify-between" action="/">
             <Input
               style={
                 this.state.name.dirty && !this.state.name.valid 
@@ -133,7 +133,7 @@ class Form extends Component {
               value={this.state.name.value}
               required={true}
               placeholder="name*"
-              className="w-full lg:w-8/25"
+              className="w-full lg:w-8/25 rounded"
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
             />
@@ -149,7 +149,7 @@ class Form extends Component {
               type="email"
               pattern={/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/}
               placeholder="email*"
-              className="w-full lg:w-8/25"
+              className="w-full lg:w-8/25 rounded"
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
             />
@@ -165,7 +165,7 @@ class Form extends Component {
               type="tel"
               placeholder="phone*"
               pattern={/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/}
-              className="w-full lg:w-8/25"
+              className="w-full lg:w-8/25 rounded"
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
             />
@@ -179,7 +179,7 @@ class Form extends Component {
               value={this.notes}
               required={true}
               placeholder="type of project*"
-              className={formElementClassName ? formElementClassName : "w-full lg:w-48/100"}
+              className={formElementClassName ? formElementClassName : "w-full lg:w-48/100 rounded"}
               // rows={textAreaHeight}
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}
@@ -194,7 +194,7 @@ class Form extends Component {
               value={this.message}
               required={true}
               placeholder="project notes*"
-              className={formElementClassName ? formElementClassName : "w-full lg:w-48/100"}
+              className={formElementClassName ? formElementClassName : "w-full lg:w-48/100 rounded"}
               rows={textAreaHeight}
               onChange={e => this.handleChange(e)}
               onBlur={(e) => this.handleBlur(e)}

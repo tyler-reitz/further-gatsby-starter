@@ -3,8 +3,10 @@
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
+    "predevelop": "cp .env .env.development",
     "develop": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby develop",
     "clean": "rm -rf public",
+    "prebuild": "cp .env .env.production",
     "build": "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby build",
     "serve": "gatsby serve",
     "deploy:test": "rsync -anv public/ furtheragency.com@s170644.gridserver.com:~/domains/trifecta-dev.influxmarketing.com/html/",

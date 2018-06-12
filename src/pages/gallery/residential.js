@@ -4,6 +4,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P1, P2 } from "../../components/Typography";
+import Helmet from "react-helmet"
 
 import img1 from "../../assets/images/Trifecta\ Selects/Residential/Ext0.jpg"
 import img2 from "../../assets/images/Trifecta\ Selects/Residential/Ext1.jpg"
@@ -91,6 +92,10 @@ const images = [
 
 export default () => (
   <PageContainer style={{ width: '72%' }}>
+    <Helmet>
+      <title>Trifecta | Gallery | Residential</title>
+    </Helmet>
+    
     <H1>See Our Work</H1>
     <P1>Los Angeles Commercial Painting Contractors</P1>
     <Rule />

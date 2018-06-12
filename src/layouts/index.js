@@ -12,18 +12,6 @@ import "./style.scss";
 const path = require('path')
 
 class Layout extends Component {
-  
-  state = {
-    phone: '123-345-6789',
-    email: 'hello@trifecta.com'
-  }
-
-  componentDidMount() {
-    for (let key in this.state) {
-      global[key] = this.state[key]
-    }
-  }
-  
   render() {
     const { children, location, ...props } = this.props
     
@@ -36,7 +24,10 @@ class Layout extends Component {
         id="main"
         className="relative flex flex-col nimbus-sans min-h-screen text-grey-darkest"
       >
-        <Helmet />
+        <Helmet>
+          <title>Trifecta</title>
+          <meta name="description" content="Description goes here" />
+        </Helmet>
         <Header />
         <main>
           {location.pathname !== "/" ? (

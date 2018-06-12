@@ -3,6 +3,7 @@ import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
+import Helmet from "react-helmet"
 
 import img1 from "../../assets/images/Trifecta Selects/Residential/Ext0.jpg"
 import img2 from "../../assets/images/Trifecta Selects/Residential/Ext1.jpg"
@@ -11,6 +12,14 @@ import img4 from "../../assets/images/Trifecta Selects/Residential/Ext3.jpg"
 
 export default () => (
   <PageContainer>
+    <Helmet>
+      <title>Trifecta | Residential Painting | Interior Painting</title>
+    </Helmet>
+
+    <Helmet>
+      <title>Trifecta | Residential Painting | Cabinet Refurbishing</title>
+    </Helmet>
+    
     <H1>Cabinet Refinishing</H1>
     <Rule />
     <H3>Premium lacquer and fine finishing.</H3>

@@ -1,19 +1,25 @@
 import React from "react";
-import { FullWidth } from "../components/ImagesContainers";
-import PageContainer from "../components/PageContainer";
-import Rule from "../components/Rule";
-import { H1, H3, P3 } from "../components/Typography";
+import { FullWidth } from "../../components/ImagesContainers";
+import PageContainer from "../../components/PageContainer";
+import Rule from "../../components/Rule";
+import { H1, H3, P3 } from "../../components/Typography";
+import Helmet from "react-helmet"
 
-import img1 from "../assets/images/Trifecta Selects/Commercial/DSCN2234.jpg"
-import img2 from "../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
-import img3 from "../assets/images/Trifecta Selects/Commercial/DSCN3180.jpg"
-import img4 from "../assets/images/Trifecta Selects/Commercial/DSCN3209.jpg"
-import img5 from "../assets/images/Trifecta Selects/Commercial/IMG_0485.jpg"
-import img6 from "../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
+import bkgImg from "../../assets/images/hero-01.jpg"
+import img1 from "../../assets/images/Trifecta Selects/Commercial/DSCN2234.jpg"
+import img2 from "../../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
+import img3 from "../../assets/images/Trifecta Selects/Commercial/DSCN3180.jpg"
+import img4 from "../../assets/images/Trifecta Selects/Commercial/DSCN3209.jpg"
+import img5 from "../../assets/images/Trifecta Selects/Commercial/IMG_0485.jpg"
+import img6 from "../../assets/images/Trifecta Selects/Commercial/IMG_3233.jpg"
 
 export default () => (
-  <PageContainer>
-    <H1>Specialty Services</H1>
+  <PageContainer bgImg={bkgImg}>
+    <Helmet>
+      <title>Trifecta | Commercial Painting | Prep Work</title>
+    </Helmet>
+
+    <H1>Prep Work</H1>
     <Rule />
     <H3>Drywall Repair.</H3>
     <P3>

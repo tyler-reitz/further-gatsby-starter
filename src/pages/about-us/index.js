@@ -1,7 +1,8 @@
 import React from "react";
-import PageContainer from '../components/PageContainer';
-import Rule from "../components/Rule";
-import { H1, H3, P1, P3 } from "../components/Typography";
+import PageContainer from '../../components/PageContainer';
+import Rule from "../../components/Rule";
+import { H1, H3, P1, P3 } from "../../components/Typography";
+import Helmet from "react-helmet"
 
 export default () => (
   <PageContainer>

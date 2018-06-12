@@ -4,6 +4,7 @@ import { FullWidth, TwoUp } from "../../components/ImagesContainers";
 import PageContainer from "../../components/PageContainer";
 import Rule from "../../components/Rule";
 import { H1, H3, P3 } from "../../components/Typography";
+import Helmet from "react-helmet"
 
 import img1 from "../../assets/images/Trifecta Selects/Commercial/IMG_3248.jpg"
 import img2 from "../../assets/images/Trifecta Selects/Commercial/IMG_3253.jpg"
@@ -14,6 +15,10 @@ import img6 from "../../assets/images/Trifecta Selects/Commercial/DSCN3124.jpg"
 
 export default () => (
   <PageContainer bgImg={bgImg}>
+    <Helmet>
+      <title>Trifecta | Commercial Painting | Office Buildings</title>
+    </Helmet>
+
     <H1>Office Buildings</H1>
     <Rule />
     <H3 className="mb-2">We paint new structures.</H3>

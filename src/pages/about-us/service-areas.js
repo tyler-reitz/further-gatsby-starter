@@ -1,8 +1,9 @@
 import React from "react";
-import bkgMap from "../assets/images/bkg-map.jpg";
-import PageContainer from "../components/PageContainer";
-import Rule from "../components/Rule";
-import { H1, H3, P1, Small } from "../components/Typography";
+import bkgMap from "../../assets/images/bkg-map.jpg";
+import PageContainer from "../../components/PageContainer";
+import Rule from "../../components/Rule";
+import { H1, H3, P1, Small } from "../../components/Typography";
+import Helmet from "react-helmet"
 
 
 export default () => (

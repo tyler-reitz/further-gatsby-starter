@@ -10,6 +10,7 @@ import { H3 } from "../components/Typography";
 import Img from "gatsby-image"
 import LazyLoad from "react-lazyload"
 import "./style.scss";
+import Helmet from "react-helmet"
 
 class IndexPage extends Component {
 
@@ -38,7 +39,8 @@ class IndexPage extends Component {
             settings={{
               autoplay: true,
               dotsClass: "slick-dots slick-dots-blue slick-dots-light",
-              asNavFor: this.state.nav2
+              asNavFor: this.state.nav2,
+              speed: 1500,
             }}
             getRef={ref => this.slider1 = ref}
           >
@@ -66,6 +68,7 @@ class IndexPage extends Component {
                 <div className="px-4 sm:py-8 sm:max-w-screen-3/4" style={{ maxWidth: "100vw" }}>
                   <Carousel2 settings={{
                       dots: false,
+                      speed: 1000,
                     }}
                     getRef={ref => this.slider2 = ref}
                   >
@@ -131,45 +134,16 @@ class IndexPage extends Component {
           {[
             {
               collection: "commercial-painting",
-              title: "retail",
-              sizes: featureImages.filter(edge =>
-                /retail/.test(edge.node.childImageSharp.id)
-              )[0].node.childImageSharp.sizes
-            },
-            {
-              collection: "commercial-painting",
-              title: "hospitality",
-              sizes: featureImages.filter(edge =>
-                /hotels/.test(edge.node.childImageSharp.id)
-              )[0].node.childImageSharp.sizes
-            },
-            {
-              collection: "commercial-painting",
-              title: "apartments",
-              sizes: featureImages.filter(edge =>
-                /apartments/.test(edge.node.childImageSharp.id)
-              )[0].node.childImageSharp.sizes
-            },
-            {
-              collection: "commercial-painting",
-              title: "office buildings",
+              title: "commercial",
               sizes: featureImages.filter(edge =>
                 /office/.test(edge.node.childImageSharp.id)
               )[0].node.childImageSharp.sizes
             },
             {
-              collection: "commercial-painting",
-              title: "parking garages",
+              collection: "residential-painting",
+              title: "HOA/Multi-family",
               sizes: featureImages.filter(edge =>
-                /parking/.test(edge.node.childImageSharp.id)
-              )[0].node.childImageSharp.sizes
-            },
-            {
-              collection: "commercial-painting",
-              title: "healthcare",
-              path: "healthcare-hospitals",
-              sizes: featureImages.filter(edge =>
-                /hospitals/.test(edge.node.childImageSharp.id)
+                /exterior/.test(edge.node.childImageSharp.id)
               )[0].node.childImageSharp.sizes
             },
             {
@@ -178,20 +152,6 @@ class IndexPage extends Component {
               root: true,
               sizes: featureImages.filter(edge =>
                 /house/.test(edge.node.childImageSharp.id)
-              )[0].node.childImageSharp.sizes
-            },
-            {
-              collection: "residential-painting",
-              title: "interior painting",
-              sizes: featureImages.filter(edge =>
-                /interior/.test(edge.node.childImageSharp.id)
-              )[0].node.childImageSharp.sizes
-            },
-            {
-              collection: "residential-painting",
-              title: "exterior painting",
-              sizes: featureImages.filter(edge =>
-                /exterior/.test(edge.node.childImageSharp.id)
               )[0].node.childImageSharp.sizes
             },
             {
@@ -210,8 +170,8 @@ class IndexPage extends Component {
         <div className="flex flex-wrap justify-center max-w-3xl mx-auto p-4 py-8 mb-8">
           <H3 className="text-primary text-center">
             Contact us today to discuss your project and how we can help:{" "}
-            <a className="no-underline text-primary" href="tel:888-123-4567">
-              888-123-4567
+            <a className="no-underline text-primary" href={`tel:${process.env.PHONE}`}>
+              {process.env.PHONE}
             </a>
           </H3>
           <Form />
@@ -258,12 +218,13 @@ class IndexPage extends Component {
         </div>
 
         {/* 2 x 2 */}
-        <div className="sm:flex flex-wrap mb-8 pb-8">
+        <div className="sm:flex flex-wrap">
           <div style={{ height: '40rem' }} className="relative w-full bg-gradient-grey-white">
             <Carousel2
               settings={{
                 className: "center-slides",
-                dotsClass: "slick-dots slick-dots-blue"
+                dotsClass: "slick-dots slick-dots-blue",
+                speed: 1000
               }}
             >
               <div>
@@ -343,7 +304,7 @@ class IndexPage extends Component {
               <h3 className="font-gotham-bold text-5xl leading-none my-4 text-primary">
                 see for yourself
               </h3>
-              <Button primary to="/gallery">view our gallery</Button>
+              <Button primary to="/gallery/commercial">view our gallery</Button>
             </div>
           </div>
           <div
@@ -352,29 +313,6 @@ class IndexPage extends Component {
           >
             <Img sizes={featGalleryImage} />
           </div>
-        </div>
-
-        {/* Team */}
-        <div className="flex flex-wrap justify-center max-w-3xl mx-auto py-6 md:my-6 mb-4">
-          <h2 className="font-gotham-bold leading-tight w-5/6 text-4xl mb-4 text-center gotham-bold text-primary text-4xl leading-none">
-            Our team is led by a <span className="text-black">Trifecta</span> of Los
-            Angeles Painting Experts
-          </h2>
-          <p className="text-xl w-5/6 leading-normal text-center font-light mb-8">
-            Ean, Chris and Allan embody the term Trifecta. Each with their own
-            unique skill set, the trio have formed a premiere Los Angeles painting
-            company, with a focus, drive and collective desire to deliver for their
-            clients.
-          </p>
-          {["Ean", "Chris", "Allan"].map(name => (
-            <div key={name} className="m-4 sm:w-2/5 md:w-1/4">
-              <img
-                className="w-full"
-                src="http://via.placeholder.com/300x350"
-                alt="placeholders"
-              />
-            </div>
-          ))}
         </div>
 
         {/* Hero 3 */}
@@ -456,18 +394,3 @@ export const query = graphql`
     }
   }
 `
-
-// export const query = graphql`
-//   query HomePageQuery {
-//     allImageSharp(filter: { id: { regex: "/feat/" } }) {
-//       edges {
-//         node {
-//           id
-//           sizes(maxWidth: 500) {
-//             ...GatsbyImageSharpSizes
-//           }
-//         }
-//       }
-//     }
-//   }
-// `

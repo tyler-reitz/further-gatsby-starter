@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import Img from "gatsby-image"
 
-export const FullWidth = ({ img }) => <img style={{ display: 'block', margin: '1rem 0' }} src={img} alt="" />
+import styles from "./style.module.css"
+
+export const FullWidth = ({ img, className = "" }) => <img src={img} className={`block rounded ${styles.maxWidth} ${className}`} alt="" />
   
 export const TwoUp = () =>
   <div className="flex flex-wrap justify-between">

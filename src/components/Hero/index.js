@@ -23,7 +23,6 @@ class Hero extends Component {
     	children,
     	isSubMenu,
     	sectionHasBgImgs,
-    	...props
     } = this.props
 
 

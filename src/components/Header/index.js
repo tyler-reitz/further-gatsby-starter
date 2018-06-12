@@ -103,9 +103,9 @@ class Header extends Component {
           <div className="hidden lg:flex flex-col text-center">
             <a
               className="font-gotham-bold no-underline text-primary font-semibold text-2xl mb-2"
-              href={`tel:+${global.phone}`}
+              href={`tel:+${process.env.PHONE}`}
             >
-              {global.phone}
+              {process.env.PHONE}
             </a>
             <Button to="/contact" primary>set an appointment</Button>
           </div>
@@ -114,7 +114,7 @@ class Header extends Component {
         <div
           id="drawer"
           className={isOpen && 'overflow-y-scroll'}
-          style={{ display: 'none' }}
+          style={{ display: this.state.windowWidth && this.state.windowWidth < 1100 ? 'none' : 'block' }}
         >
           <MegaMenu
             mode={
