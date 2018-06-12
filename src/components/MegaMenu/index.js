@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import MenuLink from "./MenuLink";
-import Menu, { SubMenu, Item as MenuItem, Divider } from "rc-menu";
-const slugify = require("slugify");
-import { withRouter } from "react-router-dom";
+import React, { Component } from "react"
+import MenuLink from "./MenuLink"
+import Menu, { SubMenu, Item as MenuItem, Divider } from "rc-menu"
+const slugify = require("slugify")
+import { withRouter } from "react-router-dom"
 
-import "./style.css";
+import "./style.css"
 
 class MegaMenu extends Component {
   state = {
@@ -15,7 +14,7 @@ class MegaMenu extends Component {
       "residential-painting": 4,
       "gallery": 6
     }
-  };
+  }
 
   renderMenuIndexLink = menuText => {
     const slug = slugify(menuText).toLowerCase();
@@ -28,12 +27,14 @@ class MegaMenu extends Component {
       >
         {menuText}
       </MenuLink>
-    );
-  };
+    )
+  }
 
   mapMenusToPaths = () => {};
 
   componentDidMount() {
+    console.log(window.width)
+    
     const { navigationMapping } = this.state;
     const {
       location: { pathname },
@@ -113,7 +114,7 @@ class MegaMenu extends Component {
 
   render() {
     const {
-      props: { mode, ...props },
+      props: { mode },
       state: { openKeys }
     } = this;
 

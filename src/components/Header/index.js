@@ -114,12 +114,13 @@ class Header extends Component {
         <div
           id="drawer"
           className={isOpen && 'overflow-y-scroll'}
+          style={{ display: this.state.windowWidth && this.state.windowWidth > 1100 ? 'block' : 'none' }}
         >
           <MegaMenu
             mode={
               this.state.windowWidth && this.state.windowWidth > 1100
-                ? "horizontal"
-                : "inline"
+              ? "horizontal"
+              : "inline"
             }
           />
         </div>
