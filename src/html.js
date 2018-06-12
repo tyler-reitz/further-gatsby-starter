@@ -52,7 +52,7 @@ export default class HTML extends Component {
           <meta property="og:image" content={`tbd`} />
           <link rel="icon" type="image/png" href="/favicon.png" />
           { headComponents }
-          <link rel="stylesheet" href="https://use.typekit.net/ykn6nrn.css" />
+          {/* <link rel="stylesheet" href="https://use.typekit.net/ykn6nrn.css" /> */}
           { css }
         </head>
         <body className="overflow-x-hidden">
