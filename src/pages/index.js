@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import bkgLA from "../assets/images/bkg-losangeles.jpg";
-import bkgMap from "../assets/images/bkg-map.jpg";
-import Button from "../components/Button";
-import Card from "../components/Card";
-import Carousel2 from "../components/Carousel";
-import Form from "../components/Form";
-import Star from "../components/Star";
-import { H3 } from "../components/Typography";
+import Button from "../components/Button"
+import Card from "../components/Card"
+import Carousel2 from "../components/Carousel"
+import Form from "../components/Form"
+import Star from "../components/Star"
+import { H3 } from "../components/Typography"
 import Img from "gatsby-image"
-import LazyLoad from "react-lazyload"
-import "./style.scss";
-import Helmet from "react-helmet"
+import LazyLoad   from "react-lazyload"
+import "./style.scss"
 
 class IndexPage extends Component {
 
@@ -30,6 +27,8 @@ class IndexPage extends Component {
     const heroImages = this.props.data.hero.edges
     const featureImages = this.props.data.features.edges
     const featGalleryImage = this.props.data.featGallery.childImageSharp.sizes
+    const bkgLA = this.props.data.heroBkgLA.childImageSharp.sizes.src
+    const bkgMap = this.props.data.heroBkgMap.childImageSharp.sizes.src
     
     return (
       <div>
@@ -129,7 +128,7 @@ class IndexPage extends Component {
           </p>
         </div>
 
-        {/* Services 5-UP */}
+        {/* Services 4-UP */}
         <div className="flex flex-wrap justify-center mx-auto py-6 md:my-6 bg-gradient-grey-white">
           {[
             {
@@ -178,44 +177,46 @@ class IndexPage extends Component {
         </div>
 
         {/* Hero 2 */}
-        <div
-          style={{ backgroundImage: `url(${bkgLA})` }}
-          className="relative bg-no-repeat bg-cover bg-center py-8"
-        >
-          <div className="flex flex-wrap justify-center items-center py-6">
-            <div className="realtive z-10 py-8 text-white max-w-3xl">
-              <div className="px-4 py-8 sm:max-w-screen-3/4">
-                <h1 className="font-gotham-bold mb-2 text-5xl leading-none capitalize">
-                  Los&nbsp;Angeles building painters
-                </h1>
-                <small className="font-gotham-medium text-3xl mb-4">
-                  Who Understand Your Goals and Concerns
-                </small>
-                <p className="text-base font-light leading-normal my-6 w-3/4">
-                  With over XX years combined experience, Trifecta Painting
-                  specializes in humanizing the world of commercial and residential
-                  painting services. We know how frustrating it can be to find the
-                  best commercial painters in Los Angeles. That&#8217;s why we
-                  insist on things like a thorough bidding process, and well-written
-                  paint specifications that outline the entire course of your
-                  project.
-                </p>
-                <p className="text-base font-light leading-normal my-8 w-3/4">
-                  We&#8217;ve established strong relationships with paint suppliers,
-                  allowing us to outfit your project with top-quality paint and
-                  supplies for a cost that is both competitive and economical. With
-                  experienced crews, including expert high-reach equipment
-                  operators, the professionalism of our work is defined by our
-                  dedication to safety and an unrivaled cleanliness on the job site.
-                </p>
+        <LazyLoad once>
+          <div
+            style={{ backgroundImage: `url(${bkgLA})` }}
+            className="relative bg-no-repeat bg-cover bg-center py-8"
+          >
+            <div className="flex flex-wrap justify-center items-center py-6">
+              <div className="realtive z-10 py-8 text-white max-w-3xl">
+                <div className="px-4 py-8 sm:max-w-screen-3/4">
+                  <h1 className="font-gotham-bold mb-2 text-5xl leading-none capitalize">
+                    Los&nbsp;Angeles building painters
+                  </h1>
+                  <small className="font-gotham-medium text-3xl mb-4">
+                    Who Understand Your Goals and Concerns
+                  </small>
+                  <p className="text-base font-light leading-normal my-6 w-3/4">
+                    With over XX years combined experience, Trifecta Painting
+                    specializes in humanizing the world of commercial and residential
+                    painting services. We know how frustrating it can be to find the
+                    best commercial painters in Los Angeles. That&#8217;s why we
+                    insist on things like a thorough bidding process, and well-written
+                    paint specifications that outline the entire course of your
+                    project.
+                  </p>
+                  <p className="text-base font-light leading-normal my-8 w-3/4">
+                    We&#8217;ve established strong relationships with paint suppliers,
+                    allowing us to outfit your project with top-quality paint and
+                    supplies for a cost that is both competitive and economical. With
+                    experienced crews, including expert high-reach equipment
+                    operators, the professionalism of our work is defined by our
+                    dedication to safety and an unrivaled cleanliness on the job site.
+                  </p>
+                </div>
               </div>
             </div>
+            <div
+              style={{ top: "1vw" }}
+              className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"
+            />
           </div>
-          <div
-            style={{ top: "1vw" }}
-            className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"
-          />
-        </div>
+        </LazyLoad>
 
         {/* 2 x 2 */}
         <div className="sm:flex flex-wrap">
@@ -224,7 +225,9 @@ class IndexPage extends Component {
               settings={{
                 className: "center-slides",
                 dotsClass: "slick-dots slick-dots-blue",
-                speed: 1000
+                speed: 500,
+                fade: false,
+                adaptiveHeight: true
               }}
             >
               <div>
@@ -298,6 +301,7 @@ class IndexPage extends Component {
                 <img
                   src="/images/logo-icon.svg"
                   alt="trifecta logo"
+                  height={200}
                   className="w-1/2 m-auto"
                 />
               </LazyLoad>
@@ -308,49 +312,55 @@ class IndexPage extends Component {
             </div>
           </div>
           <div
-            // style={{ backgroundImage: "url(/images/feat-gallery.jpg)" }}
             className="h-screen-w w-full md:w-1/2 md:h-screen-w-1/2 bg-center bg-cover"
           >
-            <Img sizes={featGalleryImage} />
+            <Img
+              backgroundColor
+              sizes={featGalleryImage}
+              alt="trifecta project"
+            />
           </div>
         </div>
 
         {/* Hero 3 */}
-        <div
-          style={{ backgroundImage: `url(${bkgMap})` }}
-          className="relative bg-no-repeat bg-cover bg-center py-8"
-        >
-          <div className="flex flex-wrap justify-center items-center py-6">
-            <div className="realtive z-10 py-8 text-white max-w-3xl">
-              <div className="px-4 py-8 w-screen-3/4 max-w-screen-3/4">
-                <h1 className="font-gotham-bold mb-1 text-5xl leading-none mb-8">
-                  Areas We Serve
-                </h1>
-                <h2 className="font-gotham-medium font-semibold text-3xl mb-4">
-                  Commercial
-                </h2>
-                <p className="text-base font-light leading-normal mb-6">
-                  Santa Clarita south to Long Beach & Oxnard east to Pasadena.
-                </p>
-                <h2 className="font-gotham-medium font-semibold text-3xl mb-4">
-                  Residential
-                </h2>
-                <p className="text-base font-light leading-normal mb-4">
-                  San Fernando Valley: Calabasas, West Hills, Woodland Hills,
-                  Tarzana, Encino, Sherman Oaks, Studio City, Toluca Lake
-                </p>
-                <p className="text-base font-light leading-normal">
-                  Los Angeles: Santa Monica, Brentwood, Bel Air, Beverly Hills,
-                  Hollywood, West Hollywood
-                </p>
+        <LazyLoad once>
+          <div
+            style={{ backgroundImage: `url(${bkgMap})` }}
+            className="relative bg-no-repeat bg-cover bg-center py-8"
+          >
+            <div className="flex flex-wrap justify-center items-center py-6">
+              <div className="realtive z-10 py-8 text-white max-w-3xl">
+                <div className="px-4 py-8 w-screen-3/4 max-w-screen-3/4">
+                  <h1 className="font-gotham-bold mb-1 text-5xl leading-none mb-8">
+                    Areas We Serve
+                  </h1>
+                  <h2 className="font-gotham-medium font-semibold text-3xl mb-4">
+                    Commercial
+                  </h2>
+                  <p className="text-base font-light leading-normal mb-6">
+                    Santa Clarita south to Long Beach & Oxnard east to Pasadena.
+                  </p>
+                  <h2 className="font-gotham-medium font-semibold text-3xl mb-4">
+                    Residential
+                  </h2>
+                  <p className="text-base font-light leading-normal mb-4">
+                    San Fernando Valley: Calabasas, West Hills, Woodland Hills,
+                    Tarzana, Encino, Sherman Oaks, Studio City, Toluca Lake
+                  </p>
+                  <p className="text-base font-light leading-normal">
+                    Los Angeles: Santa Monica, Brentwood, Bel Air, Beverly Hills,
+                    Hollywood, West Hollywood
+                  </p>
+                </div>
               </div>
             </div>
+            <div
+              style={{ top: "1vw" }}
+              className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"
+            />
           </div>
-          <div
-            style={{ top: "1vw" }}
-            className="absolute bg-primary h-9/10 sm:h-4/5 my-8 opacity-75 skew left width"
-          />
-        </div>
+        </LazyLoad>
+
       </div>
     )
   }
@@ -388,6 +398,22 @@ export const query = graphql`
       childImageSharp {
         id,
         sizes(maxWidth: 750, maxHeight: 750) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    },
+    heroBkgLA: file(relativePath: { regex: "/bkg-losangeles.jpg/" }) {
+      childImageSharp {
+        id,
+        sizes(maxWidth: 1600) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+    heroBkgMap: file(relativePath: { regex: "/bkg-map.jpg/" }) {
+      childImageSharp {
+        id,
+        sizes(maxWidth: 1600) {
           ...GatsbyImageSharpSizes
         }
       }
